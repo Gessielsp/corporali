@@ -1,0 +1,78 @@
+#headerMain{
+    background-color: #181818;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    height: 100px;
+}
+#boxLogo{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    height: 50px;
+    width: 170px;
+    padding: 10px 0;
+    
+}
+#listaUm{
+    display: flex;
+    list-style: none;
+    width: 450px;
+    justify-content: space-between;
+}
+#listaDois{
+    display: flex;
+    list-style: none;
+
+}
+#navegacao{
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+    align-items: center;
+}
+#home{
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #20e2bf;
+    color: #FFFFFF;
+}
+#clinica{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#procedimentos{
+    text-decoration: none;
+    background-color: #181818;
+    color: #FFFFFF;
+    border: none;
+}
+#contatos{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#bodyTite{
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 3px solid #20e2bf;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#ligar{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #20e2bf;
+    border: 1px solid #20e2bf;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+#whatsapp{
+    text-decoration: none;
+    margin: 0 10px;
+    color:#20e2bf;
+    border: 1px solid #20e2bf;
+    border-radius: 10px;
+    padding: 5px 15px;
+
+}
