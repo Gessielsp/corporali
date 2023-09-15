@@ -1,4 +1,4 @@
-import logo from "@/public/img/logo-corporali.png"
+import logo from "@/public/corporali/logos/logo-corporali.png"
 import Image from "next/image"
 import styles from "@/components/header/Header.module.scss"
 import Link from "next/link"
