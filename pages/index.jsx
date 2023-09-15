@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.scss'
 import Header from '@/components/header/Header'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +15,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
+      <Header />
+      <div id={styles.bgHome}>
+        <hgroup id={styles.titulosHome}>
+          <h1 id={styles.tituloUm}>Instituto</h1>
+          <h1 id={styles.tituloDois}>Corporali.</h1>
+          <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
+        </hgroup>
+        <div id={styles.boxSaberMais}>
+          <a id={styles.saberMais} href="">Saber Mais!</a>
+        </div>
+      </div>
     </>
   )
 }
