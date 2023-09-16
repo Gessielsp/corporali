@@ -1,0 +1,12 @@
+@import '../../styles/cores.module.scss';
+
+#box{
+    display: flex;
+    justify-content: center;
+}
+#linha{
+    height: 3px;
+    background-color:$primarycolor;
+    width: 900px;
+    margin: 25px 0;
+}

@@ -10,10 +10,9 @@
     align-items: center;
 }
 #logo{
-    height: 50px;
+    height: 60px;
     width: 170px;
     padding: 10px 0;
-    
 }
 #listaUm{
     display: flex;
@@ -31,6 +30,7 @@
     width: 750px;
     justify-content: space-between;
     align-items: center;
+    text-transform: uppercase;
 }
 #home{
     text-decoration: none;
@@ -47,6 +47,7 @@
     background-color: #181818;
     color: #FFFFFF;
     border: none;
+    text-transform: uppercase;
 }
 #contatos{
     text-decoration: none;
