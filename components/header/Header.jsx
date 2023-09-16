@@ -1,12 +1,13 @@
-import logo from "@/public/corporali/logos/logo-corporali.png"
-import Image from "next/image"
-import styles from "@/components/header/Header.module.scss"
-import Link from "next/link"
+import logo from "@/public/corporali/logos/logo-corporali.png";
+import Image from "next/image";
+import styles from "@/components/header/Header.module.scss";
+import Link from "next/link";
 
+import { robotoCondensed } from "@/fonts/fonts";
 
 export default function Header(){
     return(
-        <header id={styles.headerMain}>
+        <header id={styles.headerMain} className={robotoCondensed.className}>
             <div id={styles.boxLogo}>
                 <Image id={styles.logo} src={logo} alt=""/>
             </div>

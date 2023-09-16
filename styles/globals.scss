@@ -1,0 +1,12 @@
+@import './cores.module.scss';
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: $secondarycolor;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
