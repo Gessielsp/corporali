@@ -1,38 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Documentação Oficial Site Corporali
 
-First, run the development server:
+  <a href="#" target="_Blank">Link para visualização do projeto</a>
+  
+  <p>Descrição: aqui voce irá achar absolutamente tudo sobre o site do Instituto Corporali, coisas como: protótipo do projeto, design, linguagens usadas, documentações especificas de pacotes usados, insights e muito mais. Abaixo voce confere todas as informações sobre o projeto.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  
+ <h2> :hammer_and_wrench: Construído com </h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Sass](sass-lang.com/guide) - Framework CSS.
+- [Figma](https://www.figma.com/) - Ferramentar de Design, usada para prototipagem.
+- [Visual Studio Code](https://code.visualstudio.com/) - Editor de Código.
+- [NextsJs](https://nextjs.org/) - Biblioteca JS usada para criação de interfaces.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<hr>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<h2>O que foi pedido</h2>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p>Foi solicitado pela equipe da WEB-TECH um site Empresa. Sites Empresas tem como objetivo cobrir amplas informações sobre a empresa como: produtos, valores, quem são, contato e muito mais, forneçando uma presença online estável.</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h2>Como usar a aplicação</h2>
 
-## Learn More
+<p>A aplicação conta com 8 páginas, sendo elas: </p>
 
-To learn more about Next.js, take a look at the following resources:
+<ul>
+  <li>Home</li>
+  <li>Procedimentos Mamários</li>
+  <li>Procedimentos Abdominais</li>
+  <li>Procedimentos Reparadores</li>
+  <li>Procedimentos Faciais</li>
+  <li>DR. Marcelo Henrique</li>
+  <li>BodyTite</li>
+  <li>Clinica</li>
+</ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h2>UI - Interface de Usuário</h2>
 
-## Deploy on Vercel
+<p>O design foi projetado exclusivamente pela WEB-TECH, pensamos um design sofisticado e objetivo, usamos cores modernistas e criamos seções simples e objetivas. Foram usadas fotos do solicitante e textos pensados exlusivamente para o Instituto.</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h3>Protótipo do projeto</h3>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>O protótipo tem como objetivo esboçar como ficará o projeto em seu resultado final.</p>
+
+<p>No design, prototipação refere-se a como o projeto irá ficar no seu design final. Tendo isso em mente, acesse o link abaixo para visualizar o protótipo que criamos com a ferramenta Figma.</p>
+
+<a href="https://www.figma.com/file/6FiFITADpIfnniXMFv0oWQ/INSTITUTO-CORPORALLI-(Copy)?type=design&mode=design&t=qTp4cEDNZ8tTenwd-1">Visualizar protótipo</a>
+
+<h3>Paleta de Cores</h3>
+
+<p>Acredito que não haveria sentindo escolher outras cores que nao ligassem ao meio ambiente, então o verde foi escolhido como cor principal, o branco com sentindo de "indicação" e vermelho "atenção ou resposta".</p>
+
+<p>20E2BF - Verde - Cor primária </p>
+<p>181818 - Verde claro - Cor secundária</p>
+<p>FFFFFF - Branco</p>
+
+<h3>Header</h3>
+
+<p>Descricao</p>
+
+<h3>Conteúdo principal do projeto</h3>
+
+<p>Descricao</p>
+
+<h3>Footer</h3>
+
+<p>Descricao</p>
+
+<h2>Fotos do projeto</h2>
+
+![IPAM_1](https://user-images.githubusercontent.com/85260996/211205473-90854081-2d64-4af6-aa68-2fabeccaf1d3.PNG)
+![IPAM_2](https://user-images.githubusercontent.com/85260996/211205564-51c2dbf2-7808-42d6-b656-8f3e013ebca9.PNG)
+![IPAM_3](https://user-images.githubusercontent.com/85260996/211205480-425bc45c-59ee-41af-a417-02368ffa0f23.PNG)
+
+<h2>Agradecimentos</h2>
