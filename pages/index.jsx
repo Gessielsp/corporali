@@ -54,9 +54,26 @@ export default function Home() {
 
       <LinhaHorizontalLonga/>
 
-      <div id={styles.procedimentos}></div>
-
-      <div id={styles.procedimentos}></div>
+      <div id={styles.procedimentos}>
+        <div id={styles.conteudoProcedimentos}>
+          <div id={styles.caixaUmProcedimentos}>
+            <h2 id={styles.tituloProcedimentos}>Procedimentos</h2>
+            <p className={styles.descricaoProcedimentos}>Na nossa conceituada clínica de cirurgia plástica, abraçamos a missão de aprimorar a sua autoestima e realçar a sua beleza de forma segura e profissional. Comprometidos com os mais elevados padrões da medicina.</p>
+            <p className={styles.descricaoProcedimentos}>A nossa clínica é sinônimo de excelência e qualidade em cirurgia plástica. Cumprimos rigorosamente os mais altos padrões estabelecidos pela medicina moderna, garantindo a sua segurança e bem-estar em todas as etapas do processo.</p>
+            <p className={styles.descricaoProcedimentos}>Na nossa clínica de cirurgia plástica, a busca pela sua melhor versão é uma jornada que empreendemos com seriedade e dedicação. Se você está considerando aprimorar a sua aparência e elevar a sua autoestima, convidamos você a se juntar a nós.</p>
+          </div>
+          <div id={styles.caixaDoisprocedimentos}>
+            <div className={styles.caixaPequenaProcedimentos}>
+              <div className={styles.caixaProcedimento}>Mamários</div>
+              <div className={styles.caixaProcedimento}>Abdominais</div>
+            </div>
+            <div className={styles.caixaPequenaProcedimentos}>
+              <div className={styles.caixaProcedimento}>Faciais</div>
+              <div className={styles.caixaProcedimento}>Reparadores</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div id={styles.marcelo}></div>
 
