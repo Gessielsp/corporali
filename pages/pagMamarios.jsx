@@ -1,14 +1,15 @@
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+
 import styles from "@/styles/pagMamarios.module.scss";
 
-import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 
 export default function PagMamarios(){
     return(
         <div>
             <Header/>
-            <div id={styles.banner}>
+            <div id={styles.bannerMamarios}>
                 <div>
                     <h1>Procedimentos Mamários</h1>
                     <p>Conheça agora, tudo sobre os procedimentos mamários e como eles são realizados. Aqui você verá como é feito, quais são os procedimentos pré e pós operatórios e como é o apoio da nossa equipe.</p>
