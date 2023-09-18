@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '@/styles/index.module.scss';
 import Header from '@/components/header/Header';
 import Image from 'next/image';
+import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg'
 
 import { robotoCondensed } from '@/fonts/fonts';
 
@@ -30,10 +31,10 @@ export default function Home() {
         </div>
       </div>
 
-      <LinhaHorizontalLonga/>
-      
+      <LinhaHorizontalLonga />
+
       <div id={styles.clinica}>
-        <div id={styles.fotoClinica}> 
+        <div id={styles.fotoClinica}>
           <div id={styles.conteudoClinica}>
             <div id={styles.sloganClinica}>
               <h2 id={styles.tituloSloganClinica}>Corporali</h2>
@@ -52,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <LinhaHorizontalLonga/>
+      <LinhaHorizontalLonga />
 
       <div id={styles.procedimentos}>
         <div id={styles.conteudoProcedimentos}>
@@ -75,10 +76,25 @@ export default function Home() {
         </div>
       </div>
 
-      <div id={styles.marcelo}></div>
+      <div class={styles.linhaHorizontalDoutor}></div>
+
+      <div id={styles.marcelo}>
+        <div id={styles.caixadaFotoDoutor}>
+          <Image id={styles.imagemDoutor} src={imgDoutor} alt="" />
+        </div>
+        <div id={styles.caixaDetextos}>
+          <h2 id={styles.textoUmDoutor}> A mente brilhante.</h2>
+          <h4 id={styles.textoDoisDoutor}>Fazendo sempre o melhor para o próximo.</h4>
+          <div id={styles.divParagrafo}>
+            <p id={styles.textoTresDoutor}>Cirurgia plástica é coisa séria! Escolher um proficional qualificado e de confiança é um dos elementos mais importante na hora de realizar uma cirugia.</p>
+          </div>
+          <h3 id={styles.textoQuatroDoutor}>DR. MARCELO MOREIRA, CIRURGIÃO PLÁSTICO.</h3>
+        </div>
+      </div>
+
+      <div class={styles.linhaHorizontalDoutor}></div>
 
       <div id={styles.duvidas}></div>
-
       <div id={styles.contato}></div>
     </div>
   )
