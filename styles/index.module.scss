@@ -6,17 +6,19 @@
   background-position: center;
   background-size: cover;
   height: 90vh;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 13%;
 }
+
 #tituloUm {
   font-size: 50px;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
+
 #tituloDois {
   font-size: 50px;
   color: #ffffff;
@@ -24,6 +26,7 @@
   padding-left: 50px;
   margin-bottom: 22px;
 }
+
 #tituloTres {
   background-color: $tertiarycolor;
   color: $primarycolor;
@@ -31,6 +34,7 @@
   padding: 30px;
   border-radius: 20px;
 }
+
 #boxSaberMais {
   background-color: $tertiarycolor;
   border: 1px solid #ffffff;
@@ -40,20 +44,23 @@
   padding: 10px;
   margin-top: 25px;
 }
+
 #saberMais {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 13px;
 }
+
 /* PARTE BANNER FIM */
 
 
 /* PARTE CLINICA INICIO */
-#clinica{
+#clinica {
   height: 500px;
 }
-#fotoClinica{
+
+#fotoClinica {
   background-color: blue;
   height: 100%;
   width: 70%;
@@ -63,7 +70,8 @@
   display: flex;
   align-items: center;
 }
-#conteudoClinica{
+
+#conteudoClinica {
   display: flex;
   background-color: transparent;
   min-width: 90vw;
@@ -73,7 +81,8 @@
   border-radius: 20px;
   margin-left: 4vw;
 }
-#sloganClinica{
+
+#sloganClinica {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -81,12 +90,14 @@
   box-sizing: border-box;
   padding: 0 0 30px 40px;
 }
-#tituloSloganClinica{
+
+#tituloSloganClinica {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-#descricaoSloganClinica{
+
+#descricaoSloganClinica {
   color: $primarycolor;
   background-color: $tertiarycolor;
   width: 60%;
@@ -94,45 +105,52 @@
   text-align: center;
   padding: 5px;
 }
-#sobreaClinica{
+
+#sobreaClinica {
   width: 50%;
   background-color: #323232dc;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
   padding: 30px 0 0 50px;
-  
+
 }
-#tituloSobreaClinica{
+
+#tituloSobreaClinica {
   border-left: 3px solid $primarycolor;
   padding-left: 10px;
   color: #ffffff;
   text-transform: uppercase;
 }
-#tituloClinicaVerde{
+
+#tituloClinicaVerde {
   color: $primarycolor;
 }
-.descricaoClinica{
+
+.descricaoClinica {
   color: #ffffff;
   font-weight: 300;
   width: 90%;
   text-align: justify;
   margin: 20px 0;
 }
-#boxLinhaBranca{
+
+#boxLinhaBranca {
   width: 90%;
   display: flex;
   justify-content: flex-end;
 }
-#linhaBranca{
+
+#linhaBranca {
   height: 3px;
   background-color: #ffffff;
   width: 30%;
 }
+
 /* PARTE CLINICA FIM */
 
 /* PARTE INICIO PROCEDIMENTOS */
 
-#procedimentos{
+#procedimentos {
   height: 600px;
   background-image: url(../public/corporali/clinica/foto_18.JPG);
   background-size: cover;
@@ -140,7 +158,8 @@
   align-items: center;
   justify-content: center;
 }
-#conteudoProcedimentos{
+
+#conteudoProcedimentos {
   background-color: #1e1e1ed5;
   display: flex;
   height: 90%;
@@ -148,28 +167,33 @@
   box-sizing: border-box;
   padding: 50px;
 }
-#tituloProcedimentos{
+
+#tituloProcedimentos {
   color: $primarycolor;
   border-left: 3px solid $primarycolor;
   padding-left: 10px;
   font-size: 40px;
 }
-.descricaoProcedimentos{
+
+.descricaoProcedimentos {
   color: #ffffff;
   font-weight: 300;
   width: 80%;
   margin: 30px 0;
   padding-left: 15px;
 }
-#caixaUmProcedimentos{
+
+#caixaUmProcedimentos {
   width: 40%;
 }
-#caixaDoisprocedimentos{
+
+#caixaDoisprocedimentos {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
 }
-.caixaProcedimento{
+
+.caixaProcedimento {
   border: 3px solid $primarycolor;
   width: 200px;
   height: 150px;
@@ -179,9 +203,80 @@
   justify-content: center;
   border-radius: 10px;
 }
-.caixaPequenaProcedimentos{
+
+.caixaPequenaProcedimentos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 /* PARTE FIM PROCEDIMENTOS */
+/* parte Incio Doutor */
+#marcelo {
+  background-color: $secondarycolor;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+#caixadaFotoDoutor {
+  width: 350px;
+  height: 600px;
+  background-color: $primarycolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+#imagemDoutor {
+  width: 400px;
+  height: 500px;
+  padding-left: 120px;
+  border-radius: 5px;
+}
+
+#caixaDeTextos {
+  display: flex;
+  flex-direction: column;
+}
+
+#textoUmDoutor {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 40px;
+  border-left: solid 3px #ffffff;
+  padding-left: 10px;
+}
+
+#textoDoisDoutor {
+  color: $primarycolor;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#divParagrafo {
+  text-align: justify;
+  width: 300px;
+}
+
+#textoTresDoutor {
+  color: $primarycolor;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+#textoQuatroDoutor {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 70px;
+}
+.linhaHorizontalDoutor {
+  margin: 50px auto;
+  width: 800px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+/* parte fim Doutor */
