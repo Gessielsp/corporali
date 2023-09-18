@@ -129,3 +129,59 @@
   width: 30%;
 }
 /* PARTE CLINICA FIM */
+
+/* PARTE INICIO PROCEDIMENTOS */
+
+#procedimentos{
+  height: 600px;
+  background-image: url(../public/corporali/clinica/foto_18.JPG);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#conteudoProcedimentos{
+  background-color: #1e1e1ed5;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+#tituloProcedimentos{
+  color: $primarycolor;
+  border-left: 3px solid $primarycolor;
+  padding-left: 10px;
+  font-size: 40px;
+}
+.descricaoProcedimentos{
+  color: #ffffff;
+  font-weight: 300;
+  width: 80%;
+  margin: 30px 0;
+  padding-left: 15px;
+}
+#caixaUmProcedimentos{
+  width: 40%;
+}
+#caixaDoisprocedimentos{
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.caixaProcedimento{
+  border: 3px solid $primarycolor;
+  width: 200px;
+  height: 150px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.caixaPequenaProcedimentos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* PARTE FIM PROCEDIMENTOS */
