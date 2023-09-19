@@ -4,10 +4,6 @@ import Footer from "@/components/footer/Footer";
 import styles from "@/styles/pagReparatorios.module.scss";
 
 import Link from "next/link";
-import Image from "next/image";
-
-import imgReparadores from "@/public/corporali/procedimentos/reparadores.jpg";
-
 
 export default function PagReparadores(){
     return(
