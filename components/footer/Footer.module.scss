@@ -1,0 +1,82 @@
+@import '../../styles/cores.module.scss';
+
+#footerSessao{
+    
+}
+#sessaoUmFooter{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    border-right: 3px solid #fff;
+    padding-right: 30px;
+    width: 199px;
+}
+#iconsFooter{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+#conteudoFooter{
+    border-top: 3px solid $primarycolor;
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+#navegacaoFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 100px;
+}
+#caixaDrMarcelo{
+    width: 300px;
+}
+#caixaProcedimentos{
+    
+}
+#caixaEndereço{
+    width: 330px;
+}
+.titulosFooter{
+    color: $primarycolor;
+    margin-bottom: 25px;
+}
+.descricaoFooter{
+    color: #fff;
+    font-weight: 300;
+}
+.listaFooter{
+    list-style: none;
+}
+.lista{
+    margin-bottom: 10px;
+}
+#iconeWhatsapp{
+    margin-top: 1px;
+}
+#iconeFacebook{
+    margin-top: 1px;
+}
+#iconeEmail{
+    margin-top: 1px;
+}
+#sobreClinicaTexto{
+    color: #CAC8C8;
+    height: 100px;
+    padding: 0 30px;
+    //border: 1px solid red;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+#webtechBox{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primarycolor;
+}
+#webtech{
+    text-decoration: none;
+}
