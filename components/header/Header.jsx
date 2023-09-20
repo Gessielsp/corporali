@@ -3,9 +3,18 @@ import Image from "next/image";
 import styles from "@/components/header/Header.module.scss";
 import Link from "next/link";
 
+import { RiArrowDownSFill } from "react-icons/ri";
+
 import { robotoCondensed } from "@/fonts/fonts";
+import { useState } from "react";
 
 export default function Header(){
+    const [procedimentos, setProcedimentos] = useState(false);
+
+    function alterarStateProcedimentos(){
+        setProcedimentos(!procedimentos);
+    }
+
     return(
         <header id={styles.headerMain} className={robotoCondensed.className}>
             <div id={styles.boxLogo}>
@@ -20,9 +29,16 @@ export default function Header(){
                     <Link id={styles.clinica} href="#">A Clinica</Link>
                 </li>
                 <li>
-                    <select id={styles.procedimentos} name="#">
-                        <option value="">Procedimentos</option>
-                    </select>
+                    <span id={styles.procedimentos} onClick={() => alterarStateProcedimentos()}>
+                        Procedimentos
+                        <RiArrowDownSFill id={styles.iconeDown}/>
+                    </span>
+                    {procedimentos?<div id={styles.boxLinksProcedimentos}>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-mamarios">Procedimentos Mamários</Link>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-abdominais">Procedimentos Abdominais</Link>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-faciais">Procedimentos Faciais</Link>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-reparadores">Procedimentos Reparadores</Link>
+                    </div>: null}
                 </li>
                 <li>
                    <Link id={styles.bodyTite} href="#">BodyTite</Link>
