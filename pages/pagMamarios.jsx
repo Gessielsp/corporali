@@ -33,15 +33,15 @@ export default function PagMamarios(){
                         <p className={styles.descricaoSobreMamarios}>Os procedimentos mamários, muitas vezes referidos como cirurgias plásticas ou estéticas da mama, têm desempenhado um papel transformador na vida de muitas pessoas ao redor do mundo. Esses procedimentos não se limitam apenas a questões estéticas, mas também podem ter um impacto significativo na autoestima, confiança e bem-estar emocional das pessoas que optam por eles.</p>
                     </div>
                 </div>
-                <div id={styles.proteseMamas}>
+                <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>Prótese de Mamas</h2>
                     <p className={styles.descricaoProcedimentosMamarios}>Uma das cirurgias plásticas mais procuradas em território nacional, a inserção de próteses mamárias | quando feita por um profissional de ponta | potencializa a autoestima da mulher. A cirurgia de prótese mamária não é feita apenas de uma forma! Existem diferentes tipos de técnicas, bem como diferentes formatos e tamanhos de próteses. Para maiores informações, entre em contato com o Instituto Corporali!</p>
                 </div>
-                <div id={styles.mamoplastiaRedutora}>
+                <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>Mamoplastia Redutora</h2>
                     <p className={styles.descricaoProcedimentosMamarios}>O excesso no tamanho dos seios causa problemas na saúde da mulher, como questões relacionadas à coluna, por exemplo | em outros casos, os problemas causados são de cunho emocional. Para resolver este problema, a mamoplastia redutora remove o excesso de gordura nos seios, bem como o tecido glandular e a pele. Este procedimento resulta em seios proporcionais ao corpo da paciente.</p>
                 </div>
-                <div id={styles.ginecomastia}>
+                <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>Ginecomastia</h2>
                     <p className={styles.descricaoProcedimentosMamarios}>Não são apenas as mulheres que precisam de cirurgia redutora das mamas, homens também podem desenvolver glândulas mamárias de forma exagerada, o que não é comum para o corpo masculino. O crescimento exagerado é resultado de um desenvolvimento anormal das glândulas, ou acontece por conta de um acúmulo de gordura chamado de pseudo-ginecomastia, mas na maioria dos casos não existe uma causa exata. Após uma consulta médica, será decidido qual o melhor tratamento para o caso, assim como a necessidade de uma cirurgia redutora, a ginecomastia.</p>
                 </div>
@@ -70,11 +70,11 @@ export default function PagMamarios(){
             </main>
             <div id={styles.agendeSuaConsultaMamarios}>
                 <div id={styles.contentAgendeConsultaMamarios}>
-                    <div id={styles.bgAgendeSuaConsultaMamarios}>
+                    <div>
                         <h2 id={styles.tituloAgendeConsulta}>Agende sua consulta conosco</h2>
                         <p id={styles.descricaoAgendeConsulta}>Transformando sonhos em realidade. Especialista em cirurgias para uma nova você.</p>
                     </div>
-                    <div id={styles.boxAgendarConsultaMamarios}>
+                    <div>
                         <a id={styles.linkAgendarConsultaMamarios} href="#">Agendar Consulta</a>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ export default function Pagfaciais(){
             </div>
             <div id={styles.sobreProcedimentosFaciais}>
                 <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx3WX6zCFxk?si=s6BypgcP7ktP4s_v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx3WX6zCFxk?si=s6BypgcP7ktP4s_v" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <div>
                         <h2>Sobre os procedimentos Faciais</h2>
                         <p>Procedimentos faciais englobam uma ampla variedade de técnicas, desde os não invasivos, como a aplicação de botox para suavizar rugas, até procedimentos mais invasivos, como cirurgias plásticas, como a rinoplastia ou a blefaroplastia.</p>
