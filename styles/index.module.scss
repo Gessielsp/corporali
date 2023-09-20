@@ -272,6 +272,7 @@
   color: #ffffff;
   margin-top: 70px;
 }
+
 .linhaHorizontalDoutor {
   margin: 50px auto;
   width: 800px;
@@ -280,3 +281,149 @@
 }
 
 /* parte fim Doutor */
+/* parte incio Duvidas */
+#duvidas{
+  background-color: $secondarycolor;
+}
+.imgMarcelo{
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+#caixaDoTituloPrinpical{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: $primarycolor;
+  margin-bottom: 30px;
+}
+#tituloPrincipalDuvidas{
+  background-color: $secondarycolor;
+  text-transform: uppercase;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.boxDuvidas{
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#caixaDasImagensUm{
+  background-image: url(../public/corporali/dr_marcelo/marcelo_4.JPG);
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+#planos{
+  border: 3px red solid;
+}
+.boxImgDuvidas{
+  display: flex;
+  justify-content: center;
+}
+.setasDireitaEsqueda{
+  width: 110px;
+  height: 110px;
+}
+#caixaDasImagensDois{
+  background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+#caixaDasImagensTres{
+  background-image: url(../public/corporali/dr_marcelo/marcelo_7.JPG);
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+.titulosDasDuvidas{
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.caixaDasDuvidas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primarycolor;
+  width: 350px;
+  height: 350px;
+
+}
+.textosDasDuvidas{
+  
+  text-align: justify;
+  color: $secondarycolor;
+  width: 50%;
+}
+.boxTextosDasDuvidas{
+  width: 230px;
+  height: 250px;
+  border: 3px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LinhaHorizontalTexto{
+  display: flex;
+  width: 50%;
+  justify-content: right;
+
+}
+.linhaDoTexto{
+  margin-top: 20px;
+  width: 70px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.linhasMaster{
+  display: flex;
+  justify-content: center;
+}
+#LinhaHorizontalTextoEsquerda{
+  display: flex;
+  width: 50%;
+  justify-content: left;
+}
+#linhaDoTextoEsquerdo{
+  margin-top: 20px;
+  width: 70px;
+  height: 3px;
+  background-color: #ffffff;
+}
+#linhaHorizontalDosCarsUm{
+  height: 3px;
+  background-color: $primarycolor;
+  width: 890px;
+}
+#linhaHorizontalDosCarsDois{
+  height: 3px;
+  background-color: $primarycolor;
+  width: 890px;
+}
+#linhaHorizontalDosCarsTres{
+  height: 20px;
+  background-color: $primarycolor;
+}
+/* parte fim Duvidas */
