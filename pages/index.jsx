@@ -3,8 +3,9 @@ import styles from '@/styles/index.module.scss';
 import Header from '@/components/header/Header';
 import Image from 'next/image';
 import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg'
-
 import { robotoCondensed } from '@/fonts/fonts';
+import setaEsquerda from '@/public/corporali/icons/seta_branca_esquerda.png'
+import setaDireita from '@/public/corporali/icons/seta_branca_direita.png'
 
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
@@ -76,7 +77,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div class={styles.linhaHorizontalDoutor}></div>
+      <div className={styles.linhaHorizontalDoutor}></div>
 
       <div id={styles.marcelo}>
         <div id={styles.caixadaFotoDoutor}>
@@ -92,10 +93,76 @@ export default function Home() {
         </div>
       </div>
 
-      <div class={styles.linhaHorizontalDoutor}></div>
+      <div className={styles.linhaHorizontalDoutor}></div>
 
-      <div id={styles.duvidas}></div>
+      <div id={styles.duvidas}>
+        <div id={styles.caixaDoTituloPrinpical}>
+          <h1 id={styles.tituloPrincipalDuvidas}>Dúvidas Frequentes</h1>
+        </div>
+        <div className={styles.boxDuvidas}>
+          <div id={styles.caixaDasImagensUm}>
+            <div className={styles.planos}>
+              <h2 className={styles.titulosDasDuvidas}>Quais planos de saúde Atendemos?</h2>
+              <div className={styles.boxImgDuvidas}>
+                <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.caixaDasDuvidas}>
+            <div className={styles.boxTextosDasDuvidas}>
+              <p className={styles.textosDasDuvidas}>Atedemos a maioria doa planos de saúde, entre em contato para mais informações.</p>
+              <div className={styles.LinhaHorizontalTexto}>
+                <div className={styles.linhaDoTexto}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.linhasMaster}>
+          <div id={styles.linhaHorizontalDosCarsUm}></div>
+        </div>
+        <div className={styles.boxDuvidas}>
+          <div className={styles.caixaDasDuvidas}>
+            <div className={styles.boxTextosDasDuvidas}>
+              <p className={styles.textosDasDuvidas}>Oferecemos execelentes condições, parcelamos com e sem juros e pagamentos facilitado.</p>
+              <div id={styles.LinhaHorizontalTextoEsquerda}>
+                <div id={styles.linhaDoTextoEsquerdo}></div>
+              </div>
+            </div>
+          </div>
+          <div id={styles.caixaDasImagensDois}>
+            <div className={styles.planos}>
+              <h2 className={styles.titulosDasDuvidas}>Qual são as formas de pagamentos</h2>
+              <div className={styles.boxImgDuvidas}>
+                <Image className={styles.setasDireitaEsqueda} src={setaEsquerda} alt="seta esquerda para navegação" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.linhasMaster}>
+          <div id={styles.linhaHorizontalDosCarsDois}></div>
+        </div>
+        <div className={styles.boxDuvidas}>
+          <div id={styles.caixaDasImagensTres}>
+            <div className={styles.planos}>
+              <h2 className={styles.titulosDasDuvidas}>Qual é o horário de Funcionamento?</h2>
+              <div className={styles.boxImgDuvidas}>
+                <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.caixaDasDuvidas}>
+            <div className={styles.boxTextosDasDuvidas}>
+              <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h ás 18h, de segunda á sexta.</p>
+              <div className={styles.LinhaHorizontalTexto}>
+                <div className={styles.linhaDoTexto}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id={styles.linhaHorizontalDosCarsTres}></div>
+      </div>
       <div id={styles.contato}></div>
+
     </div>
   )
 }
