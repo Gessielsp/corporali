@@ -23,7 +23,6 @@ export default function PagAbdominais(){
                 </div>
             </div>
             <main id={styles.conteudoPrincipalAbdominais}>
-                <div id={styles.bordaFundoAbdominais}></div>
                 <div id={styles.sobreProcedimentosAbdominais}>
                     <div id={styles.bgMarcacao}>
                         <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt=""/>

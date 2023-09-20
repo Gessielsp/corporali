@@ -21,7 +21,6 @@ export default function PagMamarios(){
                     </div>
                 </div>
             </div>
-            <div className={styles.bordaFundoMamarios}></div>
             <main id={styles.conteudoPrincipalMamarios}>
                 <div id={styles.sobreProcedimentosMamarios}>
                     <div id={styles.bgProtese}>

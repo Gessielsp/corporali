@@ -10,16 +10,12 @@
     background-color: $primarycolor;
     margin: 50px 0;
 }
-#conteudoPrincipalMamarios{
-    width: 90vw;
-    border-bottom: 3px solid $primarycolor;
-    margin: 0px auto;
-}
 #bannerMamarios{
     height: 400px;
     background-image: url(../public/corporali/procedimentos/mamario.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom:50px;
 }
 #bgBannerMamarios{
     background-color: #18181894;
@@ -31,10 +27,16 @@
 #contentBannerMamarios{
     width: 70%;
     height: 150px;
-    //border: 3px solid lightblue;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+#conteudoPrincipalMamarios{
+    width: 90vw;
+    border-top: 3px solid $primarycolor;
+    border-bottom: 3px solid $primarycolor;
+    margin: 0px auto;
+    padding-top: 50px;
 }
 #tituloBannerMamarios{
     color: #fff;

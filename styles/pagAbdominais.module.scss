@@ -5,16 +5,12 @@
     background-color: $primarycolor;
     margin-bottom: 50px;
 }
-#bordaFundoAbdominais{
-    height: 2px;
-    background-color: $primarycolor;
-    margin: 50px 0;
-}
 #bannerAbdominais{
     height: 400px;
     background-image: url(../public/corporali/procedimentos/abdominal_2.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom:50px;
 }
 #bgBannerAbdominais{
     background-color: #18181894;
@@ -45,8 +41,10 @@
 }
 #conteudoPrincipalAbdominais{
     width: 90vw;
+    border-top: 3px solid $primarycolor;
     border-bottom: 3px solid $primarycolor;
     margin: 0px auto;
+    padding-top: 50px;
 }
 #sobreProcedimentosAbdominais{
     display: flex;
