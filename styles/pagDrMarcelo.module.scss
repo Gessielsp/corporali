@@ -1,0 +1,372 @@
+@import "./cores.module.scss";
+
+/* INICIO BANNER MARCELO */
+
+#bannerMarcelo{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_14.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 85vh;
+}
+#bgMarcelo{
+    background-color: #181818a1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#conteudoMarcelo{
+    width: 50%;
+    margin-left:13%;
+}
+#linhaAcimaDrMarcelo{
+    width: 20%;
+    height: 3px;
+    background-color: $primarycolor;
+    margin-bottom: 50px;
+}
+#tituloMarcelo{
+    color: $primarycolor;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#cirurgiao{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+#linhaAbaixoDrMarcelo{
+    width: 10%;
+    height: 3px;
+    background-color: $primarycolor;
+    margin-bottom: 50px;
+}
+#informacoes{
+    display: flex;
+}
+#subTituloMarcelo{
+    width: 200px;
+    background-color: $primarycolor;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #323232;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+#fotoVideosMarcelo{
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid $primarycolor;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+/* FIM BANNER MARCELO */
+
+/* INICIO CARROSSEL */
+#carroselMarcelo{
+    border: 3px solid $primarycolor;
+    width: 95%;
+    margin: 50px auto;
+}
+#carrosselUm{
+    margin: 15px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_3.JPG);
+    background-size: cover;
+    background-position: 0px -130px;
+    height: 400px;
+    display: flex;
+}
+.bgCarrossel{
+    display: flex;
+    background-color: #1818186b;
+}
+.boxSetaEsquerda{
+    display: flex;
+    align-items: center;
+}
+.setaEsquerdaCarrossel{
+    cursor: pointer;
+    padding: 100px 20px;
+}
+.informacoesCarrossel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tituloCarrossel{
+    text-transform: uppercase;
+    color: $primarycolor;
+    margin: 25px 0;
+}
+.descricaoCarrossel{
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.boxlinhasCarrossel{
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.linhaVerdeCarrosel{
+    width: 100px;
+    height: 3px;
+    background-color: $primarycolor;
+    border-radius: 3px;
+}
+.boxSetaDireita{
+    display: flex;
+    align-items: center;
+}
+.setaDireitaCarrossel{
+    cursor: pointer;
+    padding: 100px 20px;
+}
+/* FIM CARROSSEL */
+
+/* INICIO SEGUNDA SESSAO */
+#vidaMarcelo{
+    margin: 100px 0;
+}
+#rotinaCirurgica{
+    display: flex;
+    justify-content: center;
+}
+#arteDeConstruir{
+    display: flex;
+}
+#cuidandoComEmpatia{
+    display: flex;
+}
+#imgSegundaSessao{
+    width: 50%;
+    height: 350px;
+}
+.boxSegundaSessao{
+    background-color: #3C3C3C;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 27px;
+}
+.tituloSegundaSessao{
+    color: $primarycolor;
+    border-left: 3px solid #fff;
+    width: 80%;
+    padding-left: 10px;
+}
+.descricaoSegundaoSessao{
+    color: #fff;
+    font-weight: 300;
+    width: 80%;
+    margin-top: 25px;
+    font-size: 18px;
+}
+/* FIM SEGUNDA SESSAO */
+
+/* INICIO GALERIA */
+#galeriaFotosMarcelo{
+    margin-bottom: 100px;
+}
+#tituloGaleria{
+    text-transform: uppercase;
+    color: $primarycolor;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#descricaoGaleria{
+    text-align: center;
+    font-size: 17px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+#conteudoFotoGaleria{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxFotoGaleria{
+    border: 3px solid $primarycolor;
+    height: 500px;
+    width: 300px;
+    border-radius: 5px;
+}
+.fotosGaleria{
+    height: 500px;
+    width: 280px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+/* FIM GALERIA */
+
+/* INICIO CARREIRA MARCELO */
+
+#tituloSobreCarreira{
+    color: $primarycolor;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0 50px;
+    font-size: 40px;
+}
+#descricaoSobreCarreira{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+.boxsCarreiras{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxConteudoCarreiras{
+    margin-bottom: 50px;
+}
+.bgCarreira{
+    width: 600px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.tituloCarreiraMarcelo{
+    color: #fff;
+    background-color: #20e2be71;
+    padding: 10px;
+}
+.descricaoCarreira{
+    width: 600px;
+    text-align: justify;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 30px;
+}
+#bgCarreiraUm{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
+}
+#bgCarreiraDois{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_2.JPG);
+}
+#bgCarreiraTres{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_12.JPG);
+}
+#bgCarreiraQuatro{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_11.JPG);
+}
+/* FIM CARREIRA MARCELO */
+
+/* INICIO LINKS MARCELO */
+#navegacaoMarcelo{
+    margin: 100px 0;
+}
+#linksSessaoMarcelo{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.linksMarcelo{
+    background-color: $primarycolor;
+    color: $secondarycolor;
+    padding: 10px 0;
+    width: 200px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* FIM LINKS MARCELO */
+
+#linhaVerde{
+   height: 3px;
+   width: 90%;
+   background-color: $primarycolor;
+   margin: 0 auto; 
+}
+
+/* INICIO AGENDAR CONSULTA MARCELO */
+#agendeConsultaDrMarcelo{
+    margin: 50px 0 50px;
+    background-image: url(../public/corporali/avulsos/aperto_maos_marcelo.jpg);
+    background-size: cover;
+    background-position: 0 -230px;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+}
+#conteudoAgendarConsultaMarcelo{
+    background-color: #181818b4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#tituloAgendarConsultaMarcelo{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+#descricaoAgendarConsultaMarcelo{
+    color: #D8D8D8;
+    font-size: 18px;
+}
+#linkAgendarConsultaMarcelo{
+    border: 2px solid $primarycolor;
+    width: 170px;
+    display: block;
+    text-decoration: none;
+    color: #fff;text-align: center;
+    padding: 10px 0;
+}
+/* FIM AGENDAR CONSULTA MARCELO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgSegundaSessao{
+    width: 400px;
+    height: 200px;
+}

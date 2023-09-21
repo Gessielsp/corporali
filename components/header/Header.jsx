@@ -23,10 +23,10 @@ export default function Header(){
            <nav id={styles.navegacao}>
             <ul id={styles.listaUm}>
                 <li>
-                    <Link id={styles.home} href="#">Home</Link>
+                    <Link id={styles.home} href="/">Home</Link>
                 </li>
                 <li>
-                    <Link id={styles.clinica} href="#">A Clinica</Link>
+                    <Link id={styles.clinica} href="/clinica">A Clinica</Link>
                 </li>
                 <li>
                     <span id={styles.procedimentos} onClick={() => alterarStateProcedimentos()}>
@@ -41,15 +41,15 @@ export default function Header(){
                     </div>: null}
                 </li>
                 <li>
-                   <Link id={styles.bodyTite} href="#">BodyTite</Link>
+                   <Link id={styles.bodyTite} href="/bodytite">BodyTite</Link>
                 </li>
                 <li>
-                  <Link id={styles.contatos} href="#">Contatos</Link>
+                  <Link id={styles.contatos} href="/marcelo-moreira">Dr. Marcelo</Link>
                 </li>
             </ul>
             <ul id={styles.listaDois}>
                 <li>
-                    <a id={styles.ligar} href="">Ligar</a>
+                    <a id={styles.ligar} href="tel:61999999999">Ligar</a>
                 </li>
                 <li>
                     <a id={styles.whatsapp} href="">WhatsApp</a>
