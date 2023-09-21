@@ -2,10 +2,16 @@ import Head from 'next/head';
 import styles from '@/styles/index.module.scss';
 import Header from '@/components/header/Header';
 import Image from 'next/image';
-import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg'
+import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg';
 import { robotoCondensed } from '@/fonts/fonts';
-import setaEsquerda from '@/public/corporali/icons/seta_branca_esquerda.png'
-import setaDireita from '@/public/corporali/icons/seta_branca_direita.png'
+import setaEsquerda from '@/public/corporali/icons/seta_branca_esquerda.png';
+import setaDireita from '@/public/corporali/icons/seta_branca_direita.png';
+import imgRelogio from '@/public/corporali/icons/relogio.png';
+import imgEndereco from '@/public/corporali/icons/endereco.png';
+import imgGmail from '@/public/corporali/icons/gmail.png';
+import imgInstaContato from '@/public/corporali/icons/insta_contato.png';
+import imgFaceContato from '@/public/corporali/icons/face_contato.png';
+import imgTwitterContato from '@/public/corporali/icons/twitter_contato.png';
 
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
@@ -161,8 +167,71 @@ export default function Home() {
         </div>
         <div id={styles.linhaHorizontalDosCarsTres}></div>
       </div>
-      <div id={styles.contato}></div>
 
+      <div id={styles.linhaHorizontalDosContas}></div>
+
+      <div id={styles.contato}>
+        <div id={styles.boxContatos}>
+          <div id={styles.parteUmdosContatos}>
+            <div id={styles.contateNos}>
+              <div id={styles.boxContatenos}>
+                <div id={styles.linhavertxalContatenos}></div>
+                <h1 id={styles.contateNostexto}>Contate-Nos</h1>
+              </div>
+            </div>
+            <div id={styles.boxTextoContatos}>
+              <p id={styles.textoContateNos}>Fique a vontade para nos contatar, será um prazer receber voce em nossa clinica.</p>
+            </div>
+            <div id={styles.secForm}>
+              <form id={styles.formContatos} action="" method="post">
+                <label htmlFor="nome" className={styles.nomesDoFormularios}>Nome</label>
+                <input type="text" id={styles.nome} placeholder='Digite seu nome' />
+
+                <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contatos</label>
+                <input type="number" id={styles.contatos} placeholder='Digite seu telefone aqui' />
+
+                <label htmlFor="email" className={styles.nomesDoFormularios}>Email</label>
+                <input type="email" id={styles.email} placeholder='Digite seu email' />
+
+                <label htmlFor="mensagem" className={styles.nomesDoFormularios}>Mensagem</label>
+                <textarea name="MensagemTexto" id={styles.mensagem} cols="30" rows="10" placeholder='Digite sua mensagem'></textarea>
+                <button id={styles.butaoContatos}>Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div id={styles.linhaVerticalDosContatos}></div>
+          <div id={styles.parteDoisdosContatos}>
+            <div id={styles.boxInformacoes}>
+              <div id={styles.linhaHorizontalInformacoes}></div>
+              <h1 id={styles.textoInformacoes}>INFORMAÇÕES</h1>
+            </div>
+            <div id={styles.caixadasInformacoesdaClinica}>
+              <div className={styles.clinicainformacoes}>
+                <Image src={imgGmail} alt="imgem do email" />
+                <p className={styles.boxDosTextos}>institutocorporalli@gmail.com</p>
+              </div>
+              <div className={styles.clinicainformacoes}>
+                <Image src={imgRelogio} alt="imgem do relogio" />
+                <p className={styles.boxDosTextos}>Segunda a Sexta das 09hrs as 18hrs</p>
+              </div>
+              <div className={styles.clinicainformacoes}>
+                <Image src={imgEndereco} alt="imgem do endereco" />
+                <p className={styles.boxDosTextos}>Asa Sul, Brasília, Distrito Federal</p>
+              </div>
+            </div>
+            <div id={styles.partesDosContas}>
+              <div id={styles.caixadasImgs}>
+              <Image className={styles.imagensDoscontatos} src={imgInstaContato} alt="imgem do inst do contato" />
+              <Image className={styles.imagensDoscontatos} src={imgFaceContato} alt="imgem do face do contato" />
+              <Image className={styles.imagensDoscontatos} src={imgTwitterContato} alt="imgem do twitter do contato" />
+              </div>
+              <div id={styles.numeroDosContatos}>
+                <p id={styles.telefones}>+61 9 8199-3099 <span id={styles.textoOu}>OU</span> +61 3346-3399</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

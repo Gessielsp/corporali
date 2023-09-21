@@ -282,16 +282,18 @@
 
 /* parte fim Doutor */
 /* parte incio Duvidas */
-#duvidas{
+#duvidas {
   background-color: $secondarycolor;
 }
-.imgMarcelo{
+
+.imgMarcelo {
   width: 250px;
   height: 250px;
   background-position: center;
   background-size: cover;
 }
-#caixaDoTituloPrinpical{
+
+#caixaDoTituloPrinpical {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,7 +301,8 @@
   background-color: $primarycolor;
   margin-bottom: 30px;
 }
-#tituloPrincipalDuvidas{
+
+#tituloPrincipalDuvidas {
   background-color: $secondarycolor;
   text-transform: uppercase;
   width: 250px;
@@ -308,12 +311,14 @@
   color: #ffffff;
   text-align: center;
 }
-.boxDuvidas{
+
+.boxDuvidas {
   padding: 25px;
   display: flex;
   justify-content: space-evenly;
 }
-#caixaDasImagensUm{
+
+#caixaDasImagensUm {
   background-image: url(../public/corporali/dr_marcelo/marcelo_4.JPG);
   background-position: center;
   background-size: cover;
@@ -323,18 +328,22 @@
   align-items: center;
   opacity: 0.8;
 }
-#planos{
+
+#planos {
   border: 3px red solid;
 }
-.boxImgDuvidas{
+
+.boxImgDuvidas {
   display: flex;
   justify-content: center;
 }
-.setasDireitaEsqueda{
+
+.setasDireitaEsqueda {
   width: 110px;
   height: 110px;
 }
-#caixaDasImagensDois{
+
+#caixaDasImagensDois {
   background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
   background-position: center;
   background-size: cover;
@@ -344,7 +353,8 @@
   align-items: center;
   opacity: 0.8;
 }
-#caixaDasImagensTres{
+
+#caixaDasImagensTres {
   background-image: url(../public/corporali/dr_marcelo/marcelo_7.JPG);
   background-position: center;
   background-size: cover;
@@ -354,14 +364,16 @@
   align-items: center;
   opacity: 0.8;
 }
-.titulosDasDuvidas{
+
+.titulosDasDuvidas {
   text-align: center;
   padding: 25px;
   font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
 }
-.caixaDasDuvidas{
+
+.caixaDasDuvidas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,13 +382,15 @@
   height: 350px;
 
 }
-.textosDasDuvidas{
-  
+
+.textosDasDuvidas {
+
   text-align: justify;
   color: $secondarycolor;
   width: 50%;
 }
-.boxTextosDasDuvidas{
+
+.boxTextosDasDuvidas {
   width: 230px;
   height: 250px;
   border: 3px solid #ffffff;
@@ -385,45 +399,268 @@
   justify-content: center;
   align-items: center;
 }
-.LinhaHorizontalTexto{
+
+.LinhaHorizontalTexto {
   display: flex;
   width: 50%;
   justify-content: right;
 
 }
-.linhaDoTexto{
+
+.linhaDoTexto {
   margin-top: 20px;
   width: 70px;
   height: 3px;
   background-color: #ffffff;
 }
-.linhasMaster{
+
+.linhasMaster {
   display: flex;
   justify-content: center;
 }
-#LinhaHorizontalTextoEsquerda{
+
+#LinhaHorizontalTextoEsquerda {
   display: flex;
   width: 50%;
   justify-content: left;
 }
-#linhaDoTextoEsquerdo{
+
+#linhaDoTextoEsquerdo {
   margin-top: 20px;
   width: 70px;
   height: 3px;
   background-color: #ffffff;
 }
-#linhaHorizontalDosCarsUm{
+
+#linhaHorizontalDosCarsUm {
   height: 3px;
   background-color: $primarycolor;
   width: 890px;
 }
-#linhaHorizontalDosCarsDois{
+
+#linhaHorizontalDosCarsDois {
   height: 3px;
   background-color: $primarycolor;
   width: 890px;
 }
-#linhaHorizontalDosCarsTres{
+
+#linhaHorizontalDosCarsTres {
   height: 20px;
   background-color: $primarycolor;
 }
+
 /* parte fim Duvidas */
+
+/* parte inicio Contatos */
+#linhaHorizontalDosContas {
+  height: 30px;
+  background-color: $secondarycolor;
+}
+
+#contato {
+  background-color: $secondarycolor;
+  background-image: url(../public/corporali/clinica/foto_1.JPG);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#boxContatos {
+  background-color: #171717d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+}
+
+#linhaVerticalDosContatos {
+  display: flex;
+  justify-content: flex-start;
+  background-color: $primarycolor;
+  width: 3px;
+  height: 420px;
+}
+
+#parteUmdosContatos {
+  padding-left: 100px;
+}
+
+#contateNos {
+  margin: 25px 0;
+  color: $primarycolor;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#contateNostexto {
+  width: 250px;
+  padding-left: 15px;
+}
+
+#linhavertxalContatenos {
+  width: 2px;
+  height: 40px;
+  background-color: $primarycolor;
+}
+
+#boxContatenos {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#boxTextoContatos {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#textoContateNos {
+  width: 70%;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#secForm {}
+
+#formContatos {
+  display: flex;
+  flex-direction: column;
+}
+
+#nome {
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #17171752;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  padding-left: 15px;
+
+
+}
+
+#contatos {
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #1717175d;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  padding-left: 15px;
+
+}
+
+#email {
+  background-color: #17171759;
+  color: #ffffff;
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 2px #ffffff;
+  padding-left: 15px;
+}
+
+#mensagem {
+  padding: 15px;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #1717175e;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+}
+
+.nomesDoFormularios {
+  margin: 8px 0;
+  color: #ffffff;
+}
+
+#butaoContatos {
+  margin: 25px 0;
+  width: 340px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: $primarycolor;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#parteDoisdosContatos {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#boxInformacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #20E2BF80;
+  width: 400px;
+  height: 100px;
+}
+
+#textoInformacoes {
+  margin: 15px 0;
+  width: 70%;
+  color: #ffffff;
+  font-size: 28px;
+  border-bottom: 2px solid #ffffff;
+}
+
+#linhaHorizontalInformacoes {
+  width: 6px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+#caixadasInformacoesdaClinica {
+  margin: 40px 0;
+}
+
+.clinicainformacoes {
+  display: flex;
+  align-items: center;
+}
+
+.boxDosTextos {
+  text-align: center;
+  background-color: #1CAF95;
+  margin: 20px 10px;
+  padding: 10px;
+  width: 230px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+#partesDosContas {}
+
+#caixadasImgs {
+  display: flex;
+  justify-content: right;
+}
+
+.imagensDoscontatos {
+margin: 0 15px;
+  width: 30px;
+  height: 30px;
+}
+
+#numeroDosContatos {
+  display: flex;
+  justify-content: right;
+}
+#telefones {
+  color: $primarycolor;
+  margin: 15px;
+
+}
+#textoOu{
+  color: #ffffff;
+}
+/* parte fim Contatos */
