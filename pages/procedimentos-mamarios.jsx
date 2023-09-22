@@ -1,5 +1,6 @@
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+
 import styles from "@/styles/pagMamarios.module.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -49,19 +50,19 @@ export default function PagMamarios(){
                 <nav id={styles.navegacaoMamarios}>
                     <ul id={styles.linksSessaoMamarios}>
                         <li>
-                            <Link className={styles.linksMamarios} href="#">Abdominais</Link>
+                            <Link className={styles.linksMamarios} href="/procedimentos-abdominais">Abdominais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksMamarios} href="#">Reparadores</Link>
+                            <Link className={styles.linksMamarios} href="/procedimentos-reparadores">Reparadores</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksMamarios} href="#">Faciais</Link>
+                            <Link className={styles.linksMamarios} href="/procedimentos-reparadores">Faciais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksMamarios} href="#">BodyTite</Link>
+                            <Link className={styles.linksMamarios} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksMamarios} href="#">Clinica</Link>
+                            <Link className={styles.linksMamarios} href="/clinica">Clinica</Link>
                         </li>
                     </ul>
                     

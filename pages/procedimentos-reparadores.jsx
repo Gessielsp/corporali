@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { robotoCondensed } from "@/fonts/fonts";
+
 import iconYoutubeVermelho from "@/public/corporali/icons/youtube_vermelho.png"
 
 export default function PagReparadores(){
@@ -25,7 +26,7 @@ export default function PagReparadores(){
             <main id={styles.conteudoPrincipalReparadores}>
                 <div id={styles.sobreProcedimentosReparadores}>
                     <div id={styles.bgAnalise}>
-                        <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt=""/>
+                        <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube"/>
                     </div>
                     <div id={styles.textoProcedimentosReparadores}>
                         <h2 id={styles.tituloSobreReparadores}>Sobre os procedimentos</h2>
@@ -69,19 +70,19 @@ export default function PagReparadores(){
                 <nav id={styles.navegacaoReparadores}>
                     <ul id={styles.linksReparadores}>
                         <li>
-                            <Link className={styles.linksReparadores} href="#">Mamarios</Link>
+                            <Link className={styles.linksReparadores} href="/procedimentos-mamarios">Mamarios</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksReparadores} href="#">Faciais</Link>
+                            <Link className={styles.linksReparadores} href="/procedimentos-faciais">Faciais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksReparadores} href="#">Abdominais</Link>
+                            <Link className={styles.linksReparadores} href="/procedimentos-abdominais">Abdominais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksReparadores} href="#">BodyTite</Link>
+                            <Link className={styles.linksReparadores} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksReparadores} href="#">Clinica</Link>
+                            <Link className={styles.linksReparadores} href="/clinica">Clinica</Link>
                         </li>
                     </ul>
                 </nav>

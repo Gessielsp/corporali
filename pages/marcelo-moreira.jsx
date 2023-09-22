@@ -10,9 +10,6 @@ import fotoGaleriaDois from "@/public/corporali/dr_marcelo/marcelo_6.JPG";
 import fotoGaleriaTres from "@/public/corporali/dr_marcelo/marcelo_13.JPG";
 import fotoGaleriaQuatro from "@/public/corporali/dr_marcelo/marcelo_5.JPG";
 
-import fotoCarreiraUm from "@/public/corporali/dr_marcelo/marcelo_1.JPG";
-import fotoCarreiraTres from "@/public/corporali/dr_marcelo/marcelo_3.jpg";
-
 import setaDireita from "@/public/corporali/icons/seta_direita_verde.png";
 import setaEsquerda from "@/public/corporali/icons/seta_esquerda_verde.png";
 
@@ -23,6 +20,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { robotoCondensed, bebasNeue} from "@/fonts/fonts";
+
 import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
 
 export default function PagDrMarcelo(){
@@ -178,19 +176,19 @@ export default function PagDrMarcelo(){
             <nav id={styles.navegacaoMarcelo}>
                 <ul id={styles.linksSessaoMarcelo}>
                     <li>
-                        <Link className={styles.linksMarcelo} href="#">Mamarios</Link>
+                        <Link className={styles.linksMarcelo} href="/procedimentos-mamarios">Mamarios</Link>
                     </li>
                     <li>
-                        <Link className={styles.linksMarcelo} href="#">Reparadores</Link>
+                        <Link className={styles.linksMarcelo} href="/procedimentos-reparadores">Reparadores</Link>
                     </li>
                     <li>
-                        <Link className={styles.linksMarcelo} href="#">Abdominais</Link>
+                        <Link className={styles.linksMarcelo} href="/procedimentos-abdominais">Abdominais</Link>
                     </li>
                     <li>
-                        <Link className={styles.linksMarcelo} href="#">BodyTite</Link>
+                        <Link className={styles.linksMarcelo} href="/procedimentos-bodytite">BodyTite</Link>
                     </li>
                     <li>
-                        <Link className={styles.linksMarcelo} href="#">Clinica</Link>
+                        <Link className={styles.linksMarcelo} href="/clinica">Clinica</Link>
                     </li>
                 </ul>
             </nav>    
@@ -201,7 +199,7 @@ export default function PagDrMarcelo(){
                 <div id={styles.conteudoAgendarConsultaMarcelo}>
                     <div>
                         <h2 id={styles.tituloAgendarConsultaMarcelo}>Agende a sua consulta conosco</h2>
-                        <p id={styles.descricaoAgendarConsultaMarcelo}>Transforme sua saúde hoje! Clique no botão 'Agendar Consulta' e dê o primeiro passo para uma vida melhor.</p>
+                        <p id={styles.descricaoAgendarConsultaMarcelo}>Transforme sua saúde hoje! Clique no botão Agendar Consulta e dê o primeiro passo para uma vida melhor.</p>
                     </div>
                     <div>
                         <a id={styles.linkAgendarConsultaMarcelo} href="#">Agendar Consulta</a>
