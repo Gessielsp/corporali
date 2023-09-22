@@ -23,7 +23,7 @@ export default function PagBodytite(){
                     <Image src={imgBodytite} alt="Equipamento Bodytite" height={500} width={200}/>
                 </div>
                 <div>
-                    <Image src={setaEsquerda} alt="" width={50}/>
+                    <Image src={setaEsquerda} alt="Anterior" width={50}/>
                     <div>
                         <h2>Morpheus Face</h2>
                         <h5>Tecnologia de radiofrequência fracionada para a face!</h5>
@@ -31,12 +31,12 @@ export default function PagBodytite(){
                             Essa tecnologia oferece uma remodelação 3D do corpo, com uma contração tridimensional da derme, tecido conjuntivo subcutâneo e tecido adiposo profundo, por meio da lipólise.
                         </p>
                     </div>
-                    <Image src={setaDireita} alt="" width={50}/>
+                    <Image src={setaDireita} alt="Próximo" width={50}/>
                 </div>
             </div>
             <div id={styles.morpheus}>
                 <div>
-                    <Image src={setaEsquerda} alt="" width={50}/>
+                    <Image src={setaEsquerda} alt="Anterior" width={50}/>
                     <div>
                         <h2>Morpheus Face</h2>
                         <h5>Tecnologia de radiofrequência fracionada para a face!</h5>
@@ -44,7 +44,7 @@ export default function PagBodytite(){
                             A ponteira Morpheus Face oferece a mais avançada tecnologia de radiofrequência fracionada, permitindo aos médicos, atingirem camadas profundas da pele do paciente com 24 agulhas revestidas em ouro.
                         </p>
                     </div>
-                    <Image src={setaDireita} alt="" width={50}/>
+                    <Image src={setaDireita} alt="Próximo" width={50}/>
                 </div>
                 <div>
                     <Image src={imgMorpheus} alt="Equipamento Morpheus Face" height={500} width={200}/>
@@ -115,7 +115,7 @@ export default function PagBodytite(){
             <div id={styles.agendeSuaConsultaBodytite}>
                 <div>
                     <h2>Agende sua consulta conosco</h2>
-                    <p>Transforme sua saúde hoje! Clique no botão 'Agendar Consulta' e dê o primeiro passo para uma vida melhor.</p>
+                    <p>Transforme sua saúde hoje! Clique no botão Agendar Consulta e dê o primeiro passo para uma vida melhor.</p>
                 </div>
                 <div>
                     <a href="#">Agendar consulta</a>

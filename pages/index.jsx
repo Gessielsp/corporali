@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import styles from '@/styles/index.module.scss';
-import Header from '@/components/header/Header';
 import Image from 'next/image';
-import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg';
+import styles from '@/styles/index.module.scss';
+
 import { robotoCondensed } from '@/fonts/fonts';
+
+import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg';
 import setaEsquerda from '@/public/corporali/icons/seta_branca_esquerda.png';
 import setaDireita from '@/public/corporali/icons/seta_branca_direita.png';
 import imgRelogio from '@/public/corporali/icons/relogio.png';
@@ -13,6 +14,7 @@ import imgInstaContato from '@/public/corporali/icons/insta_contato.png';
 import imgFaceContato from '@/public/corporali/icons/face_contato.png';
 import imgTwitterContato from '@/public/corporali/icons/twitter_contato.png';
 
+import Header from '@/components/header/Header';
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
 export default function Home() {
@@ -34,7 +36,7 @@ export default function Home() {
           <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
         </hgroup>
         <div id={styles.boxSaberMais}>
-          <a id={styles.saberMais} href="">Saber Mais!</a>
+          <a id={styles.saberMais} href="#">Saber Mais!</a>
         </div>
       </div>
 
@@ -87,7 +89,7 @@ export default function Home() {
 
       <div id={styles.marcelo}>
         <div id={styles.caixadaFotoDoutor}>
-          <Image id={styles.imagemDoutor} src={imgDoutor} alt="" />
+          <Image id={styles.imagemDoutor} src={imgDoutor} alt="Dr. Marcelo Moreira" />
         </div>
         <div id={styles.caixaDetextos}>
           <h2 id={styles.textoUmDoutor}> A mente brilhante.</h2>

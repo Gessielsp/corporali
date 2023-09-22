@@ -149,7 +149,7 @@ export default function PagClinica(){
             <div id={styles.agendeSuaConsultaClinica}>
                 <div>
                     <h2>Agende sua consulta conosco</h2>
-                    <p>Transforme sua saúde hoje! Clique no botão 'Agendar Consulta' e dê o primeiro passo para uma vida melhor.</p>
+                    <p>Transforme sua saúde hoje! Clique no botão Agendar Consulta e dê o primeiro passo para uma vida melhor.</p>
                 </div>
                 <div>
                     <a href="#">Agendar consulta</a>

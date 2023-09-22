@@ -25,7 +25,7 @@ export default function PagAbdominais(){
             <main id={styles.conteudoPrincipalAbdominais}>
                 <div id={styles.sobreProcedimentosAbdominais}>
                     <div id={styles.bgMarcacao}>
-                        <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt=""/>
+                        <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt="Icone Youtube"/>
                     </div>
                     <div id={styles.textosProcedAbdominais}>
                         <h2 id={styles.tituloSobreAbdominais}>Sobre os procedimentos</h2>
@@ -52,19 +52,19 @@ export default function PagAbdominais(){
                 <nav id={styles.navegacaoAbdominais}>
                     <ul id={styles.listaSessaoAdbominais}>
                         <li>
-                            <Link className={styles.linksAbdominais} href="#">Mamarios</Link>
+                            <Link className={styles.linksAbdominais} href="/procedimentos-mamarios">Mamarios</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksAbdominais} href="#">Reparadores</Link>
+                            <Link className={styles.linksAbdominais} href="/procedimentos-reparadores">Reparadores</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksAbdominais} href="#">Faciais</Link>
+                            <Link className={styles.linksAbdominais} href="/procedimentos-faciais">Faciais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksAbdominais} href="#">BodyTite</Link>
+                            <Link className={styles.linksAbdominais} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksAbdominais} href="#">Clinica</Link>
+                            <Link className={styles.linksAbdominais} href="/clinica">Clinica</Link>
                         </li>
                     </ul>
                 </nav>
@@ -76,7 +76,7 @@ export default function PagAbdominais(){
                         <p id={styles.descricaoAgendeConsultaAbdominais}>Transformando sonhos em realidade. Especialista em cirurgias para uma nova você.</p>
                     </div>
                     <div>
-                        <a id={styles.linkAgendeConsultaAbdominais} href="">Agendar Consulta</a>
+                        <a id={styles.linkAgendeConsultaAbdominais} href="#">Agendar Consulta</a>
                     </div>
                 </div>
             </div>

@@ -89,19 +89,19 @@ export default function Pagfaciais(){
                 <nav id={styles.navegacaoFaciais}>
                     <ul id={styles.linksSessaoFaciais}>
                         <li>
-                            <Link className={styles.linksFaciais} href="#">Mamarios</Link>
+                            <Link className={styles.linksFaciais} href="/procedimentos-mamarios">Mamarios</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksFaciais} href="#">Reparadores</Link>
+                            <Link className={styles.linksFaciais} href="/procedimentos-reparadores">Reparadores</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksFaciais} href="#">Abdominais</Link>
+                            <Link className={styles.linksFaciais} href="/procedimentos-abdominais">Abdominais</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksFaciais} href="#">BodyTite</Link>
+                            <Link className={styles.linksFaciais} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksFaciais} href="#">Clinica</Link>
+                            <Link className={styles.linksFaciais} href="/clinica">Clinica</Link>
                         </li>
                     </ul>
                 </nav>
