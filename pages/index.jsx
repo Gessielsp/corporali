@@ -116,6 +116,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.linhaVerticalDasDuvidas}></div>
           <div className={styles.caixaDasDuvidas}>
             <div className={styles.boxTextosDasDuvidas}>
               <p className={styles.textosDasDuvidas}>Atedemos a maioria doa planos de saúde, entre em contato para mais informações.</p>
@@ -137,6 +138,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.linhaVerticalDasDuvidas}></div>
           <div id={styles.caixaDasImagensDois}>
             <div className={styles.planos}>
               <h2 className={styles.titulosDasDuvidas}>Qual são as formas de pagamentos</h2>
@@ -158,6 +160,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.linhaVerticalDasDuvidas}></div>
           <div className={styles.caixaDasDuvidas}>
             <div className={styles.boxTextosDasDuvidas}>
               <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h ás 18h, de segunda á sexta.</p>
@@ -223,9 +226,9 @@ export default function Home() {
             </div>
             <div id={styles.partesDosContas}>
               <div id={styles.caixadasImgs}>
-              <Image className={styles.imagensDoscontatos} src={imgInstaContato} alt="imgem do inst do contato" />
-              <Image className={styles.imagensDoscontatos} src={imgFaceContato} alt="imgem do face do contato" />
-              <Image className={styles.imagensDoscontatos} src={imgTwitterContato} alt="imgem do twitter do contato" />
+                <Image className={styles.imagensDoscontatos} src={imgInstaContato} alt="imgem do inst do contato" />
+                <Image className={styles.imagensDoscontatos} src={imgFaceContato} alt="imgem do face do contato" />
+                <Image id={styles.imagenDoTwitterDosContatos} src={imgTwitterContato} alt="imgem do twitter do contato" />
               </div>
               <div id={styles.numeroDosContatos}>
                 <p id={styles.telefones}>+61 9 8199-3099 <span id={styles.textoOu}>OU</span> +61 3346-3399</p>
