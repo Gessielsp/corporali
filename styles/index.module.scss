@@ -269,9 +269,14 @@
   text-align: center;
 }
 .boxDuvidas {
-  padding: 25px;
   display: flex;
   justify-content: space-evenly;
+}
+.linhaVerticalDasDuvidas{
+  margin-top: 40px;
+  background-color: #ffffff;
+  height: 350px;
+  width: 3px;
 }
 #caixaDasImagensUm {
   background-image: url(../public/corporali/dr_marcelo/marcelo_4.JPG);
@@ -282,9 +287,9 @@
   display: flex;
   align-items: center;
   opacity: 0.8;
+  margin: 40px 0;
 }
-#planos {
-  border: 3px red solid;
+.planos {
 }
 .boxImgDuvidas {
   display: flex;
@@ -303,6 +308,7 @@
   display: flex;
   align-items: center;
   opacity: 0.8;
+  margin: 40px 0;
 }
 #caixaDasImagensTres {
   background-image: url(../public/corporali/dr_marcelo/marcelo_7.JPG);
@@ -313,6 +319,7 @@
   display: flex;
   align-items: center;
   opacity: 0.8;
+  margin: 40px 0;
 }
 .titulosDasDuvidas {
   text-align: center;
@@ -328,6 +335,7 @@
   background-color: $primarycolor;
   width: 350px;
   height: 350px;
+  margin: 40px 0;
 }
 .textosDasDuvidas {
   text-align: justify;
@@ -373,12 +381,12 @@
 #linhaHorizontalDosCarsUm {
   height: 3px;
   background-color: $primarycolor;
-  width: 890px;
+  width: 1004px;
 }
 #linhaHorizontalDosCarsDois {
   height: 3px;
   background-color: $primarycolor;
-  width: 890px;
+  width: 1004px;
 }
 #linhaHorizontalDosCarsTres {
   height: 20px;
@@ -402,6 +410,7 @@
   justify-content: center;
 }
 #boxContatos {
+  margin: 50px 0;
   background-color: #171717d3;
   display: flex;
   justify-content: space-between;
@@ -409,6 +418,7 @@
   width: 90%;
 }
 #linhaVerticalDosContatos {
+  margin-right: 160px;
   display: flex;
   justify-content: flex-start;
   background-color: $primarycolor;
@@ -419,6 +429,7 @@
   padding-left: 100px;
 }
 #contateNos {
+  width: 100%;
   margin: 25px 0;
   color: $primarycolor;
   text-transform: uppercase;
@@ -455,7 +466,7 @@
   flex-direction: column;
 }
 #nome {
-  width: 310px;
+  width: 313px;
   height: 30px;
   border-radius: 10px;
   background-color: #17171752;
@@ -464,7 +475,7 @@
   padding-left: 15px;
 }
 #contatos {
-  width: 310px;
+  width: 313px;
   height: 30px;
   border-radius: 10px;
   background-color: #1717175d;
@@ -475,7 +486,7 @@
 #email {
   background-color: #17171759;
   color: #ffffff;
-  width: 310px;
+  width: 313px;
   height: 30px;
   border-radius: 10px;
   border: solid 2px #ffffff;
@@ -517,6 +528,7 @@
   height: 100px;
 }
 #textoInformacoes {
+  padding-bottom: 10px;
   margin: 15px 0;
   width: 70%;
   color: #ffffff;
@@ -553,6 +565,11 @@
   margin: 0 15px;
   width: 30px;
   height: 30px;
+}
+#imagenDoTwitterDosContatos{
+  margin: -2px 18px;
+  width: 36px;
+  height: 36px;
 }
 #numeroDosContatos {
   display: flex;
