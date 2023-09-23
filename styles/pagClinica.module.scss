@@ -1,0 +1,528 @@
+@import "./cores.module.scss";
+
+/* INICIO BANNER  */
+
+#bannerClinica{
+    height: 600px;
+    background-image: url(../public/corporali/clinica/foto_1.JPG);
+    background-size: cover;
+    background-position: 0 -50px;
+    border-top: 3px solid $primarycolor;
+}
+#bgClinica{
+    background-color: #18181883;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+#clinhaAcimaClinica{
+    height: 3px;
+    width: 200px;
+    background-color: $primarycolor;
+}
+#tituloClinica{
+    color: $primarycolor;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 30px;
+}
+#descricaoClinica{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    width: 45%;
+    margin: 30px 0;
+}
+#linhaAbaixoClinica{
+    height: 3px;
+    width: 100px;
+    background-color: $primarycolor;
+}
+#linkClinicaFotos{
+    display: flex;
+    margin-top: 30px;
+}
+#aClinica{
+    width: 200px;
+    background-color: $primarycolor;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #323232;
+    border-radius: 10px;
+    border: 3px solid $primarycolor;
+    font-weight: 700;
+    margin-right: 30px;
+}
+#fotoEvideos{
+    width: 200px;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    border: 3px solid $primarycolor;
+}
+/* FIM BANNER  */
+
+#conteudoPrincipalClinica{
+    margin: 0 auto;
+}
+
+/* INICIO SOBRE A CLINICA */
+#sessaoSobreClinica{
+    border-top: 3px solid $primarycolor;
+    margin: 50px auto;
+    width: 90%;
+}
+.sobreaClinica{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.sobreClinicaUm{
+    width: 45%;
+    //border: 3px solid red;
+}
+#sobreClinicaUmBorder{
+    width: 45%;
+    //border: 3px solid red;
+    border: 3px solid $primarycolor;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+}
+.sobreClinicaDois{
+    width: 45%;
+    height: 350px;
+    border: 3px solid $primarycolor;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+}
+.tituloSobre{
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    color: $primarycolor;
+    margin: 20px 0;
+    font-size: 40px;
+}
+#tituloOqueFazemos{
+    color: $primarycolor;
+    margin-bottom: 20px;
+}
+.subTitulosSobre{
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    color: $primarycolor;
+    margin-bottom: 20px;
+}
+.descricaoSobre{
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 18px;
+}
+.imgDescricaoSobre{
+    width: 100%;
+    height: 300px;
+    background-image: url(../public/corporali/clinica/foto_5.JPG);
+    background-size: cover;
+}
+
+/* FIM SOBRE A CLINICA */
+
+/* INICIO PROCEDIMENTOS */
+
+#caixaConfiraProcedimentos{
+    background-color: #3C3C3C; 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+    margin: 60px auto;
+    width: 90%;
+}
+#confiraProcedimentos{
+    color: #fff;
+    font-size: 25px;
+}
+#tituloProcedimentos{
+    color: $primarycolor;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    margin: 30px 0 20px;
+    font-size: 40px;
+}
+#descricaoProcedimentos{
+    width: 60%;
+    color: #fff;
+    font-weight: 300;
+}
+#caixaProcedimentos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+#caixaProcedimentosLinks{
+    width: 40%;
+}
+.caixaLinks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+.linksProcedimentos{
+    width: 200px;
+    padding: 20px 0;
+    background-color: $primarycolor;
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #323232;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FIM PROCEDIMENTOS */
+
+/* INICIO CONHECA EQUIPE */
+#conhecaEquipe{
+    background-image: url(../public/corporali/clinica/foto_5.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+#bgConhecaclinica{
+    background-color: #171717cc;
+    height: 50%;
+    width: 60%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#conteudoConhecaClinica{
+   width: 80%; 
+}
+#tituloConhecaclinica{
+    border-left:3px solid $primarycolor;
+    padding-left: 10px;
+    color: $primarycolor;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+#descricaoConhecaClinica{
+    color: #fff;
+    font-weight: 300;
+    padding-left: 15px;
+}
+/* FIM PROCEDIMENTOS */
+
+/* INICIO EQUIPE CORPORALI */
+
+#equipeCorporali{
+    display: flex;
+    justify-content: center;
+    background-color: #3C3C3C;
+}
+#conteudoEquipe{
+    border-top: 3px solid $primarycolor;
+    border-bottom: 3px solid $primarycolor;
+    margin: 50px 0;
+    padding: 50px 0 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+#boxUmEquipe{
+    width: 25%;
+}
+#tituloEquipe{
+    color: $primarycolor;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+#descricaoEquipe{
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+#linkAgendaConsultaEquipe{
+    border: 3px solid $primarycolor;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+#boxDoisEquipe{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.cardsEquipe{
+    width: 250px;
+}
+.bgCinza{
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bgJessicaToledo{
+    background-image: url(../public/corporali/clinica/foto_14.JPG);
+}
+.bgPaulaMelo{
+    background-image: url(../public/corporali/clinica/foto_11.JPG);
+}
+.bgLorranaBeatriz{
+    background-image: url(../public/corporali/clinica/foto_15.JPG);
+}
+.bgEquipe{
+    background-color: #605e5ebb;
+    height: 28%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.linhaAcimaEquipeCorporali{
+    width: 50%;
+    height: 3px;
+    background-color: $primarycolor;
+}
+.descricaoFuncionaria{
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 10px 0;
+}
+.nomeFuncionaria{
+    color: $primarycolor;
+    margin: 10px 0;
+}
+.cargo{
+    color: #fff;
+    font-weight: 300;
+}
+/* FIM EQUIPE CORPORALI */
+
+/* INICIO GALERIA CORPORALI */
+#galeriaDeFotosClinica{
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0 50px;
+}
+#sessaoZeroGaleria{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid $primarycolor;
+    padding-bottom: 80px;
+}
+#fotoGaleriaUm{
+    background-image: url(../public/corporali/clinica/foto_5.JPG);
+    background-size: cover;
+    height: 375px;
+    width: 525px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#linhaVertical{
+    background-color: $primarycolor;
+    width: 3px;
+}
+.textoDescricaoGaleria{
+    color: #fff;
+    background-color: #3c3c3cdc;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#textosGaleria{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#tituloGaleria{
+    text-transform: uppercase;
+    color: $primarycolor;
+    font-size: 40px;
+}
+#descricaoGaleria{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: right;
+}
+#linkGaleria{
+    border: 3px solid $primarycolor;
+    color: #fff;
+    width: 200px;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#segundaSessaoGaleria{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+#sessaoUmGaleria{
+    width: 47%;
+}
+#fotoGaleriaDois{
+    background-image: url(../public/corporali/clinica/foto_9.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.linhaHorizontalVerde{
+    height: 3px;
+    background-color: $primarycolor;
+    width: 100%;
+    margin: 20px 0;
+}
+#subSessaoUm{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 466px;
+}
+#linhaVerticalGrande{
+    width: 3px;
+    background-color: $primarycolor;
+    height: auto;
+}
+#sessaoDoisGaleria{
+    width: 47%;
+}
+#subSessaoDois{
+    display: flex;
+    justify-content: space-between;
+}
+.fotoGaleriaTres{
+    background-image: url(../public/corporali/clinica/foto_17.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fotoGaleriaQuatro{
+    background-image: url(../public/corporali/clinica/foto_11.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fotoGaleriaCinco{
+    background-image: url(../public/corporali/clinica/foto_7.JPG);
+    background-size: cover;
+    width: 275px;
+    height: 175px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fotoGaleriaSeis{
+    background-image: url(../public/corporali/clinica/foto_3.JPG);
+    background-size: cover;
+    width: 275px;
+    height: 175px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fotoGaleriaSete{
+    background-image: url(../public/corporali/clinica/foto_6.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fotoGaleriaOito{
+    background-image: url(../public/corporali/clinica/foto_8.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* FIM GALERIA CORPORALI */
+
+/* INICIO CONTATE-NOS CORPORALI */
+#agendeSuaConsultaClinica{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_2.JPG);
+    background-size: cover;
+    background-position: 0 -230px;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    margin-bottom: 100px;
+}
+#conteudoConsultaClinica{
+    background-color: #181818b4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#tituloAgendarConsulta{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+#descricaoAgendarConsulta{
+    color: #D8D8D8;
+    font-size: 18px;
+}
+#linkAgendarConsulta{
+    border: 2px solid $primarycolor;
+    width: 170px;
+    display: block;
+    text-decoration: none;
+    color: #fff;text-align: center;
+    padding: 10px 0;
+}
+/* FIM CONTATE-NOS CORPORALI */
