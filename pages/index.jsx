@@ -4,15 +4,15 @@ import styles from '@/styles/index.module.scss';
 
 import { robotoCondensed } from '@/fonts/fonts';
 
-import imgDoutor from '@/public/corporali/dr_marcelo/DoutorMarcelo.jpg';
-import setaEsquerda from '@/public/corporali/icons/seta_branca_esquerda.png';
-import setaDireita from '@/public/corporali/icons/seta_branca_direita.png';
-import imgRelogio from '@/public/corporali/icons/relogio.png';
-import imgEndereco from '@/public/corporali/icons/endereco.png';
-import imgGmail from '@/public/corporali/icons/gmail.png';
-import imgInstaContato from '@/public/corporali/icons/insta_contato.png';
-import imgFaceContato from '@/public/corporali/icons/face_contato.png';
-import imgTwitterContato from '@/public/corporali/icons/twitter_contato.png';
+const imgDoutor = require('@/public/corporali/dr_marcelo/DoutorMarcelo.jpg');
+const setaEsquerda = require('@/public/corporali/icons/seta_branca_esquerda.png');
+const setaDireita = require('@/public/corporali/icons/seta_branca_direita.png');
+const imgRelogio = require('@/public/corporali/icons/relogio.png');
+const imgEndereco = require('@/public/corporali/icons/endereco.png');
+const imgGmail = require('@/public/corporali/icons/gmail.png');
+const imgInstaContato = require('@/public/corporali/icons/insta_contato.png');
+const imgFaceContato = require('@/public/corporali/icons/face_contato.png');
+const imgTwitterContato = require('@/public/corporali/icons/twitter_contato.png');
 
 import Header from '@/components/header/Header';
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
