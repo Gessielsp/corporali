@@ -8,12 +8,12 @@ import Image from "next/image";
 
 import { robotoCondensed } from "@/fonts/fonts";
 
-import iconYoutubeVermelho from "@/public/corporali/icons/youtube_vermelho.png"
+const iconYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
-export default function PagReparadores(){
-    return(
+export default function PagReparadores() {
+    return (
         <div className={robotoCondensed.className}>
-            <Header/>
+            <Header />
             <div id={styles.bordaTopoReparadores}></div>
             <div id={styles.bannerReparadores}>
                 <div id={styles.bgBannerReparadores}>
@@ -26,7 +26,7 @@ export default function PagReparadores(){
             <main id={styles.conteudoPrincipalReparadores}>
                 <div id={styles.sobreProcedimentosReparadores}>
                     <div id={styles.bgAnalise}>
-                        <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube"/>
+                        <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube" />
                     </div>
                     <div id={styles.textoProcedimentosReparadores}>
                         <h2 id={styles.tituloSobreReparadores}>Sobre os procedimentos</h2>
@@ -87,7 +87,7 @@ export default function PagReparadores(){
                     </ul>
                 </nav>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
