@@ -7,12 +7,12 @@ import Link from "next/link";
 import { robotoCondensed } from "@/fonts/fonts";
 
 import Image from "next/image";
-import iconeYoutubeVermelho from "@/public/corporali/icons/youtube_vermelho.png";
+const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
-export default function PagAbdominais(){
-    return(
+export default function PagAbdominais() {
+    return (
         <div className={robotoCondensed.className}>
-            <Header/>
+            <Header />
             <div id={styles.bordaTopoAbdominais}></div>
             <div id={styles.bannerAbdominais}>
                 <div id={styles.bgBannerAbdominais}>
@@ -25,7 +25,7 @@ export default function PagAbdominais(){
             <main id={styles.conteudoPrincipalAbdominais}>
                 <div id={styles.sobreProcedimentosAbdominais}>
                     <div id={styles.bgMarcacao}>
-                        <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt="Icone Youtube"/>
+                        <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt="Icone Youtube" />
                     </div>
                     <div id={styles.textosProcedAbdominais}>
                         <h2 id={styles.tituloSobreAbdominais}>Sobre os procedimentos</h2>
@@ -80,7 +80,7 @@ export default function PagAbdominais(){
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

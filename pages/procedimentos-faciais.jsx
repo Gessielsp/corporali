@@ -6,17 +6,17 @@ import styles from "@/styles/pagFaciais.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import setaEsquerda from "@/public/corporali/icons/seta_esquerda_verde.png";
-import setaDireita from "@/public/corporali/icons/seta_direita_verde.png";
-import imgFacial from "@/public/corporali/procedimentos/facial_2.jpg";
-import iconeYoutubeVermelho from "@/public/corporali/icons/youtube_vermelho.png"
+const setaEsquerda = require("@/public/corporali/icons/seta_esquerda_verde.png");
+const setaDireita = require("@/public/corporali/icons/seta_direita_verde.png");
+const imgFacial = require("@/public/corporali/procedimentos/facial_2.jpg");
+const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
 import { robotoCondensed } from "@/fonts/fonts";
 
-export default function Pagfaciais(){
-    return(
+export default function Pagfaciais() {
+    return (
         <div className={robotoCondensed.className}>
-            <Header/>
+            <Header />
             <div id={styles.bordaTopoFaciais}></div>
             <div id={styles.bannerFaciais}>
                 <div id={styles.bgBannerFaciais}>
@@ -29,7 +29,7 @@ export default function Pagfaciais(){
             <main id={styles.conteudoPrincipalFaciais}>
                 <div id={styles.sobreProcedimentosFaciais}>
                     <div id={styles.bgCorte}>
-                        <Image id={styles.iconeYoutube} src={iconeYoutubeVermelho} alt="Icone do youtube"/>
+                        <Image id={styles.iconeYoutube} src={iconeYoutubeVermelho} alt="Icone do youtube" />
                     </div>
                     <div id={styles.textoProcedimentosFaciais}>
                         <h2 id={styles.tituloSobreFaciais}>Sobre os procedimentos Faciais</h2>
@@ -57,7 +57,7 @@ export default function Pagfaciais(){
                 </div>
                 <div id={styles.preenchimentosRestantes}>
                     <div id={styles.conteudoProcedRestantes}>
-                        <Image id={styles.imgProcedRestantes} src={imgFacial} alt="Outros procedimentos faciais" width={300}/>
+                        <Image id={styles.imgProcedRestantes} src={imgFacial} alt="Outros procedimentos faciais" width={300} />
                         <div id={styles.boxProcedRestantes}>
                             <h2 id={styles.tituloProcedRestantes}>Preenchimentos</h2>
                             <p id={styles.descricaoProcedRestantes}>Com o passar dos anos, nossa pele perde gradualmente o volume e a elasticidade, resultando em rugas, linhas de expressão e sulcos. Os preenchimentos são uma solução eficaz para combater esses sinais do tempo.
@@ -67,45 +67,45 @@ export default function Pagfaciais(){
                             <div id={styles.interacaoProcedRestantes}>
                                 <a id={styles.saberMaisProcedRestantes} href="#">Saber mais!</a>
                                 <div id={styles.setasProcedRestantes}>
-                                    <Image className={styles.ProcedRestantes} src={setaEsquerda} alt="Seta esquerda para voltar"/>
-                                    <Image className={styles.ProcedRestantes} src={setaDireita} alt="Seta direita para prosseguir"/>
+                                    <Image className={styles.ProcedRestantes} src={setaEsquerda} alt="Seta esquerda para voltar" />
+                                    <Image className={styles.ProcedRestantes} src={setaDireita} alt="Seta direita para prosseguir" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </main>
-                <div id={styles.agendeConsultaFaciais}>
-                    <div id={styles.conteudoAgendarConsultaFacial}>
-                        <div>
-                            <h2 id={styles.tituloAgendarConsultaFacial}>Agende sua consulta conosco</h2>
-                            <p id={styles.descricaoAgendarConsultaFacial}>Transformando sonhos em realidade. Especialista em cirurgias para uma nova você.</p>
-                        </div>
-                        <div>
-                            <a id={styles.linkAgendarConsultaFacial} href="#">Agendar Consulta</a>
-                        </div>
+            </main>
+            <div id={styles.agendeConsultaFaciais}>
+                <div id={styles.conteudoAgendarConsultaFacial}>
+                    <div>
+                        <h2 id={styles.tituloAgendarConsultaFacial}>Agende sua consulta conosco</h2>
+                        <p id={styles.descricaoAgendarConsultaFacial}>Transformando sonhos em realidade. Especialista em cirurgias para uma nova você.</p>
+                    </div>
+                    <div>
+                        <a id={styles.linkAgendarConsultaFacial} href="#">Agendar Consulta</a>
                     </div>
                 </div>
-                <nav id={styles.navegacaoFaciais}>
-                    <ul id={styles.linksSessaoFaciais}>
-                        <li>
-                            <Link className={styles.linksFaciais} href="/procedimentos-mamarios">Mamarios</Link>
-                        </li>
-                        <li>
-                            <Link className={styles.linksFaciais} href="/procedimentos-reparadores">Reparadores</Link>
-                        </li>
-                        <li>
-                            <Link className={styles.linksFaciais} href="/procedimentos-abdominais">Abdominais</Link>
-                        </li>
-                        <li>
-                            <Link className={styles.linksFaciais} href="/bodytite">BodyTite</Link>
-                        </li>
-                        <li>
-                            <Link className={styles.linksFaciais} href="/clinica">Clinica</Link>
-                        </li>
-                    </ul>
-                </nav>
-            <Footer/>
+            </div>
+            <nav id={styles.navegacaoFaciais}>
+                <ul id={styles.linksSessaoFaciais}>
+                    <li>
+                        <Link className={styles.linksFaciais} href="/procedimentos-mamarios">Mamarios</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.linksFaciais} href="/procedimentos-reparadores">Reparadores</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.linksFaciais} href="/procedimentos-abdominais">Abdominais</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.linksFaciais} href="/bodytite">BodyTite</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.linksFaciais} href="/clinica">Clinica</Link>
+                    </li>
+                </ul>
+            </nav>
+            <Footer />
         </div>
     )
 }

@@ -7,12 +7,12 @@ import Image from "next/image";
 
 import { robotoCondensed } from "@/fonts/fonts";
 
-import iconeYoutubeVermelho from "@/public/corporali/icons/youtube_vermelho.png"
+const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
-export default function PagMamarios(){
-    return(
+export default function PagMamarios() {
+    return (
         <div className={robotoCondensed.className}>
-            <Header/>
+            <Header />
             <div className={styles.bordaTopoMamarios}></div>
             <div id={styles.bannerMamarios}>
                 <div id={styles.bgBannerMamarios}>
@@ -46,7 +46,7 @@ export default function PagMamarios(){
                     <p className={styles.descricaoProcedimentosMamarios}>Não são apenas as mulheres que precisam de cirurgia redutora das mamas, homens também podem desenvolver glândulas mamárias de forma exagerada, o que não é comum para o corpo masculino. O crescimento exagerado é resultado de um desenvolvimento anormal das glândulas, ou acontece por conta de um acúmulo de gordura chamado de pseudo-ginecomastia, mas na maioria dos casos não existe uma causa exata. Após uma consulta médica, será decidido qual o melhor tratamento para o caso, assim como a necessidade de uma cirurgia redutora, a ginecomastia.</p>
                 </div>
                 <div id={styles.linksMamarios}></div>
-                
+
                 <nav id={styles.navegacaoMamarios}>
                     <ul id={styles.linksSessaoMamarios}>
                         <li>
@@ -65,7 +65,7 @@ export default function PagMamarios(){
                             <Link className={styles.linksMamarios} href="/clinica">Clinica</Link>
                         </li>
                     </ul>
-                    
+
                 </nav>
             </main>
             <div id={styles.agendeSuaConsultaMamarios}>
@@ -79,7 +79,7 @@ export default function PagMamarios(){
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
