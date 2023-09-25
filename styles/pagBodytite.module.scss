@@ -1,0 +1,264 @@
+@import "./cores.module.scss";
+
+/* INICIO BANNER BODYTITE */
+#bannerBodytite{
+    height: 600px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_2.JPG);
+    background-size: cover;
+}
+#bgBanner{
+    background-color: #1818189d;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#conteudoBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tituloBannerBodytite{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-bottom: 3px solid #fff;
+}
+#descricaoBannerBodyTite{
+    color: $primarycolor;
+    margin: 40px 0;
+    font-size: 18px;
+}
+#imgSetaParaBaixo{
+    height: 30px;
+    width: 30px 0 40px;
+}
+/* FIM BANNER BODYTITE */
+
+/* INICIO SESSAO UM */
+#oBodytite{
+    height: 500px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_15.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#morpheus{
+    height: 500px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#bgSessaoUm{
+    background-color: #181818d5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#conteudoSessaoUm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#linhaVerticalSessaoUm{
+    width: 3px;
+    height: 250px;
+    background-color: $primarycolor;
+    margin: 0 50px;
+}
+#imgBodyTite{
+    height: 350px;
+    width: 200px;
+}
+#imgMorpheus{
+    height: 350px;
+    width: 200px;
+}
+#caixaSessaoUm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#descricaoSessaoUm{
+    width: 500px;
+    margin: 0 50px;
+}
+#tituloSessaoUm{
+    font-size: 40px;
+    color: $primarycolor;
+    text-transform: uppercase;
+}
+#subTituloSessaoUm{
+    color: #fff;
+    margin: 20px 0 40px;
+    font-size: 20px;
+}
+#paragrafoSessaoUm{
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+}
+/* FIM SESSAO UM */
+
+/* INICIO EXAMES */
+#exames{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3C3C3C;
+    height: 200px;
+    margin: 50px 0;
+}
+.linhaExames{
+    width: 3px;
+    background-color: #fff;
+    height: 50%;
+}
+.descricaoExames{
+    color: $primarycolor;
+    font-size: 20px;
+}
+/* FIM EXAMES */
+
+/* INICIO EQUIPAMENTOS BODYTITE */
+#equipamentoBodytite{
+
+}
+#confiraEquipamentos{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#outrosEquipamentos{
+    width: 70%;
+    color: $primarycolor;
+    font-size: 30px;
+}
+#caixaEquipamentosUm{
+    height: 400px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+#caixaEquipamentosDois{
+    height: 400px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_14.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 30px 0;
+}
+#caixaEquipamentosTres{
+    height: 400px;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_9.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.bgEquipamentos{
+    background-color:#181818c2 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.imgEquipamentos{
+    height: 300px;
+    width: 220px;
+}
+.linhaEquipamentos{
+    width: 3px;
+    height: 60%;
+    background-color: $primarycolor;
+}
+.caixaEquipamentos{
+    width: 700px;
+}
+.titulosEquipamentos{
+    color: $primarycolor;
+    text-transform: uppercase;
+}
+.descricaoEquipamentos{
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 18px;
+}
+/* FIM EQUIPAMENTOS BODYTITE */
+
+/* INICIO INFORMAÇÕES BODYTITE */
+#info{
+    background-color: #3C3C3C;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+#conteudoInfo{
+    padding: 50px 0;
+    width: 90%;
+}
+#tituloInfo{
+    color: $primarycolor;
+    text-transform: uppercase;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+}
+#descricaoInfo{
+    color: #fff;
+    padding-left: 13px;
+    margin: 20px 0 35px;
+}
+#navegacaoInfo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+}
+.linkInfo{
+    display: block;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px 0;
+    color: #323232;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color:$primarycolor ;
+}
+/* FIM INFORMAÇÕES BODYTITE */
+
+/* INICIO AGENDAR CONSULTA */
+#agendeSuaConsultaBodytite{
+    margin: 80px 0 0;
+    background-image: url(../public/corporali/dr_marcelo/marcelo_10.JPG);
+    background-size: cover;
+    background-position: 0 -230px;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    margin-bottom: 70px;
+}
+#conteudoAgendarConsultaFacial{
+    background-color: #181818b4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#tituloAgendarConsultaFacial{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+#descricaoAgendarConsultaFacial{
+    color: #D8D8D8;
+    font-size: 18px;
+}
+#linkAgendarConsultaFacial{
+    border: 2px solid $primarycolor;
+    width: 170px;
+    display: block;
+    text-decoration: none;
+    color: #fff;text-align: center;
+    padding: 10px 0;
+}
+/* FIM AGENDAR CONSULTA */
