@@ -5,6 +5,7 @@ import styles from "@/styles/pagClinica.module.scss";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
+import Link from "next/link";
 
 export default function PagClinica(){
     return(
@@ -20,12 +21,13 @@ export default function PagClinica(){
                     </div>
                     <div id={styles.linhaAbaixoClinica}></div>
                     <div id={styles.linkClinicaFotos}>
-                        <a id={styles.aClinica} href="#">A clinica</a>
-                        <a id={styles.fotoEvideos} href="#">Fotos e Videos</a>
+                        <a id={styles.aClinica} href="#irClinica">A clinica</a>
+                        <a id={styles.fotoEvideos} href="#irParaGaleria">Visualizar Fotos</a>
                     </div>
                 </div>
             </div>
             {/*FIM PRIMEIRA SESSAO */}
+            <div id="irClinica"></div>
             <main id={styles.conteudoPrincipalClinica}>
             {/* INICIO SEGUNDA SESSAO */}
             <div id={styles.sessaoSobreClinica}>
@@ -62,12 +64,12 @@ export default function PagClinica(){
                 </div>
                 <div id={styles.caixaProcedimentosLinks}>
                     <div className={styles.caixaLinks}>
-                        <a className={styles.linksProcedimentos} href="#">Mamários</a>
-                        <a className={styles.linksProcedimentos} href="#">Faciais</a>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-mamarios">Mamários</Link>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-faciais">Faciais</Link>
                     </div>
                     <div className={styles.caixaLinks}>
-                        <a className={styles.linksProcedimentos} href="#">Reparadores</a>
-                        <a className={styles.linksProcedimentos} href="#">Abdominais</a>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-reparadores">Reparadores</Link>
+                        <Link className={styles.linksProcedimentos} href="/procedimentos-abdominais">Abdominais</Link>
                     </div>
                 </div>
             </div>
@@ -91,7 +93,7 @@ export default function PagClinica(){
                     <div id={styles.boxUmEquipe}>
                         <h2 id={styles.tituloEquipe}>Equipe Instituto Corporali</h2>
                         <p id={styles.descricaoEquipe}>Em nossa clínica, orgulhamo-nos de contar com uma equipe dedicada e altamente competente para cuidar de nossos pacientes em cada etapa de sua jornada. Veja agora as peças fundamentais para a excelência do nosso trabalho, com vasta experiência em cirurgia plástica e um compromisso inabalável com a excelência</p>
-                        <a id={styles.linkAgendaConsultaEquipe} href="#">Agendar consulta</a>
+                        <a id={styles.linkAgendaConsultaEquipe} href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" >Agendar consulta</a>
                     </div>
                     <div id={styles.boxDoisEquipe}>
                         <div className={styles.cardsEquipe}>
@@ -128,6 +130,7 @@ export default function PagClinica(){
                 </div>
             </div>
             {/* FIM EQUIPE CORPORALI */}
+            <div id="irParaGaleria"></div>
             {/* INICIO GALERIA CORPORALI */}    
             <div id={styles.galeriaDeFotosClinica}>
                 <div id={styles.sessaoZeroGaleria}>
@@ -137,7 +140,7 @@ export default function PagClinica(){
                     <div id={styles.textosGaleria}>
                         <h2 id={styles.tituloGaleria}>Galeria de Fotos</h2>
                         <p id={styles.descricaoGaleria}>Confira nesta seção algumas fotos de nossa clinica.  É uma clinica ampla, bem organizada e planejada. FIcamos no Centro Clínico Linea, Asa Sul, Brasília, Bloco B, Salas 25 e 27 –  Distrito Federal. </p>
-                        <a href="#" id={styles.linkGaleria}>Agendar consulta</a>
+                        <a href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" id={styles.linkGaleria}>Agendar consulta</a>
                     </div>
                 </div>
                 <div id={styles.segundaSessaoGaleria}>
@@ -180,7 +183,7 @@ export default function PagClinica(){
                 </div>
             </div>
             {/* FIM GALERIA CORPORALI */}
-            {/* INICIO GALERIA CORPORALI */}    
+            {/* INICIO AGENDAR CONSULTA */}    
             </main>
             <div id={styles.agendeSuaConsultaClinica}>
                 <div id={styles.conteudoConsultaClinica}>
@@ -189,11 +192,11 @@ export default function PagClinica(){
                         <p id={styles.descricaoAgendarConsulta}>Transforme sua saúde hoje! Clique no botão Agendar Consulta e dê o primeiro passo para uma vida melhor.</p>
                     </div>
                     <div>
-                        <a id={styles.linkAgendarConsulta} href="#">Agendar consulta</a>
+                        <a id={styles.linkAgendarConsulta} href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">Agendar consulta</a>
                     </div>
                 </div>
             </div>
-            {/* FIM GALERIA CORPORALI */}    
+            {/* FIM AGENDAR CONSULTA */}    
             <Footer/>
         </div>
     )

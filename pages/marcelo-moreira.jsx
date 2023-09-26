@@ -36,7 +36,7 @@ export default function PagDrMarcelo() {
                         <div id={styles.linhaAbaixoDrMarcelo}></div>
                         <div id={styles.informacoes}>
                             <a href="#" id={styles.subTituloMarcelo}>Sobre Marcelo</a>
-                            <a href="#" id={styles.fotoVideosMarcelo}>Fotos e Videos</a>
+                            <a href="#" id={styles.fotoVideosMarcelo}>Visualizar Fotos</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ export default function PagDrMarcelo() {
                         <div id={styles.bgCarreiraTres} className={styles.bgCarreira}>
                             <h2 className={styles.tituloCarreiraMarcelo}>Atividades</h2>
                         </div>
-                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique começou sua jornada acadêmica com uma paixão precoce pela biomedicina. Ele se formou com distinção em Biologia Molecular na fictícia Universidade Avançada de Ciências Biomédicas. Durante seus anos de graduação, ele um talento notável para a pesquisa genética, participando de projetos.</p>
+                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique começou sua jornada acadêmica com uma paixão precoce pela medicina. Ele se formou com distinção em Biologia Molecular na fictícia Universidade Avançada de Ciências Biomédicas. Durante seus anos de graduação, ele um talento notável para a pesquisa genética, participando de projetos.</p>
                     </div>
                     <div className={styles.boxConteudoCarreiras}>
                         <div id={styles.bgCarreiraQuatro} className={styles.bgCarreira}>
