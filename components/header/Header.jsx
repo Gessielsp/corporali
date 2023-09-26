@@ -6,32 +6,40 @@ import Link from "next/link";
 import { RiArrowDownSFill } from "react-icons/ri";
 
 import { robotoCondensed } from "@/fonts/fonts";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
+
 export default function Header(){
+    const router = useRouter();
+    const [activeLink, setActiveLink] = useState('');
     const [procedimentos, setProcedimentos] = useState(false);
+    
+    const funcLinkAtivo = (route) => {
+        setActiveLink(route);
+    }
 
     function alterarStateProcedimentos(){
-        setProcedimentos(!procedimentos);
+    setProcedimentos(!procedimentos);
     }
 
     return(
         <header id={styles.headerMain} className={robotoCondensed.className}>
             <div id={styles.boxLogo}>
                 <Link href="/">
-                    <Image id={styles.logo} src={logo} alt=""/>
+                    <Image id={styles.logo} src={logo} alt="Logo"/>
                 </Link>
             </div>
            <nav id={styles.navegacao}>
             <ul id={styles.listaUm}>
                 <li>
-                    <Link className={`${styles.home} ${styles.linksAnimados}`} href="/">Home</Link>
+                    <Link className={`${styles.home} ${styles.linksAnimados} ${router.pathname === '/' ? styles.active : ''}`} href="/">Home</Link>
                 </li>
                 <li>
-                    <Link className={`${styles.clinica} ${styles.linksAnimados}`} href="/clinica">A Clinica</Link>
+                    <Link className={`${styles.clinica} ${styles.linksAnimados} ${router.pathname === '/clinica' ? styles.active : ''}`} href="/clinica">A Clinica</Link>
                 </li>
                 <li>
-                    <span className={`${styles.procedimentos} ${styles.linksAnimados}`} onClick={() => alterarStateProcedimentos()}>
+                    <span className={`${styles.procedimentos} ${styles.linksAnimados} ${router.pathname === '/procedimentos-faciais' || router.pathname === '/procedimentos-reparadores' || router.pathname === '/procedimentos-abdominais' || router.pathname === '/procedimentos-mamarios' ? styles.active : ''}`} onClick={() => alterarStateProcedimentos()}>
                         Procedimentos
                         <RiArrowDownSFill id={styles.iconeDown}/>
                     </span>
@@ -46,7 +54,7 @@ export default function Header(){
                    <Link className={styles.bodyTite} href="/bodytite">BodyTite</Link>
                 </li>
                 <li>
-                  <Link className={`${styles.marcelo} ${styles.linksAnimados}`} href="/marcelo-moreira">Dr. Marcelo</Link>
+                  <Link className={`${styles.marcelo} ${styles.linksAnimados} ${router.pathname === '/marcelo-moreira' ? styles.active : ''}`} href="/marcelo-moreira">Dr. Marcelo</Link>
                 </li>
             </ul>
             <ul id={styles.listaDois}>
