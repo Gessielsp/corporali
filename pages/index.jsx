@@ -18,6 +18,8 @@ import Header from '@/components/header/Header';
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 import Link from 'next/link';
 
+import 'animate.css';
+
 export default function Home() {
   return (
     <div className={robotoCondensed.className}>
@@ -32,8 +34,8 @@ export default function Home() {
 
       <div id={styles.bgHome}>
         <hgroup>
-          <h1 id={styles.tituloUm}>Instituto</h1>
-          <h1 id={styles.tituloDois}>Corporali.</h1>
+          <h1 id={styles.tituloUm} class="animate__animated animate__backInRight">Instituto</h1>
+          <h1 id={styles.tituloDois} class="animate__animated animate__backInRight">Corporali.</h1>
           <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
         </hgroup>
         <div id={styles.boxSaberMais}>

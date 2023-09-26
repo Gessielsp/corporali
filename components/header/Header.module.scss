@@ -22,6 +22,8 @@
     list-style: none;
     width: 450px;
     justify-content: space-between;
+    align-items: flex-end;
+    //border: 1px solid blue;
 }
 #listaDois{
     display: flex;
@@ -36,32 +38,32 @@
 }
 .home{
     text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 2px solid $primarycolor;
     color: #FFFFFF;
+    position: relative;
+    padding-bottom: 3px;
 }
 .clinica{
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
+    padding-bottom: 3px;
 }
 .procedimentos{
     text-decoration: none;
-    background-color: #181818;
     color: #FFFFFF;
     border: none;
     text-transform: uppercase;
     cursor: pointer;
-    padding-bottom: 5px;
     display: block;
     position: relative;
-}
+}    
 .bodyTite{
     text-decoration: none;
     color: #FFFFFF;
     border: 2px solid $primarycolor;
     border-radius: 5px;
     padding: 5px 10px;
+    padding-bottom: 3px;
     &:hover{
         border-color: #237566;
     }
@@ -70,6 +72,7 @@
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
+    padding-bottom: 3px;
 }
 .linksAnimados{
     &::after {
@@ -87,7 +90,7 @@
         right: 0;
         left: auto;
     }
-    padding-bottom: 7px;
+    //padding-bottom: 7px;
 }
 #boxLinksProcedimentos{
     position: absolute;
@@ -131,4 +134,7 @@
     &:hover{
         border-color: #237566;
     }
+}
+.active{
+    //border-bottom: 2px solid $primarycolor;
 }
