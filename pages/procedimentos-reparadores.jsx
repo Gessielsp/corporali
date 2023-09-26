@@ -63,7 +63,7 @@ export default function PagReparadores() {
                             <p id={styles.descricaoAgendarConsultaReparadores}>Sua jornada para um bem-estar completo começa aqui. Agende sua consulta agora mesmo.</p>
                         </div>
                         <div>
-                            <a id={styles.linkAgendarConsultaReparadores} href="#">Agendar Consulta</a>
+                            <a id={styles.linkAgendarConsultaReparadores} href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">Agendar Consulta</a>
                         </div>
                     </div>
                 </div>

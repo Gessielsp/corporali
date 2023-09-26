@@ -16,6 +16,7 @@ const imgTwitterContato = require('@/public/corporali/icons/twitter_contato.png'
 
 import Header from '@/components/header/Header';
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -36,12 +37,12 @@ export default function Home() {
           <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
         </hgroup>
         <div id={styles.boxSaberMais}>
-          <a id={styles.saberMais} href="#">Saber Mais!</a>
+          <Link id={styles.saberMais} href="/#sobreClinica">Saber Mais!</Link>
         </div>
       </div>
 
+      <div id="sobreClinica"></div>
       <LinhaHorizontalLonga />
-
       <div id={styles.clinica}>
         <div id={styles.fotoClinica}>
           <div id={styles.conteudoClinica}>

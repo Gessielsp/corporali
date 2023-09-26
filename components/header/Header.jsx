@@ -18,18 +18,20 @@ export default function Header(){
     return(
         <header id={styles.headerMain} className={robotoCondensed.className}>
             <div id={styles.boxLogo}>
-                <Image id={styles.logo} src={logo} alt=""/>
+                <Link href="/">
+                    <Image id={styles.logo} src={logo} alt=""/>
+                </Link>
             </div>
            <nav id={styles.navegacao}>
             <ul id={styles.listaUm}>
                 <li>
-                    <Link id={styles.home} href="/">Home</Link>
+                    <Link className={`${styles.home} ${styles.linksAnimados}`} href="/">Home</Link>
                 </li>
                 <li>
-                    <Link id={styles.clinica} href="/clinica">A Clinica</Link>
+                    <Link className={`${styles.clinica} ${styles.linksAnimados}`} href="/clinica">A Clinica</Link>
                 </li>
                 <li>
-                    <span id={styles.procedimentos} onClick={() => alterarStateProcedimentos()}>
+                    <span className={`${styles.procedimentos} ${styles.linksAnimados}`} onClick={() => alterarStateProcedimentos()}>
                         Procedimentos
                         <RiArrowDownSFill id={styles.iconeDown}/>
                     </span>
@@ -41,18 +43,18 @@ export default function Header(){
                     </div>: null}
                 </li>
                 <li>
-                   <Link id={styles.bodyTite} href="/bodytite">BodyTite</Link>
+                   <Link className={styles.bodyTite} href="/bodytite">BodyTite</Link>
                 </li>
                 <li>
-                  <Link id={styles.contatos} href="/marcelo-moreira">Dr. Marcelo</Link>
+                  <Link className={`${styles.marcelo} ${styles.linksAnimados}`} href="/marcelo-moreira">Dr. Marcelo</Link>
                 </li>
             </ul>
             <ul id={styles.listaDois}>
                 <li>
-                    <a id={styles.ligar} href="tel:61999999999">Ligar</a>
+                    <a id={styles.ligar} href="tel:6199463399" target="_blank">Ligar</a>
                 </li>
                 <li>
-                    <a id={styles.whatsapp} href="">WhatsApp</a>
+                    <a id={styles.whatsapp} href="https://wa.me/55061981993099" target="_blank">WhatsApp</a>
                 </li>
             </ul>
            </nav>

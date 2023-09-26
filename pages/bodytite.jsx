@@ -132,11 +132,11 @@ export default function PagBodytite(){
                     <h2 id={styles.tituloInfo}>Confira mais infomações sobre o bodytite</h2>
                     <p id={styles.descricaoInfo}>Veja alguns tópicos importantes sobre este novo equipamento que adquirimos recentemente.</p>
                     <nav id={styles.navegacaoInfo}>
-                        <a className={styles.linkInfo} href="#">Estudos</a>
-                        <a className={styles.linkInfo} href="#">Anvisa</a>
-                        <a className={styles.linkInfo} href="#">Certificações</a>
-                        <a className={styles.linkInfo} href="#">Natural</a>
-                        <a className={styles.linkInfo} href="#">Mamários</a>
+                        <a className={styles.linkInfo} href="/clinica">Clinica</a>
+                        <a className={styles.linkInfo} href="/procedimentos-mamarios">Mamários</a>
+                        <a className={styles.linkInfo} href="/procedimentos-faciais">Faciais</a>
+                        <a className={styles.linkInfo} href="/procedimentos-reparadores">Reparadores</a>
+                        <a className={styles.linkInfo} href="/marcelo">Marcelo</a>
                     </nav>
                 </div>
             </div>
