@@ -15,6 +15,7 @@ import styles from "@/styles/pagBodytite.module.scss";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
+import Link from "next/link";
 
 export default function PagBodytite(){
     return(
@@ -132,11 +133,11 @@ export default function PagBodytite(){
                     <h2 id={styles.tituloInfo}>Confira mais infomações sobre o bodytite</h2>
                     <p id={styles.descricaoInfo}>Veja alguns tópicos importantes sobre este novo equipamento que adquirimos recentemente.</p>
                     <nav id={styles.navegacaoInfo}>
-                        <a className={styles.linkInfo} href="/clinica">Clinica</a>
-                        <a className={styles.linkInfo} href="/procedimentos-mamarios">Mamários</a>
-                        <a className={styles.linkInfo} href="/procedimentos-faciais">Faciais</a>
-                        <a className={styles.linkInfo} href="/procedimentos-reparadores">Reparadores</a>
-                        <a className={styles.linkInfo} href="/marcelo">Marcelo</a>
+                        <Link className={styles.linkInfo} href="/clinica">Clinica</Link>
+                        <Link className={styles.linkInfo} href="/procedimentos-mamarios">Mamários</Link>
+                        <Link className={styles.linkInfo} href="/procedimentos-faciais">Faciais</Link>
+                        <Link className={styles.linkInfo} href="/procedimentos-reparadores">Reparadores</Link>
+                        <Link className={styles.linkInfo} href="/marcelo">Marcelo</Link>
                     </nav>
                 </div>
             </div>
