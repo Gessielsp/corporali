@@ -13,6 +13,9 @@ const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.
 
 import { robotoCondensed } from "@/fonts/fonts";
 
+import 'animate.css';
+
+
 export default function Pagfaciais() {
     return (
         <div className={robotoCondensed.className}>
@@ -20,7 +23,7 @@ export default function Pagfaciais() {
             <div id={styles.bordaTopoFaciais}></div>
             <div id={styles.bannerFaciais}>
                 <div id={styles.bgBannerFaciais}>
-                    <div id={styles.conteudoBannerFaciais}>
+                    <div class="animate__animated animate__backInRight" id={styles.conteudoBannerFaciais}>
                         <h1 id={styles.tituloBannerFaciais}>Procedimentos Faciais</h1>
                         <p id={styles.descricaoBannerFaciais}>Procedimentos faciais são tratamentos estéticos que visam melhorar a aparência da pele e reduzir sinais de envelhecimento, incluindo técnicas como peelings químicos e preenchimentos dérmicos.</p>
                     </div>

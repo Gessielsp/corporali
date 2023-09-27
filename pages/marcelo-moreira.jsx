@@ -23,6 +23,9 @@ import { robotoCondensed, bebasNeue } from "@/fonts/fonts";
 
 import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
 
+import 'animate.css';
+
+
 export default function PagDrMarcelo() {
     return (
         <div className={robotoCondensed.className}>
@@ -31,8 +34,8 @@ export default function PagDrMarcelo() {
                 <div id={styles.bgMarcelo}>
                     <div id={styles.conteudoMarcelo}>
                         <div id={styles.linhaAcimaDrMarcelo}></div>
-                        <h1 id={styles.tituloMarcelo} className={bebasNeue.className}>Dr. Marcelo Moreira</h1>
-                        <p id={styles.cirurgiao}>Bem mais que um cirurgião Plástico.</p>
+                        <h1 class="animate__animated animate__fadeInRight" id={styles.tituloMarcelo} className={bebasNeue.className}>Dr. Marcelo Moreira</h1>
+                        <p class="animate__animated animate__fadeInRight" id={styles.cirurgiao}>Bem mais que um cirurgião Plástico.</p>
                         <div id={styles.linhaAbaixoDrMarcelo}></div>
                         <div id={styles.informacoes}>
                             <a href="#" id={styles.subTituloMarcelo}>Sobre Marcelo</a>

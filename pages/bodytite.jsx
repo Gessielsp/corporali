@@ -17,6 +17,8 @@ import { robotoCondensed } from "@/fonts/fonts";
 import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
 import Link from "next/link";
 
+import 'animate.css';
+
 export default function PagBodytite(){
     return(
         <div className={robotoCondensed.className}>
@@ -24,9 +26,9 @@ export default function PagBodytite(){
             <div id={styles.bannerBodytite}>
                 <div id={styles.bgBanner}>
                     <div id={styles.conteudoBanner}>
-                        <h1><strong id={styles.tituloBannerBodytite}>Bodytite</strong></h1>
-                        <p id={styles.descricaoBannerBodyTite}>Conheça agora o mais novo equipamento de nossa cliníca. Ele foi construido com tecnologias de última geração.</p>
-                        <Image id={styles.imgSetaParaBaixo} src={setaParaBaixo} alt="Ir para Bodytite"/>
+                        <h1 class="animate__animated animate__fadeInDown"><strong id={styles.tituloBannerBodytite}>Bodytite</strong></h1>
+                        <p class="animate__animated animate__fadeInRight" id={styles.descricaoBannerBodyTite}>Conheça agora o mais novo equipamento de nossa cliníca. Ele foi construido com tecnologias de última geração.</p>
+                        <Image class="animate__animated animate__shakeY" id={styles.imgSetaParaBaixo} src={setaParaBaixo} alt="Ir para Bodytite"/>
                     </div>
                 </div>
             </div>
