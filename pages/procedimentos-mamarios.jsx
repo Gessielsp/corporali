@@ -7,16 +7,19 @@ import Image from "next/image";
 
 import { robotoCondensed } from "@/fonts/fonts";
 
+import 'animate.css';
+
+
 const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
 export default function PagMamarios() {
     return (
         <div className={robotoCondensed.className}>
-            <Header />
+           
             <div className={styles.bordaTopoMamarios}></div>
             <div id={styles.bannerMamarios}>
                 <div id={styles.bgBannerMamarios}>
-                    <div id={styles.contentBannerMamarios}>
+                    <div class="animate__animated animate__backInRight" id={styles.contentBannerMamarios}>
                         <h1 id={styles.tituloBannerMamarios}>Procedimentos Mamários</h1>
                         <p id={styles.descricaoMamarios}>Conheça agora, tudo sobre os procedimentos mamários e como eles são realizados. Aqui você verá como é feito, quais são os procedimentos pré e pós operatórios e como é o apoio da nossa equipe.</p>
                     </div>
@@ -79,7 +82,7 @@ export default function PagMamarios() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            
         </div>
     )
 }

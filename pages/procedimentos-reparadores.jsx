@@ -8,6 +8,8 @@ import Image from "next/image";
 
 import { robotoCondensed } from "@/fonts/fonts";
 
+import 'animate.css';
+
 const iconYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
 
 export default function PagReparadores() {
@@ -17,7 +19,7 @@ export default function PagReparadores() {
             <div id={styles.bordaTopoReparadores}></div>
             <div id={styles.bannerReparadores}>
                 <div id={styles.bgBannerReparadores}>
-                    <div id={styles.conteudoBannerReparadores}>
+                    <div class="animate__animated animate__backInRight"  id={styles.conteudoBannerReparadores}>
                         <h1 id={styles.tituloBannerReparadores}>Procedimentos Reparadores</h1>
                         <p id={styles.descricaoBannerReparadores}>Procedimentos reparadores são intervenções médicas que desempenham um papel fundamental na correção de imperfeições físicas, restaurando a função e a aparência de partes do corpo afetadas por lesões, deformidades congênitas ou condições médicas.</p>
                     </div>

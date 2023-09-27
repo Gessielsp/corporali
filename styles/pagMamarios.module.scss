@@ -1,61 +1,70 @@
 @import './cores.module.scss';
 
-.bordaTopoMamarios{
+.bordaTopoMamarios {
     height: 2px;
     background-color: $primarycolor;
     margin-bottom: 50px;
 }
-.bordaFundoMamarios{
+
+.bordaFundoMamarios {
     height: 2px;
     background-color: $primarycolor;
     margin: 50px 0;
 }
-#bannerMamarios{
+
+#bannerMamarios {
     height: 400px;
     background-image: url(../public/corporali/procedimentos/mamario.jpg);
     background-size: cover;
     background-position: center;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-#bgBannerMamarios{
+
+#bgBannerMamarios {
     background-color: #18181894;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#contentBannerMamarios{
+
+#contentBannerMamarios {
     width: 70%;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-#conteudoPrincipalMamarios{
+
+#conteudoPrincipalMamarios {
     width: 90vw;
     border-top: 3px solid $primarycolor;
     border-bottom: 3px solid $primarycolor;
     margin: 0px auto;
     padding-top: 50px;
 }
-#tituloBannerMamarios{
+
+#tituloBannerMamarios {
     color: #fff;
     border-left: 3px solid #fff;
     padding-left: 10px;
     font-size: 45px;
     text-transform: uppercase;
 }
-#descricaoMamarios{
+
+#descricaoMamarios {
     color: #A8A8A8;
     border-left: 3px solid transparent;
     padding-left: 10px;
     font-size: 18px;
 }
-#sobreProcedimentosMamarios{
+
+#sobreProcedimentosMamarios {
     display: flex;
     justify-content: space-between;
 }
-#bgProtese{
+
+#bgProtese {
     background-image: url(../public/corporali/procedimentos/protese.png);
     background-size: cover;
     height: 300px;
@@ -65,33 +74,39 @@
     justify-content: center;
     border-radius: 10px;
 }
-#iconeYoutube{
+
+#iconeYoutube {
     width: 100px;
     height: 100px;
 }
-#textosProcedimentosMamarios{
+
+#textosProcedimentosMamarios {
     width: 50%;
 }
-#imgProtese{
+
+#imgProtese {
     width: 500px;
     height: 300px;
     opacity: 0.5;
 }
-#tituloSobreMamarios{
+
+#tituloSobreMamarios {
     color: $primarycolor;
     border-left: 3px solid #fff;
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 35px;
 }
-.descricaoSobreMamarios{
+
+.descricaoSobreMamarios {
     color: #fff;
     font-size: 18px;
     font-weight: 300;
     margin-top: 30px;
     text-align: justify;
 }
-.tituloProcedimentosMamarios{
+
+.tituloProcedimentosMamarios {
     color: $primarycolor;
     border-left: 3px solid #fff;
     padding-left: 10px;
@@ -99,21 +114,25 @@
     text-transform: uppercase;
     margin: 50px 0;
 }
-.descricaoProcedimentosMamarios{
+
+.descricaoProcedimentosMamarios {
     color: #fff;
     font-weight: 300;
     font-size: 18px;
     text-align: justify;
 }
-#navegacaoMamarios{
+
+#navegacaoMamarios {
     margin: 100px 0;
 }
-#linksSessaoMamarios{
+
+#linksSessaoMamarios {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-.linksMamarios{
+
+.linksMamarios {
     background-color: $primarycolor;
     color: $secondarycolor;
     padding: 10px 0;
@@ -124,12 +143,14 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
-    &:hover{
+
+    &:hover {
         background-color: #029479;
         color: #D8D8D8;
     }
 }
-#agendeSuaConsultaMamarios{
+
+#agendeSuaConsultaMamarios {
     margin: 50px 0;
     background-image: url(../public/corporali/avulsos/aperto_maos_mamarios.jpg);
     background-size: cover;
@@ -137,7 +158,8 @@
     height: 300px;
     display: flex;
 }
-#contentAgendeConsultaMamarios{
+
+#contentAgendeConsultaMamarios {
     background-color: #181818b4;
     width: 100%;
     display: flex;
@@ -145,32 +167,154 @@
     justify-content: space-evenly;
 }
 
-#tituloAgendeConsulta{
+#tituloAgendeConsulta {
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
     margin: 20px 0;
 }
-#descricaoAgendeConsulta{
+
+#descricaoAgendeConsulta {
     color: #D8D8D8;
     font-size: 18px;
 }
-#linkAgendarConsultaMamarios{
+
+#linkAgendarConsultaMamarios {
     border: 2px solid $primarycolor;
     width: 170px;
     display: block;
     text-decoration: none;
-    color: #fff;text-align: center;
+    color: #fff;
+    text-align: center;
     padding: 10px 0;
-    &:hover{
+
+    &:hover {
         background-color: #20E2BF;
         color: #3C3C3C;
         font-weight: bold;
     }
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    #bannerMamarios {
+        width: 100%;
+    }
+
+    #tituloBannerMamarios {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    #descricaoMamarios {
+        margin-top: 25px;
+        text-align: justify;
+    }
+
+    #descricaoMamarios {
+        text-align: justify;
+    }
+
+    #sobreProcedimentosMamarios {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        border-bottom: 3px solid $primarycolor;
+        justify-content: center;
+    }
+
+    #bgProtese {
+        margin-top: 25px;
+        order: 1;
+        width: 300px;
+    }
+
+    #textosProcedimentosMamarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        order: 0;
+    }
+
+    #tituloSobreMamarios {
+        text-align: center;
+        font-size: 23px;
+        width: 100%;
+        border: none;
+    }
+
+    .descricaoSobreMamarios {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .tituloProcedimentosMamarios {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #descricaoProcedimentosMamarios {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #linksMamarios {
+        margin: 25px 0;
+    }
+
+    #agendeSuaConsultaMamarios {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #contentAgendeConsultaMamarios {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #tituloAgendeConsulta {
+        font-size: 20px;
+        order: 1;
+        width: 300px;
+        color: $primarycolor;
+    }
+
+    #descricaoAgendeConsulta {
+        font-size: 15px;
+        order: 2;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+
+    }
+
+    #linkAgendarConsultaMamarios {
+        width: 150px;
+        order: 3;
+    }
+
+    #navegacaoMamarios {
+        border: solid red 3px;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    #linksSessaoMamarios {
+        border: solid green 3px;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .linksMamarios {
+        font-size: 12px;
+        width: 60px;
+    }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
