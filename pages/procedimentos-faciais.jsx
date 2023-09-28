@@ -10,6 +10,7 @@ const setaEsquerda = require("@/public/corporali/icons/seta_esquerda_verde.png")
 const setaDireita = require("@/public/corporali/icons/seta_direita_verde.png");
 const imgFacial = require("@/public/corporali/procedimentos/facial_2.jpg");
 const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
+const fecharModalX = require("@/public/corporali/icons/fechar_modal.png");
 
 import { robotoCondensed } from "@/fonts/fonts";
 
@@ -17,6 +18,14 @@ import 'animate.css';
 
 
 export default function Pagfaciais() {
+    function mostrarModal(){
+        const modal = document.querySelector('.modal');
+        modal.style.display = "block";
+    }
+    function fecharModal(){
+        const modal = document.querySelector('.modal');
+        modal.style.display = "none";
+    }
     return (
         <div className={robotoCondensed.className}>
             <Header />
@@ -31,7 +40,7 @@ export default function Pagfaciais() {
             </div>
             <main id={styles.conteudoPrincipalFaciais}>
                 <div id={styles.sobreProcedimentosFaciais}>
-                    <div id={styles.bgCorte}>
+                    <div id={styles.bgCorte} onClick={() => mostrarModal()}>
                         <Image id={styles.iconeYoutube} src={iconeYoutubeVermelho} alt="Icone do youtube" />
                     </div>
                     <div id={styles.textoProcedimentosFaciais}>
@@ -109,6 +118,25 @@ export default function Pagfaciais() {
                 </ul>
             </nav>
             <Footer />
+            <div id={styles.modal} className="modal" >
+                <div id={styles.conteudoModal}>
+                    <div>
+                        <p id={styles.descricaoModal}>Gostaria de visualizar este video neste site mesmo ou no canal do Instituto Corporali no YouTube?</p>
+                    </div>
+                    <div id={styles.caixaEscolhasModal}>
+                        <div>
+                            <div id={styles.boxFecharModal} className="btnFecharModal" onClick={() => fecharModal()}>
+                                <Image id={styles.fecharModal} src={fecharModalX} alt="Fechar Modal" width={15} height={15}/>
+                                Fechar
+                            </div>
+                        </div>
+                        <div id={styles.ondeAssistir}>
+                            <a id={styles.assistirNoSite} href="">Assistir no Site</a>
+                            <a id={styles.assistirNoYoutube} href="">Assistir no YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
