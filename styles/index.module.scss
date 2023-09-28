@@ -586,6 +586,22 @@
   color: #ffffff;
 }
 /* parte fim Contatos */
+#boxInstagramWhatsapp{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#whatsappFlut{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+#instagramFlut{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+/* INSTAGRAM E WHATSAPP FLUTUANTES */ 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 }

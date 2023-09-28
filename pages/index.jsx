@@ -13,6 +13,8 @@ const imgGmail = require('@/public/corporali/icons/gmail.png');
 const imgInstaContato = require('@/public/corporali/icons/insta_contato.png');
 const imgFaceContato = require('@/public/corporali/icons/face_contato.png');
 const imgTwitterContato = require('@/public/corporali/icons/twitter_contato.png');
+const whatsappFlutuante = require('@/public/corporali/icons/whatsapp_flutuante.png');
+const instagramFlutuante = require('@/public/corporali/icons/instagram_flutuante.png')
 
 import Header from '@/components/header/Header';
 import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
@@ -239,6 +241,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div id={styles.boxInstagramWhatsapp}>
+        <a id={styles.whatsappFlut} href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
+          <Image src={whatsappFlutuante} alt='Whatsapp' width={50} height={50}/>
+        </a>
+        <a id={styles.instagramFlut} href="https://www.instagram.com/drmarcelomoreiraa/" target="_blank">
+          <Image src={instagramFlutuante} alt='Instagram' width={50} height={50}/>
+        </a>
       </div>
     </div>
   )

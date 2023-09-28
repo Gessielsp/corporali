@@ -9,8 +9,18 @@ import Image from "next/image";
 import { robotoCondensed } from "@/fonts/fonts";
 
 const iconYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
+const fecharModalX = require("@/public/corporali/icons/fechar_modal.png");
 
 export default function PagReparadores() {
+    function mostrarModal(){
+        const modal = document.querySelector('.modal');
+        modal.style.display = "block";
+    }
+    function fecharModal(){
+        const modal = document.querySelector('.modal');
+        modal.style.display = "none";
+    }
+
     return (
         <div className={robotoCondensed.className}>
             <Header />
@@ -25,7 +35,7 @@ export default function PagReparadores() {
             </div>
             <main id={styles.conteudoPrincipalReparadores}>
                 <div id={styles.sobreProcedimentosReparadores}>
-                    <div id={styles.bgAnalise}>
+                    <div id={styles.bgAnalise} onClick={() => mostrarModal()}>
                         <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube" />
                     </div>
                     <div id={styles.textoProcedimentosReparadores}>
@@ -88,6 +98,25 @@ export default function PagReparadores() {
                 </nav>
             </main>
             <Footer />
+            <div id={styles.modal} className="modal" >
+                <div id={styles.conteudoModal}>
+                    <div>
+                        <p id={styles.descricaoModal}>Gostaria de visualizar este video neste site mesmo ou no canal do Instituto Corporali no YouTube?</p>
+                    </div>
+                    <div id={styles.caixaEscolhasModal}>
+                        <div>
+                            <div id={styles.boxFecharModal} className="btnFecharModal" onClick={() => fecharModal()}>
+                                <Image id={styles.fecharModal} src={fecharModalX} alt="Fechar Modal" width={15} height={15}/>
+                                Fechar
+                            </div>
+                        </div>
+                        <div id={styles.ondeAssistir}>
+                            <a id={styles.assistirNoSite} href="">Assistir no Site</a>
+                            <a id={styles.assistirNoYoutube} href="">Assistir no YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
