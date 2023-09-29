@@ -11,6 +11,9 @@
   justify-content: center;
   padding-left: 13%;
 }
+#tituloCelular{
+  display: none;
+}
 #tituloUm {
   font-size: 50px;
   color: #ffffff;
@@ -248,12 +251,6 @@
 #duvidas {
   background-color: $secondarycolor;
 }
-.imgMarcelo {
-  width: 250px;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-}
 #caixaDoTituloPrinpical {
   display: flex;
   justify-content: center;
@@ -356,9 +353,8 @@
 }
 .LinhaHorizontalTexto {
   display: flex;
-  width: 50%;
+  width: 80%;
   justify-content: right;
-
 }
 .linhaDoTexto {
   margin-top: 20px;
@@ -372,8 +368,8 @@
 }
 #LinhaHorizontalTextoEsquerda {
   display: flex;
-  width: 50%;
-  justify-content: left;
+  width: 80%;
+  justify-content: right;
 }
 #linhaDoTextoEsquerdo {
   margin-top: 20px;
@@ -381,12 +377,7 @@
   height: 3px;
   background-color: #ffffff;
 }
-#linhaHorizontalDosCarsUm {
-  height: 3px;
-  background-color: $primarycolor;
-  width: 1004px;
-}
-#linhaHorizontalDosCarsDois {
+#linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
   height: 3px;
   background-color: $primarycolor;
   width: 1004px;
@@ -604,6 +595,221 @@
 /* INSTAGRAM E WHATSAPP FLUTUANTES */ 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  /* INICIO INSTITUTO CORPORALI */
+  #bgHome{
+    padding: 0;
+  }
+  #boxDeTitulos{
+    background-color: #171717d8;
+  }
+  #tituloCelular{
+    display: block;
+    color: $primarycolor;
+    border-left: 2px solid #fff;
+    padding-left: 5px;
+    font-size: 25px;
+  }
+  #tituloUm{
+    display: none;
+  }
+  #tituloDois{
+    display: none;
+  }
+  #tituloTres{
+    width: auto;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 300;
+  }
+  #boxSaberMais{
+    width: auto;
+    border-radius: 0;
+    padding: 0;
+  }
+  /* FIM INSTITUTO CORPORALI */
+  /* INICIO CLINICA */
+  #fotoClinica {
+    width: 100vw;
+    background-image: none;
+  }
+  #conteudoClinica {
+    justify-content: center;
+    width: 100%;
+    border: none;
+    margin-left: 0;
+    font-size: 15px;
+  }
+  #sloganClinica {
+    display: none;
+  }
+  #sobreaClinica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 85vw;
+    background-color: transparent;
+  }
+  .descricaoClinica {
+    width: 100%;
+  }
+  #boxLinhaBranca {
+    width: 100%;
+  }
+  /* FIM CLINICA */
+
+  /* INICIO PROCEDIMENTOS */
+  #procedimentos {
+    background-position: left;
+  }
+  #conteudoProcedimentos {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  #tituloProcedimentos {
+    border-left: 3px solid $primarycolor;
+    padding-left: 5px;
+    font-size: 25px;
+  }
+  .descricaoProcedimentos {
+    padding-left: 0;
+    width: 100%;
+    text-align: justify;
+  }
+  #caixaUmProcedimentos {
+    width: 100%;
+  }
+  #caixaDoisprocedimentos {
+    width: 100%;
+  }
+  .caixaProcedimento {
+    border: 3px solid $primarycolor;
+    width: 120px;
+    height: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  /* FIM PROCEDIMENTOS */
+  /* INICIO DOUTOR */
+  #marcelo{
+    flex-direction: column;
+    align-items: center;
+  }
+  #caixadaFotoDoutor{
+    width: 250px;
+    height: 400px;
+    order: 1;
+  }
+  #imagemDoutor{
+    width: 250px;
+    height: 400px;
+    padding-left: 0;
+    border-radius: 0;
+  }
+  #caixaDetextos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #textoUmDoutor{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 0px;
+    border-left: none;
+    padding-left: 0;
+  }
+  #textoDoisDoutor{
+    color: $primarycolor;
+    font-size: 18px;
+  }
+  #textoTresDoutor{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  #textoQuatroDoutor{
+    margin: 50px 0;
+    text-align: center;
+    border-top: 2px solid $primarycolor;
+    border-bottom: 2px solid $primarycolor;
+    padding: 10px 0;
+    width: 300px;
+  }
+  .linhaHorizontalDoutor{
+    margin: 50px auto;
+    width: 300px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  /* FIM DOUTOR MARCELO */
+  /* INICIO DUVIDAS */
+  #caixaDuvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #caixaDoTituloPrinpical{
+    background-color:transparent;
+  }
+  #tituloPrincipalDuvidas{
+    width: 80%;
+    height: auto;
+    color: $primarycolor;
+    border-top: 2px solid $primarycolor;
+    border-bottom: 2px solid $primarycolor;
+    padding: 10px 0;
+  }
+  .boxDuvidas{
+    flex-direction: column;
+  }
+  .linhaVerticalDasDuvidas{
+    display: none;
+  }
+  #caixaDasImagensUm{
+    width: 275px;
+    height: 250px;
+  }
+  .titulosDasDuvidas{
+    background-color: #181818c9;
+  }
+  .setasDireitaEsqueda{
+    display: none;
+  }
+  #caixaDasImagensDois{
+    width: 275px;
+    height: 250px;
+    margin-bottom: 0;
+  }
+  #caixaDasImagensTres{
+    width: 275px;
+    height: 250px;
+    margin: 0 0 50px;
+  }
+  .caixaDasDuvidas{
+    width: 275px;
+    height: 250px;
+    margin: 0;
+  }
+  .textosDasDuvidas{
+    width: 80%;
+  }
+  .boxTextosDasDuvidas{
+    width: 200px;
+    height: 200px;
+  }
+  .linhasMaster{
+    
+  }
+  #linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
+    width: 300px;
+    margin: 50px 0;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }

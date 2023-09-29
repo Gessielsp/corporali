@@ -20,10 +20,8 @@
 #listaUm{
     display: flex;
     list-style: none;
-    width: 450px;
     justify-content: space-between;
-    align-items: flex-end;
-    //border: 1px solid blue;
+    align-items: center;
 }
 #listaDois{
     display: flex;
@@ -40,13 +38,14 @@
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
-    padding-bottom: 3px;
+    padding: 5px 0;
+
 }
 .clinica{
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
-    padding-bottom: 3px;
+    padding: 5px 0px;
 }
 .procedimentos{
     text-decoration: none;
@@ -56,6 +55,7 @@
     cursor: pointer;
     display: block;
     position: relative;
+    padding: 5px 0;
 }    
 .bodyTite{
     text-decoration: none;
@@ -63,7 +63,6 @@
     border: 2px solid $primarycolor;
     border-radius: 5px;
     padding: 5px 10px;
-    padding-bottom: 3px;
     &:hover{
         border-color: #237566;
     }
@@ -72,7 +71,7 @@
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
-    padding-bottom: 3px;
+    padding: 5px 0;
 }
 .linksAnimados{
     &::after {
@@ -90,7 +89,7 @@
         right: 0;
         left: auto;
     }
-    //padding-bottom: 7px;
+    margin: 0 10px;
 }
 #boxLinksProcedimentos{
     position: absolute;
@@ -136,5 +135,40 @@
     }
 }
 .active{
-    border-bottom: 2px solid $primarycolor;
+    border-top: 2px solid $primarycolor;
+}
+#menuHamburguer{
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #headerMain{
+        padding: 0;
+        height: 100px;
+        justify-content: space-around;
+    }
+    #boxLogo{
+    }
+    #navegacao{
+        width: auto;
+    }
+    #listaUm{
+        display: none;
+    }
+    #listaDois{
+        display: none;
+    }
+    #menuHamburguer{
+        display: block;
+    }
+    #logo{
+        height: 50px;
+        width: 150px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 }

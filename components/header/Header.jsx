@@ -9,16 +9,13 @@ import { robotoCondensed } from "@/fonts/fonts";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
+import menuHamburguer from "@/public/corporali/icons/menu.png";
 
 export default function Header(){
     const router = useRouter();
-    const [activeLink, setActiveLink] = useState('');
+    
     const [procedimentos, setProcedimentos] = useState(false);
     
-    const funcLinkAtivo = (route) => {
-        setActiveLink(route);
-    }
-
     function alterarStateProcedimentos(){
     setProcedimentos(!procedimentos);
     }
@@ -65,6 +62,9 @@ export default function Header(){
                     <a id={styles.whatsapp} href="https://wa.me/55061981993099" target="_blank">WhatsApp</a>
                 </li>
             </ul>
+            <div id={styles.menuCelular}>
+                <Image id={styles.menuHamburguer} src={menuHamburguer} alt="Menu" width={40} height={40}/>
+            </div>
            </nav>
         </header>
     )
