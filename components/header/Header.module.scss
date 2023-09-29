@@ -139,15 +139,85 @@
 }
 #menuHamburguer{
     display: none;
+    height: 60px;
+    width: 60px;
 }
+#procedimentosCelular{
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #181818;
+    width: 100vw;
+}
+#caixaListaCelular{
 
+}
+#listaCelular{
+
+}
+#listaLinksCelular{
+
+}
+.linksProcedCelular{
+    color: $primarycolor;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    margin: 10px 0;
+    display: block;
+    padding: 10px;
+}
+#caixaFecharCelular{
+    display: flex;
+    justify-content: flex-end;
+}
+#iconFecharProcedimentos{
+    width: 20px;
+    height: 20px;
+}
+#btnFecharCelular{
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff0000;
+    border-radius: 5px;
+    margin: 30px 15px;
+    width: 100px;
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #headerMain{
         padding: 0;
         height: 100px;
         justify-content: space-around;
     }
-    #boxLogo{
+    #navegacao{
+        width: auto;
+    }
+    #listaUm{
+        display: none;
+    }
+    #listaDois{
+        display: none;
+    }
+    #menuHamburguer{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    #logo{
+        height: 50px;
+        width: 150px;
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #headerMain{
+        padding: 0;
+        height: 100px;
+        justify-content: space-around;
+        width: 100vw;
     }
     #navegacao{
         width: auto;
@@ -162,13 +232,31 @@
         display: block;
     }
     #logo{
-        height: 50px;
-        width: 150px;
-        padding: 10px 0;
-        cursor: pointer;
+        height: 60px;
+        width: 160px;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #headerMain{
+        padding: 0;
+        height: 100px;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    #navegacao{
+        width: auto;
+    }
+    #listaUm{
+        display: none;
+    }
+    #listaDois{
+        display: none;
+    }
+    #menuHamburguer{
+        display: block;
+    }
+    #logo{
+        height: 60px;
+        width: 160px;
+    }
 }

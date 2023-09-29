@@ -35,14 +35,16 @@ export default function Home() {
       <Header />
 
       <div id={styles.bgHome}>
-        <hgroup id={styles.boxDeTitulos}>
-          <h1 id={styles.tituloCelular}>Instituto Corporali.</h1>
-          <h1 id={styles.tituloUm} class="animate__animated animate__backInRight">Instituto</h1>
-          <h1 id={styles.tituloDois} class="animate__animated animate__backInRight">Corporali.</h1>
-          <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
-        </hgroup>
-        <div id={styles.boxSaberMais}>
-          <Link id={styles.saberMais} href="/#sobreClinica">Saber Mais!</Link>
+        <div id={styles.bgCelphone}>
+          <hgroup id={styles.boxDeTitulos}>
+            <h1 id={styles.tituloCelular}>Instituto Corporali.</h1>
+            <h1 id={styles.tituloUm} class="animate__animated animate__backInRight">Instituto</h1>
+            <h1 id={styles.tituloDois} class="animate__animated animate__backInRight">Corporali.</h1>
+            <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
+          </hgroup>
+          <div id={styles.boxSaberMais}>
+            <Link id={styles.saberMais} href="/#sobreClinica">Saber Mais!</Link>
+          </div>
         </div>
       </div>
 
@@ -220,15 +222,15 @@ export default function Home() {
             </div>
             <div id={styles.caixadasInformacoesdaClinica}>
               <div className={styles.clinicainformacoes}>
-                <Image src={imgGmail} alt="imgem do email" />
+                <Image id={styles.iconEmail} src={imgGmail} alt="Icone email" />
                 <p className={styles.boxDosTextos}>institutocorporalli@gmail.com</p>
               </div>
               <div className={styles.clinicainformacoes}>
-                <Image src={imgRelogio} alt="imgem do relogio" />
+                <Image id={styles.iconRelogio} src={imgRelogio} alt="Icone relogio" />
                 <p className={styles.boxDosTextos}>Segunda a Sexta das 09hrs as 18hrs</p>
               </div>
               <div className={styles.clinicainformacoes}>
-                <Image src={imgEndereco} alt="imgem do endereco" />
+                <Image id={styles.iconEndereço} src={imgEndereco} alt="Icone endereco" />
                 <p className={styles.boxDosTextos}>Asa Sul, Brasília, Distrito Federal</p>
               </div>
             </div>
