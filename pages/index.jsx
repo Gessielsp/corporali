@@ -35,7 +35,8 @@ export default function Home() {
       <Header />
 
       <div id={styles.bgHome}>
-        <hgroup>
+        <hgroup id={styles.boxDeTitulos}>
+          <h1 id={styles.tituloCelular}>Instituto Corporali.</h1>
           <h1 id={styles.tituloUm} class="animate__animated animate__backInRight">Instituto</h1>
           <h1 id={styles.tituloDois} class="animate__animated animate__backInRight">Corporali.</h1>
           <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
@@ -112,70 +113,72 @@ export default function Home() {
         <div id={styles.caixaDoTituloPrinpical}>
           <h1 id={styles.tituloPrincipalDuvidas}>Dúvidas Frequentes</h1>
         </div>
-        <div className={styles.boxDuvidas}>
-          <div id={styles.caixaDasImagensUm}>
-            <div className={styles.planos}>
-              <h2 className={styles.titulosDasDuvidas}>Quais planos de saúde Atendemos?</h2>
-              <div className={styles.boxImgDuvidas}>
-                <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
+        <div id={styles.caixaDuvidas}>
+          <div className={styles.boxDuvidas}>
+            <div id={styles.caixaDasImagensUm}>
+              <div className={styles.planos}>
+                <h2 className={styles.titulosDasDuvidas}>Quais planos de saúde Atendemos?</h2>
+                <div className={styles.boxImgDuvidas}>
+                  <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.linhaVerticalDasDuvidas}></div>
+            <div className={styles.caixaDasDuvidas}>
+              <div className={styles.boxTextosDasDuvidas}>
+                <p className={styles.textosDasDuvidas}>Atendemos a maioria doa planos de saúde, entre em contato para mais informações.</p>
+                <div className={styles.LinhaHorizontalTexto}>
+                  <div className={styles.linhaDoTexto}></div>
+                </div>
               </div>
             </div>
           </div>
-          <div className={styles.linhaVerticalDasDuvidas}></div>
-          <div className={styles.caixaDasDuvidas}>
-            <div className={styles.boxTextosDasDuvidas}>
-              <p className={styles.textosDasDuvidas}>Atedemos a maioria doa planos de saúde, entre em contato para mais informações.</p>
-              <div className={styles.LinhaHorizontalTexto}>
-                <div className={styles.linhaDoTexto}></div>
+          <div className={styles.linhasMaster}>
+            <div id={styles.linhaHorizontalDosCarsUm}></div>
+          </div>
+          <div className={styles.boxDuvidas}>
+            <div className={styles.caixaDasDuvidas}>
+              <div className={styles.boxTextosDasDuvidas}>
+                <p className={styles.textosDasDuvidas}>Oferecemos execelentes condições, parcelamos com e sem juros e pagamentos facilitado.</p>
+                <div id={styles.LinhaHorizontalTextoEsquerda}>
+                  <div id={styles.linhaDoTextoEsquerdo}></div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.linhaVerticalDasDuvidas}></div>
+            <div id={styles.caixaDasImagensDois}>
+              <div className={styles.planos}>
+                <h2 className={styles.titulosDasDuvidas}>Qual são as formas de pagamentos</h2>
+                <div className={styles.boxImgDuvidas}>
+                  <Image className={styles.setasDireitaEsqueda} src={setaEsquerda} alt="seta esquerda para navegação" />
+                </div>
               </div>
             </div>
           </div>
+          <div className={styles.linhasMaster}>
+            <div id={styles.linhaHorizontalDosCarsDois}></div>
+          </div>
+          <div className={styles.boxDuvidas}>
+            <div id={styles.caixaDasImagensTres}>
+              <div className={styles.planos}>
+                <h2 className={styles.titulosDasDuvidas}>Qual é o horário de Funcionamento?</h2>
+                <div className={styles.boxImgDuvidas}>
+                  <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.linhaVerticalDasDuvidas}></div>
+            <div className={styles.caixaDasDuvidas}>
+              <div className={styles.boxTextosDasDuvidas}>
+                <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h ás 18h, de segunda á sexta.</p>
+                <div className={styles.LinhaHorizontalTexto}>
+                  <div className={styles.linhaDoTexto}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id={styles.linhaHorizontalDosCarsTres}></div>
         </div>
-        <div className={styles.linhasMaster}>
-          <div id={styles.linhaHorizontalDosCarsUm}></div>
-        </div>
-        <div className={styles.boxDuvidas}>
-          <div className={styles.caixaDasDuvidas}>
-            <div className={styles.boxTextosDasDuvidas}>
-              <p className={styles.textosDasDuvidas}>Oferecemos execelentes condições, parcelamos com e sem juros e pagamentos facilitado.</p>
-              <div id={styles.LinhaHorizontalTextoEsquerda}>
-                <div id={styles.linhaDoTextoEsquerdo}></div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.linhaVerticalDasDuvidas}></div>
-          <div id={styles.caixaDasImagensDois}>
-            <div className={styles.planos}>
-              <h2 className={styles.titulosDasDuvidas}>Qual são as formas de pagamentos</h2>
-              <div className={styles.boxImgDuvidas}>
-                <Image className={styles.setasDireitaEsqueda} src={setaEsquerda} alt="seta esquerda para navegação" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.linhasMaster}>
-          <div id={styles.linhaHorizontalDosCarsDois}></div>
-        </div>
-        <div className={styles.boxDuvidas}>
-          <div id={styles.caixaDasImagensTres}>
-            <div className={styles.planos}>
-              <h2 className={styles.titulosDasDuvidas}>Qual é o horário de Funcionamento?</h2>
-              <div className={styles.boxImgDuvidas}>
-                <Image className={styles.setasDireitaEsqueda} src={setaDireita} alt="seta direita para navegação" />
-              </div>
-            </div>
-          </div>
-          <div className={styles.linhaVerticalDasDuvidas}></div>
-          <div className={styles.caixaDasDuvidas}>
-            <div className={styles.boxTextosDasDuvidas}>
-              <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h ás 18h, de segunda á sexta.</p>
-              <div className={styles.LinhaHorizontalTexto}>
-                <div className={styles.linhaDoTexto}></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id={styles.linhaHorizontalDosCarsTres}></div>
       </div>
 
       <div id={styles.linhaHorizontalDosContas}></div>
