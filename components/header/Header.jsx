@@ -2,6 +2,7 @@ import logo from "@/public/corporali/logos/logo-corporali.png";
 import Image from "next/image";
 import styles from "@/components/header/Header.module.scss";
 import Link from "next/link";
+import 'animate.css';
 
 import { RiArrowDownSFill } from "react-icons/ri";
 
@@ -10,6 +11,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 import menuHamburguer from "@/public/corporali/icons/menu.png";
+import fecharAbaProcedimentos from "@/public/corporali/icons/fechar_modal.png"
 
 export default function Header(){
     const router = useRouter();
@@ -18,6 +20,14 @@ export default function Header(){
     
     function alterarStateProcedimentos(){
     setProcedimentos(!procedimentos);
+    }
+    function abreProcedimentosCelular(){
+        let abaProcedCelular = document.querySelector('.abaProcedimentosCelular');
+        abaProcedCelular.style.display = "block";
+    }
+    function fecharProcedimentosCelular(){
+        let abaProcedCelular = document.querySelector('.abaProcedimentosCelular');
+        abaProcedCelular.style.display = "none";
     }
 
     return(
@@ -62,10 +72,32 @@ export default function Header(){
                     <a id={styles.whatsapp} href="https://wa.me/55061981993099" target="_blank">WhatsApp</a>
                 </li>
             </ul>
-            <div id={styles.menuCelular}>
-                <Image id={styles.menuHamburguer} src={menuHamburguer} alt="Menu" width={40} height={40}/>
+            <div id={styles.menuCelular} className="menuCelular" onClick={() => abreProcedimentosCelular()}>
+                <Image id={styles.menuHamburguer} src={menuHamburguer} alt="Menu"/>
             </div>
            </nav>
+           {/* ELEMENTOS QUE ESTÃO FORA DO FLUXO NORMAL DO DOCUMENTO */}
+            <div id={styles.procedimentosCelular} className="abaProcedimentosCelular animate__animated animate__fadeInDownBig">
+                <div id={styles.caixaListaCelular}>
+                    <ul id={styles.listaCelular}>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/">Home</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/procedimentos-abdominais">Procedimentos Abdominais</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/procedimentos-faciais">Procedientos Faciais</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/procedimentos-mamarios">Procedimentos Mamarios</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/procedimentos-reparadores">Procedimentos Reparadores</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/clinica">A Clinica</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/bodytite">O Bodytite</Link></li>
+                        <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/marcelo-moreira">Dr. Marcelo Moreira</Link></li>
+                    </ul>
+                </div>
+                <div id={styles.caixaFecharCelular}>
+                    <button id={styles.btnFecharCelular} className="btnFecharCelular" onClick={() => fecharProcedimentosCelular()}>
+                        <Image id={styles.iconFecharProcedimentos} src={fecharAbaProcedimentos} alt="Fechar"/>
+                        Fechar
+                    </button>
+                </div>
+            </div>
+            {/* ELEMENTOS QUE ESTÃO FORA DO FLUXO NORMAL DO DOCUMENTO */}
         </header>
     )
 }

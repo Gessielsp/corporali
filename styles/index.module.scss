@@ -501,12 +501,13 @@
 }
 #butaoContatos {
   margin: 25px 0;
-  width: 340px;
+  width: 335px;
   height: 40px;
   border-radius: 10px;
   background-color: $primarycolor;
   color: #ffffff;
   cursor: pointer;
+  border: none;
 }
 #parteDoisdosContatos {
   height: 90%;
@@ -598,8 +599,9 @@
   /* INICIO INSTITUTO CORPORALI */
   #bgHome{
     padding: 0;
+    height: 50vh;
   }
-  #boxDeTitulos{
+  #bgCelphone{
     background-color: #171717d8;
   }
   #tituloCelular{
@@ -607,7 +609,8 @@
     color: $primarycolor;
     border-left: 2px solid #fff;
     padding-left: 5px;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 25px 25px 0;
   }
   #tituloUm{
     display: none;
@@ -620,11 +623,23 @@
     background-color: transparent;
     color: #fff;
     font-weight: 300;
+    font-size: 13px;
   }
   #boxSaberMais{
     width: auto;
     border-radius: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 13px;
+  }  
+  #saberMais {
+    border: 1px solid #fff;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 15px;
+    margin: 0 40px 20px;
   }
   /* FIM INSTITUTO CORPORALI */
   /* INICIO CLINICA */
@@ -674,13 +689,13 @@
     padding-left: 5px;
     font-size: 25px;
   }
+  #caixaUmProcedimentos {
+    width: 100%;
+  }
   .descricaoProcedimentos {
     padding-left: 0;
     width: 100%;
     text-align: justify;
-  }
-  #caixaUmProcedimentos {
-    width: 100%;
   }
   #caixaDoisprocedimentos {
     width: 100%;
@@ -803,15 +818,500 @@
     width: 200px;
     height: 200px;
   }
-  .linhasMaster{
-    
+  #linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
+    width: 300px;
+    margin: 50px 0;
+  }
+  /* INICIO CONTATOS */
+  #linhaHorizontalDosContas {
+    height: 30px;
+    background-color: transparent;
+  }
+  #boxContatos {
+    flex-direction: column;
+    display: flex;
+  }
+  #linhaVerticalDosContatos {
+    display: none;
+  }
+  #parteUmdosContatos {
+    padding-left: 0;
+    order: 1;
+  }
+  #contateNostexto {
+    width: auto;
+    padding-left: 0;
+  }
+  #linhavertxalContatenos {
+    display: none;
+  }
+  #boxContatenos {
+    justify-content: center;
+  }
+  #boxTextoContatos {
+    justify-content: center;
+  }
+  #textoContateNos {
+    font-size: 15px;
+    text-align: center;
+  }
+  #secForm{
+    display: flex;
+    justify-content: center;
+  }
+  #formContatos {
+    width: 275px;
+  }
+  #nome {
+    width: auto;
+    border-radius: 5px;
+  }
+  #contatos {
+    width: auto;
+    border-radius: 5px;
+  }
+  #email {
+    width: auto;
+    border-radius: 5px;
+  }
+  #mensagem {
+    width: auto;
+    border-radius: 5px;
+  }
+  .nomesDoFormularios {
+    margin: 8px 0;
+    color: #ffffff;
+  }
+  #butaoContatos {
+    width: auto;
+    border: none;
+  }
+  #parteDoisdosContatos {
+    height: auto;
+  }
+  #boxInformacoes {
+    width: auto;
+    margin: 20px 0;
+  }
+  #textoInformacoes {
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
+  #linhaHorizontalInformacoes {
+    display: none;
+  }
+  .clinicainformacoes {
+    display: flex;
+    align-items: center;
+  }
+  #iconEmail, #iconEndereço, #iconRelogio{
+    width: 40px;
+    height: 40px;
+  }
+  .boxDosTextos {
+    font-size: 13px;
+  }
+  #caixadasImgs {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .imagensDoscontatos {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+  #imagenDoTwitterDosContatos{
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  #numeroDosContatos {
+    justify-content: center;
+  }
+  #textoOu{
+    font-size: 15px;
+  }
+  /* FIM CONTATOS */
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+/* INICIO INSTITUTO CORPORALI */
+#bgHome{
+  padding: 0;
+  height: 40vh;
+}
+#bgCelphone{
+  background-color: #171717d8;
+}
+#tituloCelular{
+  display: block;
+  color: $primarycolor;
+  border-left: 2px solid #fff;
+  padding-left: 5px;
+  font-size: 25px;
+  margin: 25px 25px 0;
+}
+#tituloUm{
+  display: none;
+}
+#tituloDois{
+  display: none;
+}
+#tituloTres{
+  width: auto;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+#boxSaberMais{
+  width: auto;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 13px;
+}  
+#saberMais {
+  border: 1px solid #fff;
+  width: 120px;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0 40px 20px;
+}
+/* FIM INSTITUTO CORPORALI */
+/* INICIO CLINICA */
+#clinica{
+  height: auto;
+}
+#fotoClinica {
+  width: 100vw;
+  background-image: none;
+}
+#conteudoClinica {
+  justify-content: center;
+  width: 100%;
+  border: none;
+  margin-left: 0;
+  font-size: 15px;
+}
+#sloganClinica {
+  display: none;
+}
+#sobreaClinica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: 85vw;
+  background-color: transparent;
+  margin: 50px 0;
+}
+.descricaoClinica {
+  width: 100%;
+}
+#boxLinhaBranca {
+  width: 100%;
+}
+/* FIM CLINICA */
+  /* INICIO PROCEDIMENTOS */
+  #procedimentos {
+    background-position: left;
+  }
+  #conteudoProcedimentos {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  #tituloProcedimentos {
+    border-left: 3px solid $primarycolor;
+    padding-left: 5px;
+    font-size: 25px;
+  }
+  #caixaUmProcedimentos {
+    width: 100%;
+  }
+  .descricaoProcedimentos {
+    padding-left: 0;
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+  }
+  #caixaDoisprocedimentos {
+    width: 100%;
+  }
+  .caixaProcedimento {
+    border: 3px solid $primarycolor;
+    width: 120px;
+    height: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  /* FIM PROCEDIMENTOS */
+  /* INICIO DOUTOR */
+  #marcelo{
+    flex-direction: column;
+    align-items: center;
+  }
+  #caixadaFotoDoutor{
+    width: 250px;
+    height: 400px;
+    order: 1;
+  }
+  #imagemDoutor{
+    width: 250px;
+    height: 400px;
+    padding-left: 0;
+    border-radius: 0;
+  }
+  #caixaDetextos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #textoUmDoutor{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 0px;
+    border-left: none;
+    padding-left: 0;
+  }
+  #textoDoisDoutor{
+    color: $primarycolor;
+    font-size: 18px;
+  }
+  #textoTresDoutor{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  #textoQuatroDoutor{
+    margin: 50px 0;
+    text-align: center;
+    border-top: 2px solid $primarycolor;
+    border-bottom: 2px solid $primarycolor;
+    padding: 10px 0;
+    width: 300px;
+  }
+  .linhaHorizontalDoutor{
+    margin: 50px auto;
+    width: 300px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  /* FIM DOUTOR MARCELO */
+  /* INICIO DUVIDAS */
+  #caixaDuvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #caixaDoTituloPrinpical{
+    background-color:transparent;
+  }
+  #tituloPrincipalDuvidas{
+    width: 80%;
+    height: auto;
+    color: $primarycolor;
+    border-top: 2px solid $primarycolor;
+    border-bottom: 2px solid $primarycolor;
+    padding: 10px 0;
+  }
+  .boxDuvidas{
+    flex-direction: column;
+  }
+  .linhaVerticalDasDuvidas{
+    display: none;
+  }
+  #caixaDasImagensUm{
+    width: 275px;
+    height: 250px;
+  }
+  .titulosDasDuvidas{
+    background-color: #181818c9;
+  }
+  .setasDireitaEsqueda{
+    display: none;
+  }
+  #caixaDasImagensDois{
+    width: 275px;
+    height: 250px;
+    margin-bottom: 0;
+  }
+  #caixaDasImagensTres{
+    width: 275px;
+    height: 250px;
+    margin: 0 0 50px;
+  }
+  .caixaDasDuvidas{
+    width: 275px;
+    height: 250px;
+    margin: 0;
+  }
+  .textosDasDuvidas{
+    width: 80%;
+  }
+  .boxTextosDasDuvidas{
+    width: 200px;
+    height: 200px;
   }
   #linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
     width: 300px;
     margin: 50px 0;
   }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* FIM DUVIDAS */
+  /* INICIO CONTATOS */
+  #linhaHorizontalDosContas {
+    height: 30px;
+    background-color: transparent;
+  }
+  #boxContatos {
+    flex-direction: column;
+    display: flex;
+  }
+  #linhaVerticalDosContatos {
+    display: none;
+  }
+  #parteUmdosContatos {
+    padding-left: 0;
+    order: 1;
+  }
+  #contateNostexto {
+    width: auto;
+    padding-left: 0;
+    font-size: 40px;
+  }
+  #linhavertxalContatenos {
+    display: none;
+  }
+  #boxContatenos {
+    justify-content: center;
+  }
+  #boxTextoContatos {
+    justify-content: center;
+  }
+  #textoContateNos {
+    font-size: 20px;
+    text-align: center;
+  }
+  #secForm{
+    display: flex;
+    justify-content: center;
+  }
+  #formContatos {
+    width: 400px;
+  }
+  #nome {
+    width: auto;
+    border-radius: 5px;
+  }
+  #contatos {
+    width: auto;
+    border-radius: 5px;
+  }
+  #email {
+    width: auto;
+    border-radius: 5px;
+  }
+  #mensagem {
+    width: auto;
+    border-radius: 5px;
+  }
+  .nomesDoFormularios {
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  #butaoContatos {
+    width: auto;
+    border: none;
+  }
+  #parteDoisdosContatos {
+    height: auto;
+  }
+  #boxInformacoes {
+    width: auto;
+    margin: 20px 0;
+  }
+  #textoInformacoes {
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
+  #linhaHorizontalInformacoes {
+    display: none;
+  }
+  .clinicainformacoes {
+    display: flex;
+    align-items: center;
+  }
+  #iconEmail, #iconEndereço, #iconRelogio{
+    width: 40px;
+    height: 40px;
+  }
+  .boxDosTextos {
+    font-size: 15px;
+  }
+  #caixadasImgs {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .imagensDoscontatos {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+  #imagenDoTwitterDosContatos{
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  #numeroDosContatos {
+    justify-content: center;
+  }
+  #telefones{
+    font-size: 20px;
+  }
+  #textoOu{
+    font-size: 15px;
+  }
+  /* FIM CONTATOS */
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  #boxDeTitulos{
+    text-align: center;
+  }
+  #tituloCelular{
+    border-left: none;
+    padding-left: 0;
+  }
+  #boxSaberMais{
+    width: auto;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    &:hover{
+      width: auto;
+    }
+  }
+  #saberMais{
+    margin: 15px;
+    &:hover{
+      background-color: #3d3d3d;
+    }
+  }
 }
