@@ -233,6 +233,108 @@
 }
 /* MODAL */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    #bannerReparadores {
+        width: 100%;
+        height: 300px;
+    }
+
+    #tituloBannerReparadores {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    #descricaoBannerReparadores {
+        margin-top: 25px;
+        text-align: justify;
+    }
+    #sobreProcedimentosReparadores {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        border-bottom: 3px solid $primarycolor;
+        justify-content: center;
+        width: 90vw;
+    }
+    #bgAnalise {
+        margin-top: 25px;
+        order: 1;
+        width: 320px;
+        height: 250px;
+    }
+    #textoProcedimentosReparadores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        order: 0;
+    }
+    #tituloSobreReparadores {
+        text-align: center;
+        font-size: 24px;
+        width: 280px;
+        border: none;
+    }
+    .descricaoSobreReparadores {
+        text-align: justify;
+        font-size: 18px;
+        width: 90vw;
+    }
+
+    .tituloProcedReparadores {
+        font-size: 18px;
+        width: 100%;
+    }
+    #descricaoProcedReparadores {
+        text-align: justify;
+        font-size: 15px;
+    }
+    #agendeConsultaReparadores{
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #conteudoAgendarConsultaReparadores{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    #tituloAgendarConsultaReparadores{
+        font-size: 20px;
+        order: 1;
+        width: 300px;
+        color: $primarycolor;
+    }
+    #descricaoAgendarConsultaReparadores{
+        font-size: 15px;
+        order: 2;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+    }
+    #linkAgendarConsultaReparadores{
+        width: 150px;
+        order: 3;
+    }
+    #navegacaoReparadores {
+        margin: 30px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #linksReparadores {
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 250px;
+        height: 100px;
+    }
+    
+    .linksReparadores {
+        font-size: 10px;
+        width: 70px;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }

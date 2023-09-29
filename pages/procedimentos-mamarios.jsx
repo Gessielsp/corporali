@@ -25,7 +25,7 @@ export default function PagMamarios() {
 
     return (
         <div className={robotoCondensed.className}>
-           
+           <Header/>
             <div className={styles.bordaTopoMamarios}></div>
             <div id={styles.bannerMamarios}>
                 <div id={styles.bgBannerMamarios}>
@@ -92,7 +92,7 @@ export default function PagMamarios() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>
