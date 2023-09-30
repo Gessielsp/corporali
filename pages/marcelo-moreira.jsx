@@ -38,58 +38,30 @@ export default function PagDrMarcelo() {
                         <p class="animate__animated animate__fadeInRight" id={styles.cirurgiao}>Bem mais que um cirurgião Plástico.</p>
                         <div id={styles.linhaAbaixoDrMarcelo}></div>
                         <div id={styles.informacoes}>
-                            <a href="#" id={styles.subTituloMarcelo}>Sobre Marcelo</a>
+                            <a href="#sobreMarcelo" id={styles.subTituloMarcelo}>Sobre Marcelo</a>
                             <a href="#" id={styles.fotoVideosMarcelo}>Visualizar Fotos</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <LinhaHorizontalLonga />
-            <div id={styles.carroselMarcelo}>
-                <div id={styles.carrosselUm}>
-                    <div className={styles.bgCarrossel}>
-                        <div className={styles.boxSetaEsquerda}>
-                            <Image className={styles.setaEsquerdaCarrossel} src={setaEsquerda} alt="Anterior" />
-                        </div>
-                        <div className={styles.informacoesCarrossel}>
-                            <h2 className={styles.tituloCarrossel}>Dr. Marcelo Moreira</h2>
-                            <p className={styles.descricaoCarrossel}>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
-                            <div className={styles.boxlinhasCarrossel}>
-                                <div className={styles.linhaVerdeCarrosel}></div>
-                                <div className={styles.linhaVerdeCarrosel}></div>
-                                <div className={styles.linhaVerdeCarrosel}></div>
-                            </div>
-                        </div>
-                        <div className={styles.boxSetaDireita}>
-                            <Image className={styles.setaDireitaCarrossel} src={setaDireita} alt="Próxima" />
-                        </div>
+            <div id="sobreMarcelo"></div>
+
+            <div id={styles.linhaHorizontalLongaMarcelo}></div>
+
+            <div className={styles.sobreMarcelo}>
+                <div id={styles.conteudoSobreMarcelo}>
+                    <div>
+                        <h1 id={styles.tituloSobreMarcelo}>Dr. Marcelo Moreira</h1>
+                        <p className={styles.descricaoSobreMarcelo}>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
+                    </div>
+                    <div id={styles.linhaSobreMarcelo}></div>
+                    <div>
+                        <p className={styles.descricaoSobreMarcelo}>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
                     </div>
                 </div>
-                {/* <div id={styles.carrosselDois}>
-                    <div id={styles.boxSetaEsquerda}>
-                        <Image className={setaEsquerdaCarrossel} src={setaEsquerda} alt="Anterior"/>
-                    </div>
-                    <div>
-                        <h2>Dr. Marcelo Moreira</h2>
-                        <p>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
-                    </div>
-                    <div>
-                        <Image className={setaDireitaCarrossel} src={setaDireita} alt="Próxima"/>
-                    </div>
-                </div>
-                <div id={styles.carrosselTres}>
-                    <div id={styles.boxSetaEsquerda}>
-                        <Image className={setaEsquerdaCarrossel} src={setaEsquerda} alt="Anterior"/>
-                    </div>
-                    <div>
-                        <h2>Dr. Marcelo Moreira</h2>
-                        <p>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
-                    </div>
-                    <div>
-                        <Image className={setaDireitaCarrossel} src={setaDireita} alt="Próxima"/>
-                    </div>
-                </div> */}
             </div>
+
+            <div id={styles.linhaHorizontalLongaMarcelo}></div>
 
             <div id={styles.vidaMarcelo}>
                 <div id={styles.rotinaCirurgica}>
@@ -99,7 +71,7 @@ export default function PagDrMarcelo() {
                         <p className={styles.descricaoSegundaoSessao}>O dia a dia agitado do Dr. Marcelo Henrique começa nas primeiras horas da manhã, quando ele se prepara para uma série de cirurgias especializadas. Sua dedicação à excelência na cirurgia abdominal, facial, reparadora e mamária é evidente em cada procedimento, onde sua habilidade cirúrgica e atenção aos detalhes proporcionam resultados excepcionais aos pacientes.</p>
                     </div>
                 </div>
-                <LinhaHorizontalLonga />
+                <div className={styles.linhaHorizontalVidaMarcelo}></div>
                 <div id={styles.arteDeConstruir}>
                     <div className={styles.boxSegundaSessao}>
                         <h2 className={styles.tituloSegundaSessao}>A Arte da Reconstrução</h2>
@@ -107,7 +79,7 @@ export default function PagDrMarcelo() {
                     </div>
                     <Image id={styles.imgSegundaSessao} src={fotoSobreMarceloDois} alt="Dr Marcelo" />
                 </div>
-                <LinhaHorizontalLonga />
+                <div className={styles.linhaHorizontalVidaMarcelo}></div>
                 <div id={styles.cuidandoComEmpatia}>
                     <Image id={styles.imgSegundaSessao} src={fotoSobreMarceloTres} alt="Dr Marcelo" />
                     <div className={styles.boxSegundaSessao}>
@@ -139,7 +111,7 @@ export default function PagDrMarcelo() {
                 </div>
             </div>
 
-            <LinhaHorizontalLonga />
+            <div id={styles.linhaAbaixoGaleria}></div>
 
             <div id={styles.carreiraMarcelo}>
                 <div>

@@ -31,7 +31,7 @@ export default function Footer() {
                         <p>Somos uma clinica brasileira com mais de 25 anos de experiência no mercado de cirurgia plasticas.</p>
                     </div>
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.274481919358!2d-47.9201295!3d-15.8398426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2558c776a1d5%3A0x34e5c65df4ce64a3!2sInstituto%20Corporali!5e0!3m2!1spt-BR!2sbr!4v1695059958768!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe id={styles.iframeLocalizacao} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.274481919358!2d-47.9201295!3d-15.8398426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2558c776a1d5%3A0x34e5c65df4ce64a3!2sInstituto%20Corporali!5e0!3m2!1spt-BR!2sbr!4v1695059958768!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <nav id={styles.navegacaoFooter}>
