@@ -336,6 +336,7 @@
     height: 200px;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    /* INICIO MARCELO */
     #bannerMarcelo{
         height: 50vh;
     }
@@ -358,7 +359,6 @@
     #cirurgiao{
         margin-bottom: 20px;
     }
-    #linhaAbaixoDrMarcelo{}
     #informacoes{
         display: flex;
         flex-direction: column;
@@ -402,11 +402,6 @@
         height: 3px;
     }
     /* FIM SOBRE MARCELO */
-
-
-
-
-
 
     /* INICIO SEGUNDA SESSAO */
     #vidaMarcelo{
@@ -532,7 +527,8 @@
     #agendeConsultaDrMarcelo{
         height: 400px;
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        background-position: center;
     }
     #conteudoAgendarConsultaMarcelo{
         flex-direction: column;
@@ -550,6 +546,372 @@
     /* FIM AGENDAR CONSULTA MARCELO */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    /* INICIO SOBRE MARCELO */
+    #bannerMarcelo{
+        height: 50vh;
+    }
+    #bgMarcelo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #conteudoMarcelo{
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+    #linhaAcimaDrMarcelo{
+        margin-bottom: 20px;
+    }
+    #tituloMarcelo{
+        font-size: 30px;
+    }
+    #cirurgiao{
+        margin-bottom: 20px;
+    }
+    #informacoes{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    #subTituloMarcelo{
+        width: 400px;
+        font-size: 13px;
+        margin: 15px auto;
+        border: 2px solid $primarycolor;
+    }
+    #fotoVideosMarcelo{
+        width: 400px;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    /* FIM BANNER MARCELO */
+    #linhaHorizontalLongaMarcelo{
+        display: none;
+    }
+    /* INICIO SOBRE MARCELO */
+    #conteudoSobreMarcelo{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #tituloSobreMarcelo{
+        text-align: center;
+        font-size: 30px;
+        border-left: 0;
+        padding: 10px 0;
+        border-top: 2px solid $primarycolor;
+        border-bottom: 2px solid $primarycolor;
+    }
+    .descricaoSobreMarcelo{
+        width: 80%;
+        margin: 30px auto;
+        text-align: justify;
+    }
+    #linhaSobreMarcelo{
+        width: 80%;
+        margin: 0 auto;
+        height: 3px;
+    }
+    /* FIM SOBRE MARCELO */
+    /* INICIO SEGUNDA SESSAO */
+    #vidaMarcelo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .linhaHorizontalVidaMarcelo{
+        width: 75%;
+        height: 3px;
+        background-color: $primarycolor;
+        margin: 30px 0;
+    }
+    #rotinaCirurgica, #arteDeConstruir, #cuidandoComEmpatia{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #imgSegundaSessao{
+        width: 90%;
+        height: 200px;
+    }
+    .boxSegundaSessao{
+        width: 90%;
+        order: 1;
+    }
+    .tituloSegundaSessao{
+        margin: 30px 0 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    .descricaoSegundaoSessao{
+        margin-top: 0;
+        text-align: justify;
+        padding: 20px 0 40px;
+    }
+    /* FIM SEGUNDA SESSAO */
+    /* INICIO GALERIA */
+    #galeriaFotosMarcelo{
+        margin-bottom: 0;
+    }
+    #tituloGaleria{
+        border-top: 3px solid $primarycolor;
+        border-bottom: 3px solid $primarycolor;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+    #descricaoGaleria{
+        width: 80%;
+        margin: 60px auto;
+        font-size: 18px;
+    }
+    #conteudoFotoGaleria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxFotoGaleria{
+        margin-bottom: 100px;
+    }
+    /* FIM GALERIA */
+    /* INICIO CARREIRA MARCELO */
+    #tituloSobreCarreira{
+        font-size: 30px;
+    }
+    #descricaoSobreCarreira{
+        margin-bottom: 70px;
+        font-size: 15px;
+    }
+    .boxsCarreiras{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxConteudoCarreiras{
+        width: 80%;
+    }
+    .descricaoCarreira{
+        width: 100%;
+        font-size: 15px;
+    }
+    #bgCarreiraUm, #bgCarreiraDois, #bgCarreiraTres, #bgCarreiraQuatro{
+        width: 100%;
+    }
+    /* FIM CARREIRA MARCELO */
+    /* INICIO LINKS MARCELO */
+    #navegacaoMarcelo{
+        margin: 20px 0 50px;
+    }
+    #linksSessaoMarcelo{
+        flex-wrap: wrap;
+        width: 80%;
+        height: 150px;
+        padding: 15px 0;
+        border-top: 3px solid $primarycolor;
+    }
+    .linksMarcelo{
+        width: 100px;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+    /* FIM LINKS MARCELO */
+    /* INICIO AGENDAR CONSULTA MARCELO */
+    #agendeConsultaDrMarcelo{
+        height: 400px;
+        display: flex;
+        margin-bottom: 50px;
+        background-position: center;
+    }
+    #conteudoAgendarConsultaMarcelo{
+        flex-direction: column;
+    }
+    #tituloAgendarConsultaMarcelo{
+        text-align: center;
+        font-size: 30px;
+    }
+    #descricaoAgendarConsultaMarcelo{
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* FIM AGENDAR CONSULTA MARCELO */
+    
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /* INICIO SOBRE MARCELO */
+    #conteudoSobreMarcelo{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #tituloSobreMarcelo{
+        text-align: center;
+        font-size: 30px;
+        border-left: 0;
+        padding: 10px 0;
+        margin-bottom: 50px;
+        border-top: 2px solid $primarycolor;
+        border-bottom: 2px solid $primarycolor;
+    }
+    .descricaoSobreMarcelo{
+        width: 80%;
+        margin: 0 auto 30px;
+        text-align: justify;
+    }
+    #linhaSobreMarcelo{
+        display: none;
+    }
+    /* FIM SOBRE MARCELO */
+    #linhaHorizontalLongaMarcelo{
+        display: none;
+    }
+    /* INICIO SEGUNDA SESSAO */
+    #vidaMarcelo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .linhaHorizontalVidaMarcelo{
+        width: 550PX;
+        height: 3px;
+        background-color: $primarycolor;
+        margin: 30px 0;
+    }
+    #rotinaCirurgica, #arteDeConstruir, #cuidandoComEmpatia{
+        flex-direction: column;
+        align-items: center;
+        width: 550px;
+    }
+    #imgSegundaSessao{
+        width: 90%;
+        height: 200px;
+    }
+    .boxSegundaSessao{
+        width: 90%;
+        order: 1;
+    }
+    .tituloSegundaSessao{
+        margin: 30px 0 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    .descricaoSegundaoSessao{
+        margin-top: 0;
+        text-align: justify;
+        padding: 20px 0 40px;
+    }
+    /* FIM SEGUNDA SESSAO */
+
+    /* INICIO GALERIA */
+    #galeriaFotosMarcelo{
+        margin-bottom: 0;
+    }
+    #tituloGaleria{
+        border-top: 3px solid $primarycolor;
+        border-bottom: 3px solid $primarycolor;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+    #descricaoGaleria{
+        width: 80%;
+        margin: 60px auto;
+        font-size: 18px;
+    }
+    #conteudoFotoGaleria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boxFotoGaleria{
+        margin: 0 10px 100px;
+    }
+    /* FIM GALERIA */
+
+    /* INICIO CARREIRA MARCELO */
+    #tituloSobreCarreira{
+        font-size: 30px;
+    }
+    #descricaoSobreCarreira{
+        margin-bottom: 70px;
+        font-size: 18px;
+    }
+    .boxsCarreiras{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxConteudoCarreiras{
+        width: 80%;
+    }
+    .descricaoCarreira{
+        width: 100%;
+        font-size: 18px;
+    }
+    #bgCarreiraUm, #bgCarreiraDois, #bgCarreiraTres, #bgCarreiraQuatro{
+        width: 100%;
+    }
+    /* FIM CARREIRA MARCELO */
+    /* INICIO LINKS MARCELO */
+    #navegacaoMarcelo{
+        margin: 20px 0 50px;
+    }
+    #linksSessaoMarcelo{
+        flex-wrap: wrap;
+        width: 80%;
+        height: 150px;
+        padding: 15px 0;
+        border-top: 3px solid $primarycolor;
+    }
+    .linksMarcelo{
+        width: 150px;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+    /* FIM LINKS MARCELO */
+    /* INICIO AGENDAR CONSULTA MARCELO */
+    #agendeConsultaDrMarcelo{
+        height: 400px;
+        display: flex;
+        margin-bottom: 50px;
+        background-position: center;
+    }
+    #conteudoAgendarConsultaMarcelo{
+        flex-direction: column;
+    }
+    #tituloAgendarConsultaMarcelo{
+        text-align: center;
+        font-size: 30px;
+    }
+    #descricaoAgendarConsultaMarcelo{
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* FIM AGENDAR CONSULTA MARCELO */
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+    /* INICIO GALERIA */
+    #galeriaFotosMarcelo{
+        margin-bottom: 0;
+    }
+    #tituloGaleria{
+        border-top: 3px solid $primarycolor;
+        border-bottom: 3px solid $primarycolor;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+    #descricaoGaleria{
+        width: 80%;
+        margin: 60px auto;
+        font-size: 18px;
+    }
+    #conteudoFotoGaleria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boxFotoGaleria{
+        margin-bottom: 100px;
+    }
+    /* FIM GALERIA */
 }

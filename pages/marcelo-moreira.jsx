@@ -10,9 +10,6 @@ const fotoGaleriaDois = require("@/public/corporali/dr_marcelo/marcelo_6.JPG");
 const fotoGaleriaTres = require("@/public/corporali/dr_marcelo/marcelo_13.JPG");
 const fotoGaleriaQuatro = require("@/public/corporali/dr_marcelo/marcelo_5.JPG");
 
-const setaDireita = require("@/public/corporali/icons/seta_direita_verde.png");
-const setaEsquerda = require("@/public/corporali/icons/seta_esquerda_verde.png");
-
 import styles from "@/styles/pagDrMarcelo.module.scss";
 
 import Image from "next/image";
@@ -20,8 +17,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { robotoCondensed, bebasNeue } from "@/fonts/fonts";
-
-import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
 
 import 'animate.css';
 

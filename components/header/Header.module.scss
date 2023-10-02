@@ -148,6 +148,7 @@
     top: 0;
     background-color: #181818;
     width: 100vw;
+    z-index: 1;
 }
 #caixaListaCelular{
 
@@ -236,7 +237,7 @@
         width: 160px;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
     #headerMain{
         padding: 0;
         height: 100px;
