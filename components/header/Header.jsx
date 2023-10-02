@@ -77,8 +77,8 @@ export default function Header(){
             </div>
            </nav>
            {/* ELEMENTOS QUE ESTÃO FORA DO FLUXO NORMAL DO DOCUMENTO */}
-            <div id={styles.procedimentosCelular} className="abaProcedimentosCelular animate__animated animate__fadeInDownBig">
-                <div id={styles.caixaListaCelular}>
+            <div id={styles.procedimentosCelular} className="abaProcedimentosCelular animate__animated animate__animated animate__fadeInDown">
+                <nav id={styles.caixaListaCelular}>
                     <ul id={styles.listaCelular}>
                         <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/">Home</Link></li>
                         <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/procedimentos-abdominais">Procedimentos Abdominais</Link></li>
@@ -89,7 +89,7 @@ export default function Header(){
                         <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/bodytite">O Bodytite</Link></li>
                         <li className={styles.listaLinksCelular}><Link className={styles.linksProcedCelular} href="/marcelo-moreira">Dr. Marcelo Moreira</Link></li>
                     </ul>
-                </div>
+                </nav>
                 <div id={styles.caixaFecharCelular}>
                     <button id={styles.btnFecharCelular} className="btnFecharCelular" onClick={() => fecharProcedimentosCelular()}>
                         <Image id={styles.iconFecharProcedimentos} src={fecharAbaProcedimentos} alt="Fechar"/>
