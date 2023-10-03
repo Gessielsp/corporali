@@ -119,7 +119,6 @@ export default function PagReparadores() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
