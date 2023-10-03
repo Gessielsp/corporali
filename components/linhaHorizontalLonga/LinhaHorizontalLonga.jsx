@@ -1,4 +1,4 @@
-import styles from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga.module.scss";
+import styles from "../../components/linhaHorizontalLonga/LinhaHorizontalLonga.module.scss";
 
 export default function LinhaHorizontalLonga() {
   return (

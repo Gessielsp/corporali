@@ -1,21 +1,23 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+
 import Image from "next/image";
-
-const imgBodytite = require('@/public/corporali/bodytite/bodytite.png');
-const imgMorpheus = require('@/public/corporali/bodytite/morpheus.png');
-const imgAplicador = require('@/public/corporali/bodytite/aplicador.png');
-const imgFacetite = require('@/public/corporali/bodytite/facetite.png');
-const imgAccutite = require('@/public/corporali/bodytite/accutite.png');
-const setaDireita = require('@/public/corporali/icons/seta_direita_verde.png');
-const setaEsquerda = require('@/public/corporali/icons/seta_esquerda_verde.png');
-const setaParaBaixo = require('@/public/corporali/icons/seta_baixo_branca.png');
-
-import styles from "@/styles/pagBodytite.module.scss";
-
-import { robotoCondensed } from "@/fonts/fonts";
-import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
 import Link from "next/link";
+
+const imgBodytite = require('../public/corporali/bodytite/bodytite.png');
+const imgMorpheus = require('../public/corporali/bodytite/morpheus.png');
+const imgAplicador = require('../public/corporali/bodytite/aplicador.png');
+const imgFacetite = require('../public/corporali/bodytite/facetite.png');
+const imgAccutite = require('../public/corporali/bodytite/accutite.png');
+const setaDireita = require('../public/corporali/icons/seta_direita_verde.png');
+const setaEsquerda = require('../public/corporali/icons/seta_esquerda_verde.png');
+const setaParaBaixo = require('../public/corporali/icons/seta_baixo_branca.png');
+
+import styles from "../styles/pagBodytite.module.scss";
+
+import { robotoCondensed } from "../fonts/fonts";
+
+import LinhaHorizontalLonga from "../components/linhaHorizontalLonga/LinhaHorizontalLonga";
 
 import 'animate.css';
 

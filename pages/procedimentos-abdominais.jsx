@@ -1,14 +1,15 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
-
-import styles from "@/styles/pagAbdominais.module.scss";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 import Link from "next/link";
-import { robotoCondensed } from "@/fonts/fonts";
-
 import Image from "next/image";
-const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
-const fecharModalX = require("@/public/corporali/icons/fechar_modal.png");
+
+import styles from "../styles/pagAbdominais.module.scss";
+
+import { robotoCondensed } from "../fonts/fonts";
+
+const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
+const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
 import 'animate.css';
 
@@ -111,6 +112,7 @@ export default function PagAbdominais() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -1,17 +1,19 @@
-import logo from "@/public/corporali/logos/logo-corporali.png";
+import logo from "../../public/corporali/logos/logo-corporali.png";
+import styles from "../../components/header/Header.module.scss";
+
 import Image from "next/image";
-import styles from "@/components/header/Header.module.scss";
 import Link from "next/link";
+
 import 'animate.css';
 
 import { RiArrowDownSFill } from "react-icons/ri";
 
-import { robotoCondensed } from "@/fonts/fonts";
+import { robotoCondensed } from "../../fonts/fonts";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-import menuHamburguer from "@/public/corporali/icons/menu.png";
-import fecharAbaProcedimentos from "@/public/corporali/icons/fechar_modal.png"
+import menuHamburguer from "../../public/corporali/icons/menu.png";
+import fecharAbaProcedimentos from "../../public/corporali/icons/fechar_modal.png"
 
 export default function Header(){
     const router = useRouter();

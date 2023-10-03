@@ -1,24 +1,25 @@
+import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '@/styles/index.module.scss';
 
-import { robotoCondensed } from '@/fonts/fonts';
+import styles from '../styles/index.module.scss';
 
-const imgDoutor = require('@/public/corporali/dr_marcelo/DoutorMarcelo.jpg');
-const setaEsquerda = require('@/public/corporali/icons/seta_branca_esquerda.png');
-const setaDireita = require('@/public/corporali/icons/seta_branca_direita.png');
-const imgRelogio = require('@/public/corporali/icons/relogio.png');
-const imgEndereco = require('@/public/corporali/icons/endereco.png');
-const imgGmail = require('@/public/corporali/icons/gmail.png');
-const imgInstaContato = require('@/public/corporali/icons/insta_contato.png');
-const imgFaceContato = require('@/public/corporali/icons/face_contato.png');
-const imgTwitterContato = require('@/public/corporali/icons/twitter_contato.png');
-const whatsappFlutuante = require('@/public/corporali/icons/whatsapp_flutuante.png');
-const instagramFlutuante = require('@/public/corporali/icons/instagram_flutuante.png')
+import { robotoCondensed } from '../fonts/fonts';
 
-import Header from '@/components/header/Header';
-import LinhaHorizontalLonga from '@/components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
-import Link from 'next/link';
+const imgDoutor = require('../public/corporali/dr_marcelo/marcelo_0.JPG');
+const setaEsquerda = require('../public/corporali/icons/seta_branca_esquerda.png');
+const setaDireita = require('../public/corporali/icons/seta_branca_direita.png');
+const imgRelogio = require('../public/corporali/icons/relogio.png');
+const imgEndereco = require('../public/corporali/icons/endereco.png');
+const imgGmail = require('../public/corporali/icons/gmail.png');
+const imgInstaContato = require('../public/corporali/icons/insta_contato.png');
+const imgFaceContato = require('../public/corporali/icons/face_contato.png');
+const imgTwitterContato = require('../public/corporali/icons/twitter_contato.png');
+const whatsappFlutuante = require('../public/corporali/icons/whatsapp_flutuante.png');
+const instagramFlutuante = require('../public/corporali/icons/instagram_flutuante.png')
+
+import Header from '../components/header/Header';
+import LinhaHorizontalLonga from '../components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
 import 'animate.css';
 
