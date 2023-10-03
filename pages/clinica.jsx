@@ -15,7 +15,7 @@ export default function PagClinica(){
             {/*INICIO PRIMEIRA SESSAO */}
             <div id={styles.bannerClinica}>
                 <div id={styles.bgClinica}>
-                    <div id={styles.clinhaAcimaClinica}></div>
+                    <div id={styles.linhaAcimaClinica}></div>
                     <div class="animate__animated animate__fadeInRight">
                         <h1 id={styles.tituloClinica}>A clinica</h1>
                         <p id={styles.descricaoClinica}>Conheça a nossa clinica, aqui transformamos sonhos em realidade, promovendo a autoestima e a confiança dos nossos pacientes com procedimentos personalizados e resultados excepcionais.</p>
@@ -56,7 +56,7 @@ export default function PagClinica(){
             {/* FIM SEGUNDA SESSAO */} 
 
             {/* INICIO PROCEDIMENTO */}  
-            <LinhaHorizontalLonga/>    
+            <div id={styles.linhaHorizontalLonga}></div>    
             <div id={styles.caixaConfiraProcedimentos}>
                 <div id={styles.caixaProcedimentos}>
                     <h5 id={styles.confiraProcedimentos}>Confira</h5>
@@ -74,7 +74,7 @@ export default function PagClinica(){
                     </div>
                 </div>
             </div>
-            <LinhaHorizontalLonga/>    
+            <div id={styles.linhaHorizontalLonga}></div>       
             {/* FIM PROCEDIMENTO */}  
 
             {/* INICIO CONHECA A EQUIPE */}    
