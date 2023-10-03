@@ -257,16 +257,14 @@
 
 /* FIM MODAL */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    #bannerAbdominais{
+    #bannerAbdominais {
         height: 300px;
         width: 100%;
     }
-    #conteudoBannerAbdominais{
-        
-    }
+
     #tituloBannerAbdominais {
         font-size: 20px;
-        width: 250px;
+        width: 260px;
     }
 
     #descricaoAbdominais {
@@ -286,7 +284,126 @@
     #bgMarcacao {
         margin-top: 25px;
         order: 1;
-        width: 320px;
+        width: 90vw;
+        height: 250px;
+    }
+    #textosProcedAbdominais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        order: 0;
+    }
+
+
+    #tituloSobreAbdominais {
+        font-size: 24px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .descricaoSobreAbdominais {
+        text-align: justify;
+        font-size: 18px;
+        width: 90vw;
+    }
+
+    .tituloProcedAbdominais {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .descricaoProcedAbdominais {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #navegacaoAbdominais {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #listaSessaoAdbominais {
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 250px;
+        height: 100px;
+    }
+
+    .linksAbdominais {
+        font-size: 10px;
+        width: 70px;
+    }
+
+    #agendeConsultaAbdominais {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #conteudoAgendeConsultaAbdominais {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #tituloAgendeConsultaAbdominais {
+        font-size: 20px;
+        order: 1;
+        width: 300px;
+        color: $primarycolor;
+    }
+
+    #descricaoAgendeConsultaAbdominais {
+        font-size: 15px;
+        order: 2;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    #linkAgendeConsultaAbdominais {
+        width: 150px;
+        order: 3;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #bannerAbdominais {
+        height: 300px;
+        width: 100%;
+    }
+
+    #tituloBannerAbdominais {
+        font-size: 20px;
+        width: 260px;
+    }
+
+    #descricaoAbdominais {
+        margin-top: 25px;
+        text-align: justify;
+    }
+
+    #sobreProcedimentosAbdominais {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        border-bottom: 3px solid $primarycolor;
+        justify-content: center;
+        width: 90vw;
+    }
+
+    #bgMarcacao {
+        margin-top: 25px;
+        order: 1;
+        width: 90vw;
         height: 250px;
     }
 
@@ -294,83 +411,205 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 300px;
+        width: 90vw;
         order: 0;
+
     }
 
 
-#tituloSobreAbdominais {
-    text-align: center;
-    font-size: 24px;
-    width: 280px;
-    border: none;
-    padding-left: 6px;
+    #tituloSobreAbdominais {
+        font-size: 24px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .descricaoSobreAbdominais {
+        text-align: justify;
+        font-size: 18px;
+        width: 90vw;
+    }
+
+    .tituloProcedAbdominais {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .descricaoProcedAbdominais {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #navegacaoAbdominais {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #listaSessaoAdbominais {
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 250px;
+        height: 100px;
+    }
+
+    .linksAbdominais {
+        font-size: 10px;
+        width: 70px;
+    }
+
+    #agendeConsultaAbdominais {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #conteudoAgendeConsultaAbdominais {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #tituloAgendeConsultaAbdominais {
+        font-size: 20px;
+        order: 1;
+        width: 300px;
+        color: $primarycolor;
+    }
+
+    #descricaoAgendeConsultaAbdominais {
+        font-size: 15px;
+        order: 2;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    #linkAgendeConsultaAbdominais {
+        width: 150px;
+        order: 3;
+    }
 }
 
-.descricaoSobreAbdominais {
-    text-align: justify;
-    font-size: 18px;
-    width: 90vw;
-}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #bannerAbdominais {
+        height: 300px;
+        width: 100%;
+    }
 
-.tituloProcedAbdominais {
-    font-size: 18px;
-    width: 100%;
-}
+    #tituloBannerAbdominais {
+        font-size: 20px;
+        width: 260px;
+    }
 
-.descricaoProcedAbdominais {
-    text-align: justify;
-    font-size: 15px;
-}
+    #descricaoAbdominais {
+        margin-top: 25px;
+        text-align: justify;
+    }
 
-#navegacaoAbdominais {
-    margin:  0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    #sobreProcedimentosAbdominais {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        border-bottom: 3px solid $primarycolor;
+        justify-content: center;
+        width: 90vw;
+    }
 
-#listaSessaoAdbominais {
-    flex-wrap: wrap;
-    margin: 30px 0;
-    width: 250px;
-    height: 100px;
-}
+    #bgMarcacao {
+        margin-top: 25px;
+        order: 1;
+        width: 90vw;
+        height: 250px;
+    }
 
-.linksAbdominais {
-    font-size: 10px;
-    width: 70px;
-}
-#agendeConsultaAbdominais{
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-#conteudoAgendeConsultaAbdominais{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-#tituloAgendeConsultaAbdominais{
-    font-size: 20px;
-    order: 1;
-    width: 300px;
-    color: $primarycolor;
-}
-#descricaoAgendeConsultaAbdominais{
-    font-size: 15px;
-    order: 2;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 300px;
-}
-#linkAgendeConsultaAbdominais{
-    width: 150px;
-    order: 3;
-}
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+    #textosProcedAbdominais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        order: 0;
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+    }
+
+    #tituloSobreAbdominais {
+        font-size: 24px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .descricaoSobreAbdominais {
+        text-align: justify;
+        font-size: 18px;
+        width: 90vw;
+    }
+
+    .tituloProcedAbdominais {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .descricaoProcedAbdominais {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #navegacaoAbdominais {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #listaSessaoAdbominais {
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 250px;
+        height: 100px;
+    }
+
+    .linksAbdominais {
+        font-size: 10px;
+        width: 70px;
+    }
+
+    #agendeConsultaAbdominais {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #conteudoAgendeConsultaAbdominais {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #tituloAgendeConsultaAbdominais {
+        font-size: 20px;
+        order: 1;
+        width: 300px;
+        color: $primarycolor;
+    }
+
+    #descricaoAgendeConsultaAbdominais {
+        font-size: 15px;
+        order: 2;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    #linkAgendeConsultaAbdominais {
+        width: 150px;
+        order: 3;
+    }
+}

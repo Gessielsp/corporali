@@ -99,7 +99,7 @@ export default function PagReparadores() {
                     </ul>
                 </nav>
             </main>
-            {/* <Footer /> */}
+            <Footer />
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>

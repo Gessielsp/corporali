@@ -117,7 +117,7 @@ export default function Pagfaciais() {
                     </li>
                 </ul>
             </nav>
-            {/* <Footer /> */}
+            <Footer />
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>
