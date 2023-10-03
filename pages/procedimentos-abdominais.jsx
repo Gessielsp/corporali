@@ -91,7 +91,7 @@ export default function PagAbdominais() {
                     </div>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>
