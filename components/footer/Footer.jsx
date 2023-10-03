@@ -1,16 +1,17 @@
 import Image from "next/image";
 
-import logo from "@/public/corporali/logos/logo-corporali.png";
+import logo from "../../public/corporali/logos/logo-corporali.png";
 
-import email from "@/public/corporali/icons/email.png";
-import facebook from "@/public/corporali/icons/facebook.png";
-import instagram from "@/public/corporali/icons/instagram.png";
-import whatsapp from "@/public/corporali/icons/whatsapp.png";
-import youtube from "@/public/corporali/icons/youtube.png";
+
+import email from "../../public/corporali/icons/email.png";
+import facebook from "../../public/corporali/icons/facebook.png";
+import instagram from "../../public/corporali/icons/instagram.png";
+import whatsapp from "../../public/corporali/icons/whatsapp.png";
+import youtube from "../../public/corporali/icons/youtube.png";
 
 import Link from "next/link";
 
-import styles from "@/components/footer/Footer.module.scss";
+import styles from "../../components/footer/Footer.module.scss";
 
 export default function Footer() {
     return (

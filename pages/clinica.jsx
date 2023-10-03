@@ -1,10 +1,9 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
-import styles from "@/styles/pagClinica.module.scss";
+import styles from "../styles/pagClinica.module.scss";
 
-import { robotoCondensed } from "@/fonts/fonts";
-import LinhaHorizontalLonga from "@/components/linhaHorizontalLonga/LinhaHorizontalLonga";
+import { robotoCondensed } from "../fonts/fonts";
 import Link from "next/link";
 
 import 'animate.css';

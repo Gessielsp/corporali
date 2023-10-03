@@ -1,17 +1,17 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
-import styles from "@/styles/pagReparatorios.module.scss";
+import styles from "../styles/pagReparatorios.module.scss";
 
 import Link from "next/link";
 import Image from "next/image";
 
-import { robotoCondensed } from "@/fonts/fonts";
+import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
 
-const iconYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
-const fecharModalX = require("@/public/corporali/icons/fechar_modal.png");
+const iconYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
+const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
 export default function PagReparadores() {
     function mostrarModal(){
@@ -119,6 +119,7 @@ export default function PagReparadores() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

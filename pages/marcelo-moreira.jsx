@@ -1,25 +1,23 @@
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
-const fotoSobreMarceloUm = require("@/public/corporali/dr_marcelo/marcelo_9.JPG");
-const fotoSobreMarceloDois = require("@/public/corporali/dr_marcelo/marcelo_2.JPG");
-const fotoSobreMarceloTres = require("@/public/corporali/dr_marcelo/marcelo_4.JPG");
+const fotoSobreMarceloUm = require("../public/corporali/dr_marcelo/marcelo_9.JPG");
+const fotoSobreMarceloDois = require("../public/corporali/dr_marcelo/marcelo_2.JPG");
+const fotoSobreMarceloTres = require("../public/corporali/dr_marcelo/marcelo_4.JPG");
 
-const fotoGaleriaUm = require("@/public/corporali/dr_marcelo/marcelo_7.JPG");
-const fotoGaleriaDois = require("@/public/corporali/dr_marcelo/marcelo_6.JPG");
-const fotoGaleriaTres = require("@/public/corporali/dr_marcelo/marcelo_13.JPG");
-const fotoGaleriaQuatro = require("@/public/corporali/dr_marcelo/marcelo_5.JPG");
+const fotoGaleriaUm = require("../public/corporali/dr_marcelo/marcelo_7.JPG");
+const fotoGaleriaDois = require("../public/corporali/dr_marcelo/marcelo_6.JPG");
+const fotoGaleriaTres = require("../public/corporali/dr_marcelo/marcelo_13.JPG");
+const fotoGaleriaQuatro = require("../public/corporali/dr_marcelo/marcelo_5.JPG");
 
-import styles from "@/styles/pagDrMarcelo.module.scss";
+import styles from "../styles/pagDrMarcelo.module.scss";
 
 import Image from "next/image";
-
 import Link from "next/link";
 
-import { robotoCondensed, bebasNeue } from "@/fonts/fonts";
+import { robotoCondensed, bebasNeue } from "../fonts/fonts";
 
 import 'animate.css';
-
 
 export default function PagDrMarcelo() {
     return (

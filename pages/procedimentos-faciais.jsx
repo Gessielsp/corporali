@@ -1,18 +1,18 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
-import styles from "@/styles/pagFaciais.module.scss";
+import styles from "../styles/pagFaciais.module.scss";
 
 import Link from "next/link";
 import Image from "next/image";
 
-const setaEsquerda = require("@/public/corporali/icons/seta_esquerda_verde.png");
-const setaDireita = require("@/public/corporali/icons/seta_direita_verde.png");
-const imgFacial = require("@/public/corporali/procedimentos/facial_2.jpg");
-const iconeYoutubeVermelho = require("@/public/corporali/icons/youtube_vermelho.png");
-const fecharModalX = require("@/public/corporali/icons/fechar_modal.png");
+const setaEsquerda = require("../public/corporali/icons/seta_esquerda_verde.png");
+const setaDireita = require("../public/corporali/icons/seta_direita_verde.png");
+const imgFacial = require("../public/corporali/procedimentos/facial_2.jpg");
+const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
+const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
-import { robotoCondensed } from "@/fonts/fonts";
+import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
 
@@ -137,6 +137,7 @@ export default function Pagfaciais() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
