@@ -51,6 +51,10 @@ export default function PagMamarios() {
                     <p className={styles.descricaoProcedimentosMamarios}>Uma das cirurgias plásticas mais procuradas em território nacional, a inserção de próteses mamárias | quando feita por um profissional de ponta | potencializa a autoestima da mulher. A cirurgia de prótese mamária não é feita apenas de uma forma! Existem diferentes tipos de técnicas, bem como diferentes formatos e tamanhos de próteses. Para maiores informações, entre em contato com o Instituto Corporali!</p>
                 </div>
                 <div>
+                    <h2 className={styles.tituloProcedimentosMamarios}>MASTOPEXIA COM OU SEM PRÓTESE</h2>
+                    <p className={styles.descricaoProcedimentosMamarios}>Também é uma das cirurgias mais procuradas da clínica. Consiste na elevação das mamas com ou sem a colocação de prótese de silicone. São pacientes que buscam corrigir a flacidez das mamas em decorrência de amamentação prévia, perda de peso ou envelhecimento natural. Em geral, é realizada a incisão em "T" invertido para retirada do excedente de tecido mamário.</p>
+                </div>
+                <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>Mamoplastia Redutora</h2>
                     <p className={styles.descricaoProcedimentosMamarios}>O excesso no tamanho dos seios causa problemas na saúde da mulher, como questões relacionadas à coluna, por exemplo | em outros casos, os problemas causados são de cunho emocional. Para resolver este problema, a mamoplastia redutora remove o excesso de gordura nos seios, bem como o tecido glandular e a pele. Este procedimento resulta em seios proporcionais ao corpo da paciente.</p>
                 </div>
@@ -92,7 +96,7 @@ export default function PagMamarios() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>
@@ -112,7 +116,6 @@ export default function PagMamarios() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

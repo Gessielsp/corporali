@@ -18,11 +18,11 @@ import 'animate.css';
 
 
 export default function Pagfaciais() {
-    function mostrarModal(){
+    function mostrarModal() {
         const modal = document.querySelector('.modal');
         modal.style.display = "block";
     }
-    function fecharModal(){
+    function fecharModal() {
         const modal = document.querySelector('.modal');
         modal.style.display = "none";
     }
@@ -50,22 +50,36 @@ export default function Pagfaciais() {
                     </div>
                 </div>
                 <div>
-                    <h2 className={styles.tituloProcedFaciais}>Abdominoplastia</h2>
+                    <h2 className={styles.tituloProcedFaciais}>Preenchimentos</h2>
                     <p className={styles.descricaoProcedFaciais}>Os preenchimentos dérmicos injetáveis se tornaram os queridinhos do mundo da estética. Tratam-se de substâncias utilizadas para dar maior volume aos lábios, melhorar contornos da face, suavizar ou eliminar rugas, podendo até serem utilizados para melhorar a aparência de cicatrizes.</p>
                 </div>
                 <div>
-                    <h2 className={styles.tituloProcedFaciais}>Lipoescultura</h2>
+                    <h2 className={styles.tituloProcedFaciais}>Toxina Botulínica</h2>
                     <p className={styles.descricaoProcedFaciais}>O botox é a forma cosmética da Toxina Botulínica, e se tornou o principal procedimento que possui substâncias para amenizar as rugas faciais. O procedimento é realizado através de uma injeção não cirúrgica que temporariamente reduz ou, em alguns casos, elimina linhas de expressão, rugas na testa, pés de galinha perto dos olhos e bandas grossas no pescoço.</p>
                 </div>
                 <div>
-                    <h2 className={styles.tituloProcedFaciais}>Lipoaspiração</h2>
-                    <p className={styles.descricaoProcedFaciais}>Com o passar dos anos, é natural que a pele perca sua elasticidade. A flacidez gerada por anos de expressões faciais incomoda muitas pessoas, que por sua vez recorrem a procedimentos estéticos. Não é uma tarefa fácil eliminar a flacidez que tanto incomoda homens e mulheres, mas é possível resolver essa questão complexa com o Lifting Facial, que previne ou corrige todos os sinais que apareceram na face com o tempo.</p>
+                    <h2 className={styles.tituloProcedFaciais}>Lifting Facial</h2>
+                    <p className={styles.descricaoProcedFaciais}>Com o passar dos anos, as pálpebras ficam flácidas e sua queda pode atrapalhar o campo de visão. A Blefaroplastia tem o intuito de corrigir essa questão, que tanto atrapalha a visão de pessoas na terceira idade. Este procedimento ajuda tanto com a estética, quanto com a qualidade do seu campo de vista do paciente.</p>
                 </div>
                 <div>
-                    <h2 className={styles.tituloProcedFaciais}>Vibrolipospiração</h2>
-                    <p className={styles.descricaoProcedFaciais}>A nossa pele passa a mostrar com o tempo as linhas e marcas de expressão de anos de vida. Por conta disso, muitas mulheres entre 40 e 60 anos procuram uma solução no mundo da estética facial. A cirurgia de Lifting Frontal consiste em pequenas incisões na região frontal e temporal, na qual o couro cabeludo se inicia.
-                        Este procedimento visa tratar as estruturas profundas, retirar o excesso de pele, reposicionar músculos e ligamentos, elevar as estruturas do rosto e corrigir sinais de expressão nas regiões dos olhos, testa e sobrancelhas.
-                    </p>
+                    <h2 className={styles.tituloProcedFaciais}>Lifting Frontal</h2>
+                    <p className={styles.descricaoProcedFaciais}>A nossa pele passa a mostrar com o tempo as linhas e marcas de expressão de anos de vida. Por conta disso, muitas mulheres entre 40 e 60 anos procuram uma solução no mundo da estética facial. A cirurgia de Lifting Frontal consiste em pequenas incisões na região frontal e temporal, na qual o couro cabeludo se inicia. Este procedimento visa tratar as estruturas profundas, retirar o excesso de pele, reposicionar músculos e ligamentos, elevar as estruturas do rosto e corrigir sinais de expressão nas regiões dos olhos, testa e sobrancelhas.</p>
+                </div>
+                <div>
+                    <h2 className={styles.tituloProcedFaciais}>Blefaroplastia</h2>
+                    <p className={styles.descricaoProcedFaciais}>Com o passar dos anos, as pálpebras ficam flácidas e sua queda pode atrapalhar o campo de visão. A Blefaroplastia tem o intuito de corrigir essa questão, que tanto atrapalha a visão de pessoas na terceira idade. Este procedimento ajuda tanto com a estética, quanto com a qualidade do seu campo de vista do paciente.</p>
+                </div>
+                <div>
+                    <h2 className={styles.tituloProcedFaciais}>Otoplastia</h2>
+                    <p className={styles.descricaoProcedFaciais}>As chamadas “orelhas de abano” podem ser um dos motivos para a baixa autoestima de uma criança. Esta questão é resolvida com a otoplastia, um procedimento cirurgico que corrige o posicionamento das orelhas. Este procedimento pode ser realizado a partir dos 5 anos de idade, contanto que o paciente atenda aos requerimentos de saúde para a cirurgia.</p>
+                </div>
+                <div>
+                    <h2 className={styles.tituloProcedFaciais}>Rinoplastia</h2>
+                    <p className={styles.descricaoProcedFaciais}>O nariz é, sem dúvida, um dos pontos centrais do rosto de qualquer pessoa. Por conta disso, acaba sendo uma das partes mais notadas, atraindo a atenção de quem está por perto. Por ser um ponto tão notado, o nariz exerce um papel forte na autoestima. Reduzir ou aumentar seu tamanho através da rinoplastia é algo desejado por muitos que se veêm insatisfeitos com seus narizes. Este procedimento remove saliências, estreita as narinas, muda o ângulo entre o nariz e o lábio superior, podendo até mudar o formato da ponta ou dorso.</p>
+                </div>
+                <div>
+                    <h2 className={styles.tituloProcedFaciais}>Bichectomia</h2>
+                    <p className={styles.descricaoProcedFaciais}>A insatisfação com o exagero no volume do rosto é o principal fator que leva à decisão de realizar uma bichectomia. Trata-se de uma cirurgia que diminui a gordura das bochechas, dando um melhor contorno para o rosto do paciente. Durante o procedimento, é realizada a retirada cirúrgica de parte da gordura localizada na bochecha com o intuito de afinar e/ou modificar o contorno facial.Para saber se está apto (a) a passar pelo procedimento, é necessário fazer uma avaliação presencial.</p>
                 </div>
                 <div id={styles.preenchimentosRestantes}>
                     <div id={styles.conteudoProcedRestantes}>
@@ -126,7 +140,7 @@ export default function Pagfaciais() {
                     <div id={styles.caixaEscolhasModal}>
                         <div>
                             <div id={styles.boxFecharModal} className="btnFecharModal" onClick={() => fecharModal()}>
-                                <Image id={styles.fecharModal} src={fecharModalX} alt="Fechar Modal" width={15} height={15}/>
+                                <Image id={styles.fecharModal} src={fecharModalX} alt="Fechar Modal" width={15} height={15} />
                                 Fechar
                             </div>
                         </div>
@@ -137,7 +151,6 @@ export default function Pagfaciais() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
