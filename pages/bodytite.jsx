@@ -34,14 +34,14 @@ export default function PagBodytite(){
                     </div>
                 </div>
             </div>
-            <LinhaHorizontalLonga/>
+            <div id={styles.linhaHorizontal}></div>
             <div id={styles.oBodytite}>
                 <div id={styles.bgSessaoUm}>
                     <div id={styles.conteudoSessaoUm}>
                         <Image id={styles.imgBodyTite} src={imgBodytite} alt="Equipamento Bodytite"/>
                         <div id={styles.linhaVerticalSessaoUm}></div>
                         <div id={styles.caixaSessaoUm}>
-                            <Image src={setaEsquerda} alt="Anterior" width={50}/>
+                            <Image id={styles.setaEsquerda} src={setaEsquerda} alt="Anterior" width={50}/>
                             <div id={styles.descricaoSessaoUm}>
                                 <h2 id={styles.tituloSessaoUm}>O Bodytite</h2>
                                 <h5 id={styles.subTituloSessaoUm}>Tecnologia de radiofrequência fracionada para a face!</h5>
@@ -49,17 +49,17 @@ export default function PagBodytite(){
                                     Essa tecnologia oferece uma remodelação 3D do corpo, com uma contração tridimensional da derme, tecido conjuntivo subcutâneo e tecido adiposo profundo, por meio da lipólise.
                                 </p>
                             </div>
-                            <Image src={setaDireita} alt="Próximo" width={50}/>
+                            <Image id={styles.setaDireita} src={setaDireita} alt="Próximo" width={50}/>
                         </div>
                     </div>
                 </div>
             </div>
-            <LinhaHorizontalLonga/>
+            <div id={styles.linhaHorizontal}></div>
             <div id={styles.morpheus}>
                 <div id={styles.bgSessaoUm}>
                     <div id={styles.conteudoSessaoUm}>
                         <div id={styles.caixaSessaoUm}>
-                            <Image src={setaEsquerda} alt="Anterior" width={50}/>
+                            <Image id={styles.setaEsquerda} src={setaEsquerda} alt="Anterior" width={50}/>
                             <div id={styles.descricaoSessaoUm}>
                                 <h2 id={styles.tituloSessaoUm}>Morpheus Face</h2>
                                 <h5 id={styles.subTituloSessaoUm}>Tecnologia de radiofrequência fracionada para a face!</h5>
@@ -67,7 +67,7 @@ export default function PagBodytite(){
                                     A ponteira Morpheus Face oferece a mais avançada tecnologia de radiofrequência fracionada, permitindo aos médicos, atingirem camadas profundas da pele do paciente com 24 agulhas revestidas em ouro.
                                 </p>
                             </div>
-                            <Image src={setaDireita} alt="Próximo" width={50}/>
+                            <Image id={styles.setaDireita} src={setaDireita} alt="Próximo" width={50}/>
                         </div>
                         <div id={styles.linhaVerticalSessaoUm}></div>
                         <Image id={styles.imgMorpheus} src={imgMorpheus} alt="Equipamento Morpheus Face"/>
