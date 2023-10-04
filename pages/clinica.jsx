@@ -170,7 +170,7 @@ export default function PagClinica(){
                             </div>
                         </div>
                         <div className={styles.linhaHorizontalVerde}></div>
-                        <div>
+                        <div id={styles.subSessaoTres}>
                             <div className={styles.fotoGaleriaSete}>
                                 <p className={styles.textoDescricaoGaleria}>Equipe Corporali, Jéssica Toledo, Marcelo Herique e Paula Melo.</p>
                             </div>
