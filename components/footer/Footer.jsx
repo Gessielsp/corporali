@@ -44,16 +44,16 @@ export default function Footer() {
                         <h3 className={styles.titulosFooter}>Procedimentos</h3>
                         <ul className={styles.listaFooter}>
                             <li className={styles.lista}>
-                                <Link className={styles.descricaoFooter} href="/pagAbdominais">Abdominais</Link>
+                                <Link className={styles.descricaoFooter} href="/procedimentos-abdominais">Abdominais</Link>
                             </li>
                             <li className={styles.lista}>
-                                <Link className={styles.descricaoFooter} href="/pagAbdominais">Mamários</Link>
+                                <Link className={styles.descricaoFooter} href="/procedimentos-mamarios">Mamários</Link>
                             </li>
                             <li className={styles.lista}>
-                                <Link className={styles.descricaoFooter} href="/pagAbdominais">Reparadores</Link>
+                                <Link className={styles.descricaoFooter} href="/procedimentos-reparadores">Reparadores</Link>
                             </li>
                             <li className={styles.lista}>
-                                <Link className={styles.descricaoFooter} href="/pagAbdominais">Faciais</Link>
+                                <Link className={styles.descricaoFooter} href="/procedimentos-abdominais">Faciais</Link>
                             </li>
                         </ul>
                     </div>

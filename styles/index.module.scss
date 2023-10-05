@@ -3,7 +3,7 @@
 /* PARTE BANNER INICIO */
 #bgHome {
   background-image: url(../public/corporali/dr_marcelo/marcelo_9.JPG);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   height: 90vh;
   display: flex;
@@ -179,7 +179,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 75px;
+}
+.iconesProcedimento{
+  width: 90px;
+  height: 90px;
+  filter: grayscale(100%);
+  transition: 0.6s;
+  &:hover{
+    transform: scale(1.3);
+    filter: grayscale(0%);
+  }
 }
 .caixaPequenaProcedimentos {
   display: flex;
@@ -195,8 +205,8 @@
   justify-content: space-evenly;
 }
 #caixadaFotoDoutor {
-  width: 350px;
-  height: 600px;
+  width: 320px;
+  height: 590px;
   background-color: $primarycolor;
   display: flex;
   justify-content: center;
@@ -206,9 +216,15 @@
 #imagemDoutor {
   width: 400px;
   height: 500px;
-  padding-left: 120px;
+  margin-left: 120px;
   border-radius: 5px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px $primarycolor;
+  }
 }
+
 #caixaDeTextos {
   display: flex;
   flex-direction: column;
@@ -298,6 +314,15 @@
 .setasDireitaEsqueda {
   width: 110px;
   height: 110px;
+  animation: apontarDireita 1s ease-in-out infinite;
+}
+@keyframes apontarDireita {
+  0%, 100% {
+      transform: translateX(0); /* Começa e termina sem deslocamento horizontal */
+  }
+  50% {
+      transform: translateX(10px); /* Desloca a seta 10 pixels para a direita no meio da animação */
+  }
 }
 #caixaDasImagensDois {
   background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
@@ -577,23 +602,7 @@
 #textoOu{
   color: #ffffff;
 }
-/* parte fim Contatos */
-#boxInstagramWhatsapp{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-#whatsappFlut{
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-}
-#instagramFlut{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-/* INSTAGRAM E WHATSAPP FLUTUANTES */ 
+/* parte fim Contatos */ 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* INICIO INSTITUTO CORPORALI */
@@ -662,7 +671,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    width: 85vw;
+    width: 80%;
     background-color: transparent;
   }
   .descricaoClinica {
@@ -690,25 +699,33 @@
     font-size: 25px;
   }
   #caixaUmProcedimentos {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .descricaoProcedimentos {
     padding-left: 0;
     width: 100%;
     text-align: justify;
+    font-size: 15px;
   }
   #caixaDoisprocedimentos {
     width: 100%;
   }
+  .iconesProcedimento{
+    width: 50px;
+    height: 50px;
+
+  }
   .caixaProcedimento {
     border: 3px solid $primarycolor;
     width: 120px;
-    height: 30px;
+    height: auto;
+    padding: 15px 0;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 50px;
     margin: 5px 0;
   }
   /* FIM PROCEDIMENTOS */
@@ -727,6 +744,7 @@
     height: 400px;
     padding-left: 0;
     border-radius: 0;
+    margin: 0;
   }
   #caixaDetextos{
     display: flex;
@@ -782,6 +800,7 @@
   }
   .boxDuvidas{
     flex-direction: column;
+    margin: 0;
   }
   .linhaVerticalDasDuvidas{
     display: none;
@@ -789,6 +808,7 @@
   #caixaDasImagensUm{
     width: 275px;
     height: 250px;
+    margin-bottom:30px;
   }
   .titulosDasDuvidas{
     background-color: #181818c9;
@@ -799,17 +819,18 @@
   #caixaDasImagensDois{
     width: 275px;
     height: 250px;
-    margin-bottom: 0;
+    margin-bottom:30px;
   }
   #caixaDasImagensTres{
     width: 275px;
     height: 250px;
-    margin: 0 0 50px;
+    margin-bottom:30px;
   }
   .caixaDasDuvidas{
     width: 275px;
     height: 250px;
     margin: 0;
+    order: 1;
   }
   .textosDasDuvidas{
     width: 80%;
@@ -820,7 +841,7 @@
   }
   #linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
     width: 300px;
-    margin: 50px 0;
+    margin: 50px 0 0;
   }
   /* INICIO CONTATOS */
   #linhaHorizontalDosContas {
@@ -937,86 +958,86 @@
   /* FIM CONTATOS */
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-/* INICIO INSTITUTO CORPORALI */
-#bgHome{
-  padding: 0;
-  height: 40vh;
-}
-#bgCelphone{
-  background-color: #171717d8;
-}
-#tituloCelular{
-  display: block;
-  color: $primarycolor;
-  border-left: 2px solid #fff;
-  padding-left: 5px;
-  font-size: 25px;
-  margin: 25px 25px 0;
-}
-#tituloUm{
-  display: none;
-}
-#tituloDois{
-  display: none;
-}
-#tituloTres{
-  width: auto;
-  background-color: transparent;
-  color: #fff;
-  font-weight: 300;
-  font-size: 18px;
-}
-#boxSaberMais{
-  width: auto;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: transparent;
-  font-size: 13px;
-}  
-#saberMais {
-  border: 1px solid #fff;
-  width: 120px;
-  font-size: 15px;
-  border-radius: 15px;
-  margin: 0 40px 20px;
-}
-/* FIM INSTITUTO CORPORALI */
-/* INICIO CLINICA */
-#clinica{
-  height: auto;
-}
-#fotoClinica {
-  width: 100vw;
-  background-image: none;
-}
-#conteudoClinica {
-  justify-content: center;
-  width: 100%;
-  border: none;
-  margin-left: 0;
-  font-size: 15px;
-}
-#sloganClinica {
-  display: none;
-}
-#sobreaClinica {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  width: 85vw;
-  background-color: transparent;
-  margin: 50px 0;
-}
-.descricaoClinica {
-  width: 100%;
-}
-#boxLinhaBranca {
-  width: 100%;
-}
-/* FIM CLINICA */
+  /* INICIO INSTITUTO CORPORALI */
+  #bgHome{
+    padding: 0;
+    height: 400px;
+  }
+  #bgCelphone{
+    background-color: #171717d8;
+  }
+  #tituloCelular{
+    display: block;
+    color: $primarycolor;
+    border-left: 2px solid #fff;
+    padding-left: 5px;
+    font-size: 25px;
+    margin: 25px 25px 0;
+  }
+  #tituloUm{
+    display: none;
+  }
+  #tituloDois{
+    display: none;
+  }
+  #tituloTres{
+    width: auto;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  #boxSaberMais{
+    width: auto;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 13px;
+  }  
+  #saberMais {
+    border: 1px solid #fff;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 0 40px 20px;
+  }
+  /* FIM INSTITUTO CORPORALI */
+  /* INICIO CLINICA */
+  #clinica{
+    height: auto;
+  }
+  #fotoClinica {
+    width: 100vw;
+    background-image: none;
+  }
+  #conteudoClinica {
+    justify-content: center;
+    width: 100%;
+    border: none;
+    margin-left: 0;
+    font-size: 15px;
+  }
+  #sloganClinica {
+    display: none;
+  }
+  #sobreaClinica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 80%;
+    background-color: transparent;
+    margin: 50px 0;
+  }
+  .descricaoClinica {
+    width: 100%;
+  }
+  #boxLinhaBranca {
+    width: 100%;
+  }
+  /* FIM CLINICA */
   /* INICIO PROCEDIMENTOS */
   #procedimentos {
     background-position: left;
@@ -1034,7 +1055,8 @@
     font-size: 25px;
   }
   #caixaUmProcedimentos {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .descricaoProcedimentos {
     padding-left: 0;
@@ -1048,13 +1070,14 @@
   .caixaProcedimento {
     border: 3px solid $primarycolor;
     width: 120px;
-    height: 30px;
+    height: auto;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 5px 0;
+    padding: 15px 0;
   }
   /* FIM PROCEDIMENTOS */
   /* INICIO DOUTOR */
@@ -1072,6 +1095,7 @@
     height: 400px;
     padding-left: 0;
     border-radius: 0;
+    margin: 0;
   }
   #caixaDetextos{
     display: flex;
@@ -1144,17 +1168,18 @@
   #caixaDasImagensDois{
     width: 275px;
     height: 250px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   #caixaDasImagensTres{
     width: 275px;
     height: 250px;
-    margin: 0 0 50px;
+    margin-bottom: 30px;
   }
   .caixaDasDuvidas{
     width: 275px;
     height: 250px;
     margin: 0;
+    order: 1;
   }
   .textosDasDuvidas{
     width: 80%;
@@ -1165,7 +1190,7 @@
   }
   #linhaHorizontalDosCarsUm, #linhaHorizontalDosCarsDois {
     width: 300px;
-    margin: 50px 0;
+    margin: 40px 0 0;
   }
   /* FIM DUVIDAS */
   /* INICIO CONTATOS */
@@ -1314,4 +1339,124 @@
       background-color: #3d3d3d;
     }
   }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  /* INICIO CONTATOS */
+  #linhaHorizontalDosContas {
+    height: 30px;
+    background-color: transparent;
+  }
+  #boxContatos {
+    flex-direction: column;
+    display: flex;
+  }
+  #linhaVerticalDosContatos {
+    display: none;
+  }
+  #parteUmdosContatos {
+    padding-left: 0;
+    order: 1;
+  }
+  #contateNostexto {
+    width: auto;
+    padding-left: 0;
+    font-size: 40px;
+  }
+  #linhavertxalContatenos {
+    display: none;
+  }
+  #boxContatenos {
+    justify-content: center;
+  }
+  #boxTextoContatos {
+    justify-content: center;
+  }
+  #textoContateNos {
+    font-size: 20px;
+    text-align: center;
+  }
+  #secForm{
+    display: flex;
+    justify-content: center;
+  }
+  #formContatos {
+    width: 400px;
+  }
+  #nome {
+    width: auto;
+    border-radius: 5px;
+  }
+  #contatos {
+    width: auto;
+    border-radius: 5px;
+  }
+  #email {
+    width: auto;
+    border-radius: 5px;
+  }
+  #mensagem {
+    width: auto;
+    border-radius: 5px;
+  }
+  .nomesDoFormularios {
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  #butaoContatos {
+    width: auto;
+    border: none;
+  }
+  #parteDoisdosContatos {
+    height: auto;
+  }
+  #boxInformacoes {
+    width: auto;
+    margin: 20px 0;
+  }
+  #textoInformacoes {
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
+  #linhaHorizontalInformacoes {
+    display: none;
+  }
+  .clinicainformacoes {
+    display: flex;
+    align-items: center;
+  }
+  #iconEmail, #iconEndereço, #iconRelogio{
+    width: 40px;
+    height: 40px;
+  }
+  .boxDosTextos {
+    font-size: 15px;
+  }
+  #caixadasImgs {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .imagensDoscontatos {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+  #imagenDoTwitterDosContatos{
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  #numeroDosContatos {
+    justify-content: center;
+  }
+  #telefones{
+    font-size: 20px;
+  }
+  #textoOu{
+    font-size: 15px;
+  }
+  /* FIM CONTATOS */
 }

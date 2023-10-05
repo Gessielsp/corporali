@@ -18,6 +18,7 @@ import Link from "next/link";
 import { robotoCondensed, bebasNeue } from "../fonts/fonts";
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 export default function PagDrMarcelo() {
     return (
@@ -27,12 +28,12 @@ export default function PagDrMarcelo() {
                 <div id={styles.bgMarcelo}>
                     <div id={styles.conteudoMarcelo}>
                         <div id={styles.linhaAcimaDrMarcelo}></div>
-                        <h1 class="animate__animated animate__fadeInRight" id={styles.tituloMarcelo} className={bebasNeue.className}>Dr. Marcelo Moreira</h1>
-                        <p class="animate__animated animate__fadeInRight" id={styles.cirurgiao}>Bem mais que um cirurgião Plástico.</p>
+                        <h1 className="animate__animated animate__fadeInRight" id={styles.tituloMarcelo}>Dr. Marcelo Moreira</h1>
+                        <p className="animate__animated animate__fadeInRight" id={styles.cirurgiao}>Bem mais que um cirurgião Plástico.</p>
                         <div id={styles.linhaAbaixoDrMarcelo}></div>
                         <div id={styles.informacoes}>
                             <a href="#sobreMarcelo" id={styles.subTituloMarcelo}>Sobre Marcelo</a>
-                            <a href="#" id={styles.fotoVideosMarcelo}>Visualizar Fotos</a>
+                            <a href="#fotos" id={styles.fotoVideosMarcelo}>Visualizar Fotos</a>
                         </div>
                     </div>
                 </div>
@@ -80,8 +81,8 @@ export default function PagDrMarcelo() {
                         <p className={styles.descricaoSegundaoSessao}>Além de seu trabalho cirúrgico exímio, o Dr. Marcelo Henrique reserva tempo para se conectar com seus pacientes. Seu dia a dia inclui consultas pessoais, onde ele ouve atentamente as preocupações de cada indivíduo e compartilha seu conhecimento especializado. Sua abordagem empática e compassiva é uma parte essencial de sua prática médica.</p>
                     </div>
                 </div>
+                <div id="fotos"></div>
             </div>
-
 
             <div id={styles.galeriaFotosMarcelo}>
                 <div>
@@ -175,6 +176,7 @@ export default function PagDrMarcelo() {
                 </div>
             </div>
             <Footer />
+            <InstaWhatsappFlut/>
         </div>
     )
 }

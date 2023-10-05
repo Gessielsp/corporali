@@ -187,6 +187,12 @@
     width: 280px;
     margin-top: 25px;
     margin-left: 25px;
+    transition: 0.7s;
+    filter: grayscale(100%);
+    &:hover {
+        transform: scale(1.05);
+        filter: grayscale(0%);
+    }
 }
 #linhaAbaixoGaleria{
     width: 85%;
@@ -219,6 +225,7 @@
 }
 .boxConteudoCarreiras{
     margin-bottom: 50px;
+    
 }
 .bgCarreira{
     width: 600px;
@@ -227,6 +234,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: 0.5s;
+    &:hover{
+        box-shadow: 0 0 15px $primarycolor;
+    }
 }
 .tituloCarreiraMarcelo{
     color: #fff;

@@ -1,0 +1,15 @@
+#boxInstagramWhatsapp{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#whatsappFlut{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+#instagramFlut{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

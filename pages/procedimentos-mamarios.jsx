@@ -9,6 +9,7 @@ import styles from "../styles/pagMamarios.module.scss";
 import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
@@ -29,7 +30,7 @@ export default function PagMamarios() {
             <div className={styles.bordaTopoMamarios}></div>
             <div id={styles.bannerMamarios}>
                 <div id={styles.bgBannerMamarios}>
-                    <div class="animate__animated animate__backInRight" id={styles.contentBannerMamarios}>
+                    <div className="animate__animated animate__backInRight" id={styles.contentBannerMamarios}>
                         <h1 id={styles.tituloBannerMamarios}>Procedimentos Mamários</h1>
                         <p id={styles.descricaoMamarios}>Conheça agora, tudo sobre os procedimentos mamários e como eles são realizados. Aqui você verá como é feito, quais são os procedimentos pré e pós operatórios e como é o apoio da nossa equipe.</p>
                     </div>
@@ -52,7 +53,7 @@ export default function PagMamarios() {
                 </div>
                 <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>MASTOPEXIA COM OU SEM PRÓTESE</h2>
-                    <p className={styles.descricaoProcedimentosMamarios}>Também é uma das cirurgias mais procuradas da clínica. Consiste na elevação das mamas com ou sem a colocação de prótese de silicone. São pacientes que buscam corrigir a flacidez das mamas em decorrência de amamentação prévia, perda de peso ou envelhecimento natural. Em geral, é realizada a incisão em "T" invertido para retirada do excedente de tecido mamário.</p>
+                    <p className={styles.descricaoProcedimentosMamarios}>Também é uma das cirurgias mais procuradas da clínica. Consiste na elevação das mamas com ou sem a colocação de prótese de silicone. São pacientes que buscam corrigir a flacidez das mamas em decorrência de amamentação prévia, perda de peso ou envelhecimento natural. Em geral, é realizada a incisão em T invertido para retirada do excedente de tecido mamário.</p>
                 </div>
                 <div>
                     <h2 className={styles.tituloProcedimentosMamarios}>Mamoplastia Redutora</h2>
@@ -116,6 +117,7 @@ export default function PagMamarios() {
                     </div>
                 </div>
             </div>
+            <InstaWhatsappFlut/>
         </div>
     )
 }

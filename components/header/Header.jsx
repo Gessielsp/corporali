@@ -36,7 +36,7 @@ export default function Header(){
         <header id={styles.headerMain} className={robotoCondensed.className}>
             <div id={styles.boxLogo}>
                 <Link href="/">
-                    <Image id={styles.logo} src={logo} alt="Logo"/>
+                    <Image id={styles.logo} src={logo} alt="Logo" priority={true}/>
                 </Link>
             </div>
            <nav id={styles.navegacao}>

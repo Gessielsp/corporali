@@ -9,6 +9,7 @@ import Image from "next/image";
 import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 const iconYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
@@ -29,7 +30,7 @@ export default function PagReparadores() {
             <div id={styles.bordaTopoReparadores}></div>
             <div id={styles.bannerReparadores}>
                 <div id={styles.bgBannerReparadores}>
-                    <div class="animate__animated animate__backInRight"  id={styles.conteudoBannerReparadores}>
+                    <div className="animate__animated animate__backInRight"  id={styles.conteudoBannerReparadores}>
                         <h1 id={styles.tituloBannerReparadores}>Procedimentos Reparadores</h1>
                         <p id={styles.descricaoBannerReparadores}>Procedimentos reparadores são intervenções médicas que desempenham um papel fundamental na correção de imperfeições físicas, restaurando a função e a aparência de partes do corpo afetadas por lesões, deformidades congênitas ou condições médicas.</p>
                     </div>
@@ -119,6 +120,7 @@ export default function PagReparadores() {
                     </div>
                 </div>
             </div>
+            <InstaWhatsappFlut/>
         </div>
     )
 }

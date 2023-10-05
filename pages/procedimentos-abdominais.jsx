@@ -12,6 +12,7 @@ const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho
 const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 export default function PagAbdominais() {
     function mostrarModal(){
@@ -28,7 +29,7 @@ export default function PagAbdominais() {
             <div id={styles.bordaTopoAbdominais}></div>
             <div id={styles.bannerAbdominais}>
                 <div id={styles.bgBannerAbdominais}>
-                    <div class="animate__animated animate__backInRight" id={styles.conteudoBannerAbdominais}>
+                    <div className="animate__animated animate__backInRight" id={styles.conteudoBannerAbdominais}>
                         <h1 id={styles.tituloBannerAbdominais}>Procedimentos Abdominais</h1>
                         <p id={styles.descricaoAbdominais}>Existem vários tipos de procedimentos abdominais que podem ser realizados, desde cirurgias plásticas para eliminar gordura localizada no abdômen ou o excesso de pele, deixando a barriga mais lisinha e dura.</p>
                     </div>
@@ -40,7 +41,7 @@ export default function PagAbdominais() {
                         <Image id={styles.iconYoutube} src={iconeYoutubeVermelho} alt="Icone Youtube" />
                     </div>
                     <div id={styles.textosProcedAbdominais}>
-                        <h2 class="animate__animated animate__backInRight" id={styles.tituloSobreAbdominais}>Sobre os procedimentos</h2>
+                        <h2 className="animate__animated animate__backInRight" id={styles.tituloSobreAbdominais}>Sobre os procedimentos</h2>
                         <p className={styles.descricaoSobreAbdominais}>Procedimentos abdominais são uma categoria abrangente de intervenções cirúrgicas projetadas para tratar uma variedade de condições médicas que afetam a região abdominal. Esses procedimentos são realizados por cirurgiões altamente treinados e envolvem uma série de técnicas precisas para acessar, reparar, remover e reconstruir estruturas da parede abdominal.</p>
                         <p className={styles.descricaoSobreAbdominais}>Existem vários tipos de procedimentos abdominais que podem ser realizados, desde cirurgias plásticas para eliminar gordura localizada no abdômen ou o excesso de pele, deixando a barriga mais lisinha e dura, melhorando o contorno corporal.</p>
                     </div>
@@ -112,6 +113,7 @@ export default function PagAbdominais() {
                     </div>
                 </div>
             </div>
+            <InstaWhatsappFlut/>
         </div>
     )
 }
