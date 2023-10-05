@@ -15,6 +15,7 @@ const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 
 export default function Pagfaciais() {
@@ -32,7 +33,7 @@ export default function Pagfaciais() {
             <div id={styles.bordaTopoFaciais}></div>
             <div id={styles.bannerFaciais}>
                 <div id={styles.bgBannerFaciais}>
-                    <div class="animate__animated animate__backInRight" id={styles.conteudoBannerFaciais}>
+                    <div className="animate__animated animate__backInRight" id={styles.conteudoBannerFaciais}>
                         <h1 id={styles.tituloBannerFaciais}>Procedimentos Faciais</h1>
                         <p id={styles.descricaoBannerFaciais}>Procedimentos faciais são tratamentos estéticos que visam melhorar a aparência da pele e reduzir sinais de envelhecimento, incluindo técnicas como peelings químicos e preenchimentos dérmicos.</p>
                     </div>
@@ -151,6 +152,7 @@ export default function Pagfaciais() {
                     </div>
                 </div>
             </div>
+            <InstaWhatsappFlut/>
         </div>
     )
 }

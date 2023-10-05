@@ -15,10 +15,16 @@ const imgGmail = require('../public/corporali/icons/gmail.png');
 const imgInstaContato = require('../public/corporali/icons/insta_contato.png');
 const imgFaceContato = require('../public/corporali/icons/face_contato.png');
 const imgTwitterContato = require('../public/corporali/icons/twitter_contato.png');
-const whatsappFlutuante = require('../public/corporali/icons/whatsapp_flutuante.png');
-const instagramFlutuante = require('../public/corporali/icons/instagram_flutuante.png')
+
+const iconeAbdominal = require('../public/corporali/icons/icon-abdominal.png');
+const iconeFacial = require('../public/corporali/icons/icon-facial.png');
+const iconeReparadores = require('../public/corporali/icons/icon-reparadores.png');
+const iconeMamario = require('../public/corporali/icons/icon-mamarios.png');
+
 
 import Header from '../components/header/Header';
+import InstaWhatsappFlut from '../components/instaWhatsappFlut/InstaWhatsappFlut';
+
 import LinhaHorizontalLonga from '../components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
 import 'animate.css';
@@ -39,8 +45,8 @@ export default function Home() {
         <div id={styles.bgCelphone}>
           <hgroup id={styles.boxDeTitulos}>
             <h1 id={styles.tituloCelular}>Instituto Corporali.</h1>
-            <h1 id={styles.tituloUm} class="animate__animated animate__backInRight">Instituto</h1>
-            <h1 id={styles.tituloDois} class="animate__animated animate__backInRight">Corporali.</h1>
+            <h1 id={styles.tituloUm} className="animate__animated animate__backInRight">Instituto</h1>
+            <h1 id={styles.tituloDois} className="animate__animated animate__backInRight">Corporali.</h1>
             <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
           </hgroup>
           <div id={styles.boxSaberMais}>
@@ -83,12 +89,20 @@ export default function Home() {
           </div>
           <div id={styles.caixaDoisprocedimentos}>
             <div className={styles.caixaPequenaProcedimentos}>
-              <div className={styles.caixaProcedimento}>Mamários</div>
-              <div className={styles.caixaProcedimento}>Abdominais</div>
+              <div className={styles.caixaProcedimento}>
+                <Image className={styles.iconesProcedimento} src={iconeMamario} alt="Icone Mamarios"/>
+              </div>
+              <div className={styles.caixaProcedimento}>
+                <Image className={styles.iconesProcedimento} src={iconeAbdominal} alt="Icone Abdominais"/>
+              </div>
             </div>
             <div className={styles.caixaPequenaProcedimentos}>
-              <div className={styles.caixaProcedimento}>Faciais</div>
-              <div className={styles.caixaProcedimento}>Reparadores</div>
+              <div className={styles.caixaProcedimento}>
+                <Image className={styles.iconesProcedimento} src={iconeReparadores} alt="Icone Reparadores"/>
+              </div>
+              <div className={styles.caixaProcedimento}>
+                <Image className={styles.iconesProcedimento} src={iconeFacial} alt="Icone Faciais"/>
+              </div>
             </div>
           </div>
         </div>
@@ -204,7 +218,7 @@ export default function Home() {
                 <input type="text" id={styles.nome} placeholder='Digite seu nome' />
 
                 <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contatos</label>
-                <input type="number" id={styles.contatos} placeholder='Digite seu telefone aqui' />
+                <input type="text" id={styles.contatos} placeholder='Digite seu telefone aqui' />
 
                 <label htmlFor="email" className={styles.nomesDoFormularios}>Email</label>
                 <input type="email" id={styles.email} placeholder='Digite seu email' />
@@ -237,9 +251,9 @@ export default function Home() {
             </div>
             <div id={styles.partesDosContas}>
               <div id={styles.caixadasImgs}>
-                <Image className={styles.imagensDoscontatos} src={imgInstaContato} alt="imgem do inst do contato" />
-                <Image className={styles.imagensDoscontatos} src={imgFaceContato} alt="imgem do face do contato" />
-                <Image id={styles.imagenDoTwitterDosContatos} src={imgTwitterContato} alt="imgem do twitter do contato" />
+                <a href="https://www.instagram.com/drmarcelomoreiraa/"><Image className={styles.imagensDoscontatos} src={imgInstaContato} alt="Instagram Corporali" /></a>
+                <a href="#"><Image className={styles.imagensDoscontatos} src={imgFaceContato} alt="Facebook Corporali" /></a>
+                <a href="#"><Image id={styles.imagenDoTwitterDosContatos} src={imgTwitterContato} alt="Twitter Corporali" /></a>
               </div>
               <div id={styles.numeroDosContatos}>
                 <p id={styles.telefones}>+61 9 8199-3099 <span id={styles.textoOu}>OU</span> +61 3346-3399</p>
@@ -248,14 +262,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id={styles.boxInstagramWhatsapp}>
-        <a id={styles.whatsappFlut} href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
-          <Image src={whatsappFlutuante} alt='Whatsapp' width={50} height={50}/>
-        </a>
-        <a id={styles.instagramFlut} href="https://www.instagram.com/drmarcelomoreiraa/" target="_blank">
-          <Image src={instagramFlutuante} alt='Instagram' width={50} height={50}/>
-        </a>
-      </div>
+      <InstaWhatsappFlut/>
     </div>
   )
 }

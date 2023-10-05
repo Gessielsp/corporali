@@ -7,6 +7,7 @@ import { robotoCondensed } from "../fonts/fonts";
 import Link from "next/link";
 
 import 'animate.css';
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 export default function PagClinica(){
     return(
         <div className={robotoCondensed.className}>
@@ -15,7 +16,7 @@ export default function PagClinica(){
             <div id={styles.bannerClinica}>
                 <div id={styles.bgClinica}>
                     <div id={styles.linhaAcimaClinica}></div>
-                    <div class="animate__animated animate__fadeInRight">
+                    <div className="animate__animated animate__fadeInRight">
                         <h1 id={styles.tituloClinica}>A clinica</h1>
                         <p id={styles.descricaoClinica}>Conheça a nossa clinica, aqui transformamos sonhos em realidade, promovendo a autoestima e a confiança dos nossos pacientes com procedimentos personalizados e resultados excepcionais.</p>
                     </div>
@@ -198,6 +199,7 @@ export default function PagClinica(){
             </div>
             {/* FIM AGENDAR CONSULTA */}    
             <Footer/>
+            <InstaWhatsappFlut/>
         </div>
     )
 }
