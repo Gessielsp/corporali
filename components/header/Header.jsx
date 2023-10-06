@@ -45,7 +45,7 @@ export default function Header(){
                     <Link className={`${styles.home} ${styles.linksAnimados} ${router.pathname === '/' ? styles.active : ''}`} href="/">Home</Link>
                 </li>
                 <li>
-                    <Link className={`${styles.clinica} ${styles.linksAnimados} ${router.pathname === '/clinica' ? styles.active : ''}`} href="/clinica">A Clinica</Link>
+                    <Link className={`${styles.clinica} ${styles.linksAnimados} ${router.pathname === '/clinica' ? styles.active : ''}`} href="/clinica">A Clínica</Link>
                 </li>
                 <li>
                     <span className={`${styles.procedimentos} ${styles.linksAnimados} ${router.pathname === '/procedimentos-faciais' || router.pathname === '/procedimentos-reparadores' || router.pathname === '/procedimentos-abdominais' || router.pathname === '/procedimentos-mamarios' ? styles.active : ''}`} onClick={() => alterarStateProcedimentos()}>

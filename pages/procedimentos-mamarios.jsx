@@ -80,7 +80,7 @@ export default function PagMamarios() {
                             <Link className={styles.linksMamarios} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksMamarios} href="/clinica">Clinica</Link>
+                            <Link className={styles.linksMamarios} href="/clínica">Clínica</Link>
                         </li>
                     </ul>
 

@@ -21,15 +21,15 @@ export default function Footer() {
                     <div>
                         <Image id={styles.logo} src={logo} alt="Logo Instituto Corporali" />
                         <div id={styles.iconsFooter}>
-                            <Image id={styles.iconeInstagram} src={instagram} alt="Icone Instagram" />
-                            <Image id={styles.iconeYoutube} src={youtube} alt="Icone Youtube" />
-                            <Image id={styles.iconeWhatsapp} src={whatsapp} alt="Icone Whatsapp" />
-                            <Image id={styles.iconeFacebook} src={facebook} alt="Icone Facebook" />
-                            <Image id={styles.iconeEmail} src={email} alt="icone Email" />
+                            <a href="https://www.instagram.com/drmarcelomoreiraa/" target="_blank"><Image id={styles.iconeInstagram} src={instagram} alt="Icone Instagram" /></a>
+                            <a href="https://www.youtube.com/@institutocorporali1294" target="_blank"><Image id={styles.iconeYoutube} src={youtube} alt="Icone Youtube" /></a>
+                            <a href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank"><Image id={styles.iconeWhatsapp} src={whatsapp} alt="Icone Whatsapp" /></a>
+                            <a href="https://www.facebook.com/institutocorporali/" target="_blank"><Image id={styles.iconeFacebook} src={facebook} alt="Icone Facebook" /></a>
+                            <a href="mailto:Institutocorporali@hotmail.com" target="_blank"><Image id={styles.iconeEmail} src={email} alt="icone Email" /></a>
                         </div>
                     </div>
                     <div id={styles.sobreClinicaTexto}>
-                        <p>Somos uma clinica brasileira com mais de 10 anos de experiência no mercado de cirurgia plasticas.</p>
+                        <p>Somos uma clínica brasileira com mais de 10 anos de experiência no mercado de cirurgia plasticas.</p>
                     </div>
                     <div>
                         <iframe id={styles.iframeLocalizacao} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.274481919358!2d-47.9201295!3d-15.8398426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2558c776a1d5%3A0x34e5c65df4ce64a3!2sInstituto%20Corporali!5e0!3m2!1spt-BR!2sbr!4v1695059958768!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

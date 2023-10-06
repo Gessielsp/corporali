@@ -47,7 +47,7 @@ export default function Home() {
             <h1 id={styles.tituloCelular}>Instituto Corporali.</h1>
             <h1 id={styles.tituloUm} className="animate__animated animate__backInRight">Instituto</h1>
             <h1 id={styles.tituloDois} className="animate__animated animate__backInRight">Corporali.</h1>
-            <p id={styles.tituloTres}>Somos o instituido Corporali. Aqui você alcança os seus objetivos de uma forma segura e proficional</p>
+            <p id={styles.tituloTres}>Somos o instituto Corporali. Aqui você alcança os seus objetivos de uma forma segura e profissional.</p>
           </hgroup>
           <div id={styles.boxSaberMais}>
             <Link id={styles.saberMais} href="/#sobreClinica">Saber Mais!</Link>
@@ -62,13 +62,13 @@ export default function Home() {
           <div id={styles.conteudoClinica}>
             <div id={styles.sloganClinica}>
               <h2 id={styles.tituloSloganClinica}>Corporali</h2>
-              <p id={styles.descricaoSloganClinica}>O nosso maior prazer é atender voce e te ver bem.</p>
+              <p id={styles.descricaoSloganClinica}>O nosso maior prazer é atender você e te ver bem.</p>
             </div>
             <div id={styles.sobreaClinica}>
-              <h2 id={styles.tituloSobreaClinica}>Sobre a <strong id={styles.tituloClinicaVerde}>Cliníca</strong></h2>
+              <h2 id={styles.tituloSobreaClinica}>Sobre a <strong id={styles.tituloClinicaVerde}>Clínica</strong></h2>
               <p className={styles.descricaoClinica}>Idealizado para oferecer o que há de melhor em procedimentos cirúrgicos, com profissionais altamente qualificados e as melhores tecnologias disponíveis, o Instituto Corporali é focado na necessidade e expectativa dos nossos pacientes, buscando compreender as suas necessidades e oferecendo caminhos para alcançar o melhor resultado.</p>
               <p className={styles.descricaoClinica}>A nossa estrutura conta com um espaço amplo e em uma excelente localização, o que são detalhes pensados no conforto, segurança e praticidade dos nossos pacientes.</p>
-              <p className={styles.descricaoClinica}>A nossa estrutura conta com um espaço amplo e em uma excelente localização, o que são detalhes pensados no conforto, segurança e praticidade dos nossos pacientes.</p>
+              <p className={styles.descricaoClinica}>Nosso corpo clínico é liderado pelo Dr. Marcelo Moreira de Araújo, que é Membro Titular da Sociedade Brasileira de Cirurgia Plástica (SBCP) e oferece ampla bagagem teórica e prática à equipe.</p>
               <div id={styles.boxLinhaBranca}>
                 <div id={styles.linhaBranca}></div>
               </div>
@@ -118,7 +118,7 @@ export default function Home() {
           <h2 id={styles.textoUmDoutor}> A mente brilhante.</h2>
           <h4 id={styles.textoDoisDoutor}>Fazendo sempre o melhor para o próximo.</h4>
           <div id={styles.divParagrafo}>
-            <p id={styles.textoTresDoutor}>Cirurgia plástica é coisa séria! Escolher um proficional qualificado e de confiança é um dos elementos mais importante na hora de realizar uma cirugia.</p>
+            <p id={styles.textoTresDoutor}>Cirurgia plástica é coisa séria! Escolher um profissional qualificado e de confiança é um dos elementos mais importante na hora de realizar uma cirurgia.</p>
           </div>
           <h3 id={styles.textoQuatroDoutor}>DR. MARCELO MOREIRA, CIRURGIÃO PLÁSTICO.</h3>
         </div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className={styles.linhaVerticalDasDuvidas}></div>
             <div className={styles.caixaDasDuvidas}>
               <div className={styles.boxTextosDasDuvidas}>
-                <p className={styles.textosDasDuvidas}>Atendemos a maioria doa planos de saúde, entre em contato para mais informações.</p>
+                <p className={styles.textosDasDuvidas}>Atendemos a maioria dos planos de saúde, entre em contato para mais informações.</p>
                 <div className={styles.LinhaHorizontalTexto}>
                   <div className={styles.linhaDoTexto}></div>
                 </div>
@@ -156,7 +156,7 @@ export default function Home() {
           <div className={styles.boxDuvidas}>
             <div className={styles.caixaDasDuvidas}>
               <div className={styles.boxTextosDasDuvidas}>
-                <p className={styles.textosDasDuvidas}>Oferecemos execelentes condições, parcelamos com e sem juros e pagamentos facilitado.</p>
+                <p className={styles.textosDasDuvidas}> Oferecemos excelentes condições, parcelamos com e sem juros e pagamentos facilitado.</p>
                 <div id={styles.LinhaHorizontalTextoEsquerda}>
                   <div id={styles.linhaDoTextoEsquerdo}></div>
                 </div>
@@ -187,7 +187,7 @@ export default function Home() {
             <div className={styles.linhaVerticalDasDuvidas}></div>
             <div className={styles.caixaDasDuvidas}>
               <div className={styles.boxTextosDasDuvidas}>
-                <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h ás 18h, de segunda á sexta.</p>
+                <p className={styles.textosDasDuvidas}>O horário de funcionamento do Instituto Corporali é das 09h às 18h, de segunda à sexta.</p>
                 <div className={styles.LinhaHorizontalTexto}>
                   <div className={styles.linhaDoTexto}></div>
                 </div>
@@ -210,7 +210,7 @@ export default function Home() {
               </div>
             </div>
             <div id={styles.boxTextoContatos}>
-              <p id={styles.textoContateNos}>Fique a vontade para nos contatar, será um prazer receber voce em nossa clinica.</p>
+              <p id={styles.textoContateNos}>Fique a vontade para nos contatar, será um prazer receber você em nossa clínica.</p>
             </div>
             <div id={styles.secForm}>
               <form id={styles.formContatos} action="" method="post">
@@ -220,7 +220,7 @@ export default function Home() {
                 <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contatos</label>
                 <input type="text" id={styles.contatos} placeholder='Digite seu telefone aqui' />
 
-                <label htmlFor="email" className={styles.nomesDoFormularios}>Email</label>
+                <label htmlFor="email" className={styles.nomesDoFormularios}>E-mail</label>
                 <input type="email" id={styles.email} placeholder='Digite seu email' />
 
                 <label htmlFor="mensagem" className={styles.nomesDoFormularios}>Mensagem</label>
