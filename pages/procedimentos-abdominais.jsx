@@ -77,7 +77,7 @@ export default function PagAbdominais() {
                             <Link className={styles.linksAbdominais} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksAbdominais} href="/clinica">Clinica</Link>
+                            <Link className={styles.linksAbdominais} href="/clinica">Clínica</Link>
                         </li>
                     </ul>
                 </nav>

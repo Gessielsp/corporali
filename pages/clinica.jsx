@@ -17,12 +17,12 @@ export default function PagClinica(){
                 <div id={styles.bgClinica}>
                     <div id={styles.linhaAcimaClinica}></div>
                     <div className="animate__animated animate__fadeInRight">
-                        <h1 id={styles.tituloClinica}>A clinica</h1>
-                        <p id={styles.descricaoClinica}>Conheça a nossa clinica, aqui transformamos sonhos em realidade, promovendo a autoestima e a confiança dos nossos pacientes com procedimentos personalizados e resultados excepcionais.</p>
+                        <h1 id={styles.tituloClinica}>A clínica</h1>
+                        <p id={styles.descricaoClinica}>Conheça a nossa clínica, aqui transformamos sonhos em realidade, promovendo a autoestima e a confiança dos nossos pacientes com procedimentos personalizados e resultados excepcionais.</p>
                     </div>
                     <div id={styles.linhaAbaixoClinica}></div>
                     <div id={styles.linkClinicaFotos}>
-                        <a id={styles.aClinica} href="#irClinica">A clinica</a>
+                        <a id={styles.aClinica} href="#irClinica">A clínica</a>
                         <a id={styles.fotoEvideos} href="#irParaGaleria">Visualizar Fotos</a>
                     </div>
                 </div>
@@ -34,12 +34,12 @@ export default function PagClinica(){
             <div id={styles.sessaoSobreClinica}>
                 <div className={styles.sobreaClinica}>
                     <div className={styles.sobreClinicaUm}>
-                        <h2 className={styles.tituloSobre}>Sobre a clinica</h2>
+                        <h2 className={styles.tituloSobre}>Sobre a clínica</h2>
                         <div className={styles.imgDescricaoSobre}/>
                     </div>
                     <div id={styles.sobreClinicaUmBorder}>
                         <h3 id={styles.tituloOqueFazemos}>Veja aqui quem somos e o que fazemos</h3>
-                        <p className={styles.descricaoSobre}>Na Clínica de Cirurgia Plástica do Dr. [Nome do Médico], nossa missão é aprimorar a beleza e a confiança dos nossos pacientes por meio de procedimentos cirúrgicos de excelência. Com um foco especializado em cirurgias mamárias, faciais, abdominais e reparadoras, nossa equipe altamente qualificada e experiente está dedicada a proporcionar resultados excepcionais. Combinamos a mais recente tecnologia e técnicas avançadas para atender às necessidades individuais de cada paciente, garantindo procedimentos personalizados que resultam em uma transformação positiva. </p>
+                        <p className={styles.descricaoSobre}>Na Clínica de Cirurgia Plástica do Dr. Marcelo Moreira, nossa missão é aprimorar a beleza e a confiança dos nossos pacientes por meio de procedimentos cirúrgicos de excelência. Com um foco especializado em cirurgias mamárias, faciais, abdominais e reparadoras, nossa equipe altamente qualificada e experiente está dedicada a proporcionar resultados excepcionais. Combinamos a mais recente tecnologia e técnicas avançadas para atender às necessidades individuais de cada paciente, garantindo procedimentos personalizados que resultam em uma transformação positiva. </p>
                     </div>
                 </div>
                 <div className={styles.sobreaClinica}>
@@ -49,7 +49,7 @@ export default function PagClinica(){
                     </div>
                     <div className={styles.sobreClinicaDois}>
                         <h2 className={styles.subTitulosSobre}>A Equipe</h2>
-                        <p className={styles.descricaoSobre}>Localizada em uma das áreas mais prestigiadas de Brasília, a Centro Clínico Linea encontra-se no coração da Asa Sul, no endereço SGAS 616, Bloco B, Salas 25 e 27. Nossa clínica é facilmente acessível, oferecendo conveniência aos nossos pacientes que buscam serviços de alta qualidade em cirurgia plástica e cuidados médicos. Com uma localização central e comodidades modernas, estamos comprometidos em proporcionar um ambiente acolhedor e confortável para garantir a melhor experiência possível aos nossos pacientes.</p>
+                        <p className={styles.descricaoSobre}>A equipe da Corporali é especializada em cirurgia plástica e estética, comprometida com a excelência. Com cirurgiões altamente qualificados, garantimos resultados excepcionais com segurança e inovação. Na Corporali, acreditamos que a autoestima e a confiança são essenciais para uma vida plena. Visite nossa clínica e realize seus sonhos de beleza e bem-estar. Estamos aqui para você! </p>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ export default function PagClinica(){
                 <div id={styles.caixaProcedimentos}>
                     <h5 id={styles.confiraProcedimentos}>Confira</h5>
                     <h2 id={styles.tituloProcedimentos}>Procedimentos</h2>
-                    <p id={styles.descricaoProcedimentos}>Confira alguns dos procedimentos que efetuamos na clinica.</p>
+                    <p id={styles.descricaoProcedimentos}>Confira alguns dos procedimentos que efetuamos na clínica.</p>
                 </div>
                 <div id={styles.caixaProcedimentosLinks}>
                     <div className={styles.caixaLinks}>
@@ -111,7 +111,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgPaulaMelo}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Estou com dr há 5 anos. Fico tanto no centro cirúrgico quanto no consultório. No centro cirúrgico faço o papel de Instrumentadora. No consultório ajudo o dr no pré e pós operatório.</p>
+                                    <p className={styles.descricaoFuncionaria}>Estou com dr há 5 anos. Fico tanto no centro cirúrgico quanto no consultório. No centro cirúrgico faço o papel de Instrumentadora. No consultório ajudo o dr no pré e pós-operatório.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Paula Melo</h2>
@@ -140,7 +140,7 @@ export default function PagClinica(){
                     </div>
                     <div id={styles.textosGaleria}>
                         <h2 id={styles.tituloGaleria}>Galeria de Fotos</h2>
-                        <p id={styles.descricaoGaleria}>Confira nesta seção algumas fotos de nossa clinica.  É uma clinica ampla, bem organizada e planejada. FIcamos no Centro Clínico Linea, Asa Sul, Brasília, Bloco B, Salas 25 e 27 –  Distrito Federal. </p>
+                        <p id={styles.descricaoGaleria}>Confira nesta seção algumas fotos de nossa clínica. É uma clínica ampla, bem organizada e planejada. Ficamos no Centro Clínico Línea, Asa Sul, Brasília, Bloco B, Salas 25 e 27 – Distrito Federal. </p>
                         <a href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" id={styles.linkGaleria}>Agendar consulta</a>
                     </div>
                 </div>

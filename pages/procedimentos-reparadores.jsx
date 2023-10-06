@@ -95,7 +95,7 @@ export default function PagReparadores() {
                             <Link className={styles.linksReparadores} href="/bodytite">BodyTite</Link>
                         </li>
                         <li>
-                            <Link className={styles.linksReparadores} href="/clinica">Clinica</Link>
+                            <Link className={styles.linksReparadores} href="/clinica">Clínica</Link>
                         </li>
                     </ul>
                 </nav>

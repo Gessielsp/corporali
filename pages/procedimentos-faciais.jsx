@@ -128,7 +128,7 @@ export default function Pagfaciais() {
                         <Link className={styles.linksFaciais} href="/bodytite">BodyTite</Link>
                     </li>
                     <li>
-                        <Link className={styles.linksFaciais} href="/clinica">Clinica</Link>
+                        <Link className={styles.linksFaciais} href="/clinica">Clínica</Link>
                     </li>
                 </ul>
             </nav>

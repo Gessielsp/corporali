@@ -50,7 +50,7 @@ export default function PagDrMarcelo() {
                     </div>
                     <div id={styles.linhaSobreMarcelo}></div>
                     <div>
-                        <p className={styles.descricaoSobreMarcelo}>No coração de sua missão está a paixão pela ciência, que o impulsionou a inovar em cirurgias abdominais, faciais, reparadoras e mamárias. Seu compromisso com a excelência é evidente em cada procedimento, onde a arte da cirurgia se combina com sua empatia e compaixão pelos pacientes.</p>
+                        <p className={styles.descricaoSobreMarcelo}>O Dr. Marcelo Moreira é um cirurgião plástico apaixonado e dedicado à sua profissão. Sua expertise e compromisso com a excelência se destacam em cada intervenção cirúrgica. Combinando a arte da cirurgia com empatia e compaixão pelos pacientes, o Dr. Marcelo é a escolha confiável para quem busca cuidados estéticos excepcionais.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ export default function PagDrMarcelo() {
             <div id={styles.carreiraMarcelo}>
                 <div>
                     <h2 id={styles.tituloSobreCarreira}>Carreira Profissional</h2>
-                    <p id={styles.descricaoSobreCarreira}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias amet in doloremque nobis labore, soluta quod laboriosam sint at veniam iste voluptatum perspiciatis, architecto consectetur quidem quos tempora minima!</p>
+                    <p id={styles.descricaoSobreCarreira}>Dr. Marcelo Moreira tem uma carreira brilhante na cirurgia plástica, destacando-se pela paixão, dedicação à excelência e empatia com os pacientes.</p>
                 </div>
                 <div className={styles.boxsCarreiras}>
                     <div className={styles.boxConteudoCarreiras}>
@@ -123,7 +123,7 @@ export default function PagDrMarcelo() {
                         <div id={styles.bgCarreiraDois} className={styles.bgCarreira}>
                             <h2 className={styles.tituloCarreiraMarcelo}>Carreira Inicial</h2>
                         </div>
-                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique começou sua jornada acadêmica com uma paixão precoce pela biomedicina. Ele se formou com distinção em Biologia Molecular na fictícia Universidade Avançada de Ciências Biomédicas. Durante seus anos de graduação, ele um talento notável para a pesquisa genética, participando de projetos.</p>
+                        <p className={styles.descricaoCarreira}>Dr. Marcelo Moreira possui uma carreira profissional notável na cirurgia plástica. Sua jornada é marcada por uma profunda paixão pela ciência e um compromisso inabalável com a excelência cirúrgica. Com anos de experiência, ele se destacou por sua habilidade artística e, ao mesmo tempo, pela empatia e compaixão que dedica a cada paciente. Através de sua carreira, Dr. Marcelo tem sido um pioneiro na busca por resultados excepcionais e na promoção do bem-estar estético e emocional de seus clientes.</p>
                     </div>
                 </div>
                 <div className={styles.boxsCarreiras}>
@@ -131,13 +131,13 @@ export default function PagDrMarcelo() {
                         <div id={styles.bgCarreiraTres} className={styles.bgCarreira}>
                             <h2 className={styles.tituloCarreiraMarcelo}>Atividades</h2>
                         </div>
-                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique começou sua jornada acadêmica com uma paixão precoce pela medicina. Ele se formou com distinção em Biologia Molecular na fictícia Universidade Avançada de Ciências Biomédicas. Durante seus anos de graduação, ele um talento notável para a pesquisa genética, participando de projetos.</p>
+                        <p className={styles.descricaoCarreira}>Dr. Marcelo Moreira é um renomado cirurgião plástico com uma carreira profissional distinta. Sua jornada é uma fusão de paixão pela ciência e dedicação incansável à excelência cirúrgica. Com vasta experiência, ele se destaca não apenas por sua habilidade cirúrgica, mas também por sua capacidade de conectar-se com os pacientes de maneira empática e compassiva. Ao longo de sua carreira, Dr. Marcelo tem sido um líder na busca constante por resultados excepcionais, impactando positivamente a vida e a autoestima de seus pacientes.</p>
                     </div>
                     <div className={styles.boxConteudoCarreiras}>
                         <div id={styles.bgCarreiraQuatro} className={styles.bgCarreira}>
                             <h2 className={styles.tituloCarreiraMarcelo}>Conquistas</h2>
                         </div>
-                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique começou sua jornada acadêmica com uma paixão precoce pela biomedicina. Ele se formou com distinção em Biologia Molecular na fictícia Universidade Avançada de Ciências Biomédicas. Durante seus anos de graduação, ele um talento notável para a pesquisa genética, participando de projetos.</p>
+                        <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique possui uma sólida formação acadêmica em Biologia Molecular, com destaque em pesquisa genética. Seu doutorado em Genética Molecular resultou em contribuições significativas para a compreensão de doenças hereditárias. Hoje, como cirurgião plástico experiente, ele aplica seu conhecimento acadêmico em prol de resultados cirúrgicos excepcionais.</p>
                     </div>
                 </div>
             </div>

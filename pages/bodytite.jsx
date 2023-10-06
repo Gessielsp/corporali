@@ -29,7 +29,7 @@ export default function PagBodytite(){
                 <div id={styles.bgBanner}>
                     <div id={styles.conteudoBanner}>
                         <h1 className="animate__animated animate__fadeInDown"><strong id={styles.tituloBannerBodytite}>Bodytite</strong></h1>
-                        <p className="animate__animated animate__fadeInRight" id={styles.descricaoBannerBodyTite}>Conheça agora o mais novo equipamento de nossa cliníca. Ele foi construido com tecnologias de última geração.</p>
+                        <p className="animate__animated animate__fadeInRight" id={styles.descricaoBannerBodyTite}>Conheça agora o mais novo equipamento de nossa clínica. Ele foi construído com tecnologias de última geração.</p>
                         <Image className="animate__animated animate__shakeY" id={styles.imgSetaParaBaixo} src={setaParaBaixo} alt="Ir para Bodytite"/>
                     </div>
                 </div>
@@ -137,7 +137,7 @@ export default function PagBodytite(){
                     <h2 id={styles.tituloInfo}>Confira mais infomações sobre o bodytite</h2>
                     <p id={styles.descricaoInfo}>Veja alguns tópicos importantes sobre este novo equipamento que adquirimos recentemente.</p>
                     <nav id={styles.navegacaoInfo}>
-                        <Link className={styles.linkInfo} href="/clinica">Clinica</Link>
+                        <Link className={styles.linkInfo} href="/clinica">Clínica</Link>
                         <Link className={styles.linkInfo} href="/procedimentos-mamarios">Mamários</Link>
                         <Link className={styles.linkInfo} href="/procedimentos-faciais">Faciais</Link>
                         <Link className={styles.linkInfo} href="/procedimentos-reparadores">Reparadores</Link>
