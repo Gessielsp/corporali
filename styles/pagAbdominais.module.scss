@@ -5,7 +5,6 @@
     background-color: $primarycolor;
     margin-bottom: 50px;
 }
-
 #bannerAbdominais {
     height: 400px;
     background-image: url(../public/corporali/procedimentos/abdominal_2.jpg);
@@ -13,7 +12,6 @@
     background-position: center;
     margin-bottom: 50px;
 }
-
 #bgBannerAbdominais {
     background-color: #18181894;
     height: 100%;
@@ -21,7 +19,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #conteudoBannerAbdominais {
     width: 70%;
     height: 150px;
@@ -29,7 +26,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 #tituloBannerAbdominais {
     color: #fff;
     border-left: 3px solid #fff;
@@ -37,14 +33,12 @@
     font-size: 45px;
     text-transform: uppercase;
 }
-
 #descricaoAbdominais {
     color: #A8A8A8;
     border-left: 3px solid transparent;
     padding-left: 10px;
     font-size: 18px;
 }
-
 #conteudoPrincipalAbdominais {
     width: 90vw;
     border-top: 3px solid $primarycolor;
@@ -52,12 +46,10 @@
     margin: 0px auto;
     padding-top: 50px;
 }
-
 #sobreProcedimentosAbdominais {
     display: flex;
     justify-content: space-between;
 }
-
 #bgMarcacao {
     background-image: url(../public/corporali/procedimentos/abdominal.jpg);
     background-size: cover;
@@ -69,16 +61,13 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
 #iconYoutube {
     width: 100px;
     height: 100px;
 }
-
 #textosProcedAbdominais {
     width: 50%;
 }
-
 #tituloSobreAbdominais {
     color: $primarycolor;
     border-left: 3px solid #fff;
@@ -86,7 +75,6 @@
     text-transform: uppercase;
     font-size: 35px;
 }
-
 .descricaoSobreAbdominais {
     color: #fff;
     font-size: 18px;
@@ -94,7 +82,6 @@
     margin-top: 30px;
     text-align: justify;
 }
-
 .tituloProcedAbdominais {
     color: $primarycolor;
     border-left: 3px solid #fff;
@@ -103,7 +90,6 @@
     text-transform: uppercase;
     margin: 50px 0;
 }
-
 .descricaoProcedAbdominais {
     color: #fff;
     font-size: 18px;
@@ -111,17 +97,14 @@
     margin-top: 30px;
     text-align: justify;
 }
-
 #navegacaoAbdominais {
     margin: 100px 0;
 }
-
 #listaSessaoAdbominais {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-
 .linksAbdominais {
     background-color: $primarycolor;
     color: $secondarycolor;
@@ -139,7 +122,6 @@
         color: #D8D8D8;
     }
 }
-
 #agendeConsultaAbdominais {
     margin: 50px 0;
     background-image: url(../public/corporali/avulsos/aperto_maos_abdominais.jpg);
@@ -148,7 +130,6 @@
     height: 300px;
     display: flex;
 }
-
 #conteudoAgendeConsultaAbdominais {
     background-color: #181818b4;
     width: 100%;
@@ -156,19 +137,16 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
 #tituloAgendeConsultaAbdominais {
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
     margin: 20px 0;
 }
-
 #descricaoAgendeConsultaAbdominais {
     color: #D8D8D8;
     font-size: 18px;
 }
-
 #linkAgendeConsultaAbdominais {
     border: 2px solid $primarycolor;
     width: 170px;
@@ -190,29 +168,25 @@
     width: 600px;
     background-color: $secondarycolor;
     border-radius: 15px;
-    box-shadow: 1px 0px 5px $primarycolor;
     position: fixed;
     top: 30%;
     right: 10%;
     display: none;
 }
-
 #conteudoModal {
     border: 2px solid $primarycolor;
     padding: 20px;
     margin: 50px;
+    border-radius: 15px;
 }
-
 #descricaoModal {
     color: #fff;
     margin-bottom: 50px;
 }
-
 #caixaEscolhasModal {
     display: flex;
     justify-content: space-between;
 }
-
 #boxFecharModal {
     background-color: #FF6B00;
     display: flex;
@@ -224,12 +198,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 #ondeAssistir {
     display: flex;
     justify-content: right;
 }
-
 #assistirNoSite {
     background-color: $primarycolor;
     color: #3C3C3C;
@@ -242,7 +214,6 @@
     margin-right: 20px;
     border-radius: 5px;
 }
-
 #assistirNoYoutube {
     background-color: #ff0000;
     color: #fff;
@@ -254,24 +225,20 @@
     font-size: 13px;
     border-radius: 5px;
 }
-
 /* FIM MODAL */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #bannerAbdominais {
         height: 300px;
         width: 100%;
     }
-
     #tituloBannerAbdominais {
         font-size: 20px;
         width: 260px;
     }
-
     #descricaoAbdominais {
         margin-top: 25px;
         text-align: justify;
     }
-
     #sobreProcedimentosAbdominais {
         display: flex;
         flex-direction: column;
@@ -280,7 +247,6 @@
         justify-content: center;
         width: 90vw;
     }
-
     #bgMarcacao {
         margin-top: 25px;
         order: 1;
@@ -294,8 +260,6 @@
         width: 90vw;
         order: 0;
     }
-
-
     #tituloSobreAbdominais {
         font-size: 24px;
         width: 100%;
@@ -303,64 +267,53 @@
         text-align: center;
         padding: 0;
     }
-
-
     .descricaoSobreAbdominais {
         text-align: justify;
         font-size: 18px;
         width: 90vw;
     }
-
     .tituloProcedAbdominais {
         font-size: 18px;
         width: 100%;
     }
-
     .descricaoProcedAbdominais {
         text-align: justify;
         font-size: 15px;
     }
-
     #navegacaoAbdominais {
         margin: 0;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
     #listaSessaoAdbominais {
         flex-wrap: wrap;
         margin: 30px 0;
         width: 250px;
         height: 100px;
     }
-
     .linksAbdominais {
         font-size: 10px;
         width: 70px;
     }
-
     #agendeConsultaAbdominais {
         background-position: center;
         display: flex;
         flex-direction: column;
         height: auto;
     }
-
     #conteudoAgendeConsultaAbdominais {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding-bottom: 20px;
     }
-
     #tituloAgendeConsultaAbdominais {
         font-size: 20px;
         order: 1;
         width: 300px;
         color: $primarycolor;
     }
-
     #descricaoAgendeConsultaAbdominais {
         font-size: 15px;
         order: 2;
@@ -368,11 +321,49 @@
         text-align: center;
         width: 300px;
     }
-
     #linkAgendeConsultaAbdominais {
         width: 150px;
         order: 3;
     }
+    /* INICIO MODAL */
+    #modal {
+        width: 300px;
+        box-shadow: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #conteudoModal {
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    #descricaoModal {
+        text-align: justify;
+    }
+    #caixaEscolhasModal {
+        display: flex;
+        justify-content: space-between;
+    }
+    #boxFecharModal {
+        font-size: 12px;
+        width: 80px;
+    }
+    #ondeAssistir {
+        flex-direction: column;
+    }
+    #assistirNoSite {
+        height: 30px;
+        width: 100px;
+        margin: 0 0 15px 0;
+        font-size: 11px;
+    }
+    #assistirNoYoutube {
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+    }
+    /* FIM MODAL */
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -380,17 +371,14 @@
         height: 300px;
         width: 100%;
     }
-
     #tituloBannerAbdominais {
         font-size: 20px;
         width: 260px;
     }
-
     #descricaoAbdominais {
         margin-top: 25px;
         text-align: justify;
     }
-
     #sobreProcedimentosAbdominais {
         display: flex;
         flex-direction: column;
@@ -399,14 +387,12 @@
         justify-content: center;
         width: 90vw;
     }
-
     #bgMarcacao {
         margin-top: 25px;
         order: 1;
         width: 90vw;
         height: 250px;
     }
-
     #textosProcedAbdominais {
         display: flex;
         flex-direction: column;
@@ -415,8 +401,6 @@
         order: 0;
 
     }
-
-
     #tituloSobreAbdominais {
         font-size: 24px;
         width: 100%;
@@ -424,63 +408,53 @@
         text-align: center;
         padding: 0;
     }
-
     .descricaoSobreAbdominais {
         text-align: justify;
         font-size: 18px;
         width: 90vw;
     }
-
     .tituloProcedAbdominais {
         font-size: 18px;
         width: 100%;
     }
-
     .descricaoProcedAbdominais {
         text-align: justify;
         font-size: 15px;
     }
-
     #navegacaoAbdominais {
         margin: 0;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
     #listaSessaoAdbominais {
         flex-wrap: wrap;
         margin: 30px 0;
         width: 250px;
         height: 100px;
     }
-
     .linksAbdominais {
         font-size: 10px;
         width: 70px;
     }
-
     #agendeConsultaAbdominais {
         background-position: center;
         display: flex;
         flex-direction: column;
         height: auto;
     }
-
     #conteudoAgendeConsultaAbdominais {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding-bottom: 20px;
     }
-
     #tituloAgendeConsultaAbdominais {
         font-size: 20px;
         order: 1;
         width: 300px;
         color: $primarycolor;
     }
-
     #descricaoAgendeConsultaAbdominais {
         font-size: 15px;
         order: 2;
@@ -488,11 +462,53 @@
         text-align: center;
         width: 300px;
     }
-
     #linkAgendeConsultaAbdominais {
         width: 150px;
         order: 3;
     }
+    /* INICIO MODAL */
+    #modal {
+        width: 400px;
+        box-shadow: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #conteudoModal {
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    #descricaoModal {
+        text-align: justify;
+    }
+    #caixaEscolhasModal {
+        display: flex;
+        justify-content: space-between;
+    }
+    #fecharModal{
+        width: 15px;
+        height: 15px;
+    }
+    #boxFecharModal {
+        font-size: 15px;
+        width: 120px;
+    }
+    #ondeAssistir {
+        flex-direction: column;
+    }
+    #assistirNoSite {
+        height: 30px;
+        width: 150px;
+        margin: 0 0 15px 0;
+        font-size: 15px;
+    }
+    #assistirNoYoutube {
+        height: 30px;
+        width: 150px;
+        font-size: 15px;
+    }
+    /* FIM MODAL */
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
