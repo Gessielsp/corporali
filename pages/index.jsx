@@ -77,8 +77,6 @@ export default function Home() {
         </div>
       </div>
 
-      <LinhaHorizontalLonga />
-
       <div id={styles.procedimentos}>
         <div id={styles.conteudoProcedimentos}>
           <div id={styles.caixaUmProcedimentos}>
@@ -91,17 +89,21 @@ export default function Home() {
             <div className={styles.caixaPequenaProcedimentos}>
               <div className={styles.caixaProcedimento}>
                 <Image className={styles.iconesProcedimento} src={iconeMamario} alt="Icone Mamarios"/>
+                <a className={styles.linksProcedimentos} href="procedimentos-mamarios">Mamários</a>
               </div>
               <div className={styles.caixaProcedimento}>
                 <Image className={styles.iconesProcedimento} src={iconeAbdominal} alt="Icone Abdominais"/>
+                <a className={styles.linksProcedimentos} href="procedimentos-abdominais">Abdominais</a>
               </div>
             </div>
             <div className={styles.caixaPequenaProcedimentos}>
               <div className={styles.caixaProcedimento}>
                 <Image className={styles.iconesProcedimento} src={iconeReparadores} alt="Icone Reparadores"/>
+                <a className={styles.linksProcedimentos} href="procedimentos-reparadores">Reparadores</a>
               </div>
               <div className={styles.caixaProcedimento}>
                 <Image className={styles.iconesProcedimento} src={iconeFacial} alt="Icone Faciais"/>
+                <a className={styles.linksProcedimentos} href="procedimentos-faciais">Faciais</a>
               </div>
             </div>
           </div>
