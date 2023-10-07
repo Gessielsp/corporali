@@ -221,7 +221,6 @@
     width: 600px;
     background-color: $secondarycolor;
     border-radius: 15px;
-    box-shadow: 1px 0px 5px $primarycolor;
     position: fixed;
     top: 30%;
     right: 10%;
@@ -231,6 +230,7 @@
     border: 2px solid $primarycolor;
     padding: 20px;
     margin: 50px;
+    border-radius: 15px;
 }
 #descricaoModal{
     color: #fff;
@@ -425,7 +425,45 @@
         width: 150px;
         order: 3;
     }
-  
+    /* INICIO MODAL */
+    #modal {
+        width: 300px;
+        box-shadow: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #conteudoModal {
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    #descricaoModal {
+        text-align: justify;
+    }
+    #caixaEscolhasModal {
+        display: flex;
+        justify-content: space-between;
+    }
+    #boxFecharModal {
+        font-size: 12px;
+        width: 80px;
+    }
+    #ondeAssistir {
+        flex-direction: column;
+    }
+    #assistirNoSite {
+        height: 30px;
+        width: 100px;
+        margin: 0 0 15px 0;
+        font-size: 11px;
+    }
+    #assistirNoYoutube {
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+    }
+    /* FIM MODAL */
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     #bannerFaciais {
@@ -573,7 +611,49 @@
         width: 150px;
         order: 3;
     }
-  
+    /* INICIO MODAL */
+    #modal {
+        width: 400px;
+        box-shadow: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #conteudoModal {
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    #descricaoModal {
+        text-align: justify;
+    }
+    #caixaEscolhasModal {
+        display: flex;
+        justify-content: space-between;
+    }
+    #fecharModal{
+        width: 15px;
+        height: 15px;
+    }
+    #boxFecharModal {
+        font-size: 15px;
+        width: 120px;
+    }
+    #ondeAssistir {
+        flex-direction: column;
+    }
+    #assistirNoSite {
+        height: 30px;
+        width: 150px;
+        margin: 0 0 15px 0;
+        font-size: 15px;
+    }
+    #assistirNoYoutube {
+        height: 30px;
+        width: 150px;
+        font-size: 15px;
+    }
+    /* FIM MODAL */
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #bannerFaciais {

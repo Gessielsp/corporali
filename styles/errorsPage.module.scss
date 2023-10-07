@@ -1,0 +1,76 @@
+@import './cores.module.scss';
+
+#conteudoPrincipal{
+    border-top: 3px solid $primarycolor;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#titulo{
+    color: $primarycolor;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#subtitulo{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#descricao{
+    color: #666666;
+    text-align: center;
+    width: 80%;
+}
+#caixaIrParaHome{
+    margin-top: 50px;
+}  
+#irHome{
+    text-decoration: none;
+    background-color: $primarycolor;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    width: 300px;
+    color: #181818;
+    font-size: 20px;
+    border-radius: 10px;
+    &:hover{
+        background-color: #0dbd9c;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #titulo{
+        font-size: 40px;
+    }   
+    #subtitulo{
+        font-size: 25px;
+    } 
+    #descricao{
+        font-size: 20px;
+    }
+    #irHome{
+        width: 250px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    #titulo{
+        font-size: 100px;
+        margin-bottom: 30px;
+    }   
+    #subtitulo{
+        font-size: 50px;
+        margin-bottom: 30px;
+    } 
+    #descricao{
+        font-size: 30px;
+    }
+    #irHome{
+        width: 500px;
+        font-size: 30px;
+    }
+}

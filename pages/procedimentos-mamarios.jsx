@@ -112,7 +112,7 @@ export default function PagMamarios() {
                         </div>
                         <div id={styles.ondeAssistir}>
                             <a id={styles.assistirNoSite} href="">Assistir no Site</a>
-                            <a id={styles.assistirNoYoutube} href="">Assistir no YouTube</a>
+                            <a id={styles.assistirNoYoutube} href="https://www.youtube.com/watch?v=Bd6LFb-0ouk&ab_channel=InstitutoCorporali" target="_blank">Assistir no YouTube</a>
                         </div>
                     </div>
                 </div>
