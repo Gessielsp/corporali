@@ -101,7 +101,7 @@ export default function PagMamarios() {
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
                     <div>
-                        <p id={styles.descricaoModal}>Gostaria de visualizar este video neste site mesmo ou no canal do Instituto Corporali no YouTube?</p>
+                        <p id={styles.descricaoModal}>Gostaria de visualizar o vídeo neste site ou no YouTube, no canal do Instituto Corporali?</p>
                     </div>
                     <div id={styles.caixaEscolhasModal}>
                         <div>
@@ -111,8 +111,8 @@ export default function PagMamarios() {
                             </div>
                         </div>
                         <div id={styles.ondeAssistir}>
-                            <a id={styles.assistirNoSite} href="">Assistir no Site</a>
-                            <a id={styles.assistirNoYoutube} href="https://www.youtube.com/watch?v=Bd6LFb-0ouk&ab_channel=InstitutoCorporali" target="_blank">Assistir no YouTube</a>
+                            <Link id={styles.assistirNoSite} href="/video-mamarios">Assistir no Site</Link>
+                            <Link id={styles.assistirNoYoutube} href="https://www.youtube.com/watch?v=Bd6LFb-0ouk&ab_channel=InstitutoCorporali" target="_blank">Assistir no YouTube</Link>
                         </div>
                     </div>
                 </div>

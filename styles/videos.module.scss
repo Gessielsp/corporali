@@ -1,24 +1,209 @@
-#conteudoPrincipal{
-    
+@import "./cores.module.scss";
+
+.conteudoPrincipal{
+    background-size: cover;
+    height: 100vh;
+    border-top: 3px solid $primarycolor;
+}
+#bgMamarios{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_1.JPG);
+}
+#bgAbdominais{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_3.JPG);
+}
+#bgFaciais{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_10.JPG);
+}
+#bgReparadores{
+    background-image: url(../public/corporali/dr_marcelo/marcelo_14.jpg);
+}
+#bgConteudo{
+    background-color: #181818cc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #conteudo{
-    
+    display: flex;
+    align-items: center;
+    width: 90%;
 }
-#caixaDescricao{
-    
-}
+#caixaDescricao{}
 #titulo{
-    
+    color: $primarycolor;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    font-size: 40px;
 }
 #descricao{
-    
+    color: #fff;
+    margin-bottom: 50px;
+    width: 85%;
 }
-#caixaLinks{
-    
-}
+#caixaLinks{}
 #linksVoltar{
-    
+    width: 200px;
+    background-color: $primarycolor;
+    border: 3px solid transparent;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #181818;
+    margin-right: 15px;
+    &:hover{
+        background-color: #19ac91;
+    }
 }
 #voltarHome{
+    width: 200px;
+    border: 3px solid $primarycolor;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        background-color: #464545;
+    }
+}
+#videoIframe{
+    border: none;
+    height: 500px;
+    border-radius: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #conteudo{
+        flex-direction: column;
+        width: 100%;
+    }
+    #caixaDescricao{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #titulo{
+        font-size: 30px;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    #descricao{
+        text-align: center;
+    }
+    #caixaLinks{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    #linksVoltar{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    #voltarHome{
+        text-align: center;
+    }
+    #videoIframe{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+    } 
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #conteudo{
+        flex-direction: column;
+        width: 100%;
+    }
+    #caixaDescricao{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #titulo{
+        font-size: 30px;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    #descricao{
+        text-align: center;
+        font-size: 18px;
+    }
+    #caixaLinks{
+        display: flex;
+        flex-direction: column; 
+    }
+    #linksVoltar{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #voltarHome{
+        text-align: center;
+    }
+    #videoIframe{
+        width: 350px;
+        height: 250px;
+        margin-bottom: 30px;
+    } 
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #conteudo{
+       flex-direction: column;
+    }
+    #caixaDescricao{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #titulo{
+        border-left: none;
+        padding-left: 0;
+    }
+    #descricao{
+        text-align: center;
+    }
+    #videoIframe{
+        height: 300px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .conteudoPrincipal{
+        height: 800px;
+    }
+    #bgAbdominais{
+        background-image: none;
+    }
+    #conteudo{
+        flex-direction: column;
+    }
+    #caixaDescricao{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+    #titulo{
+        border-left: none;
+        padding-left: 0;
+    }
+    #descricao{
+        text-align: center;
+    }
+    #videoIframe{
+        width: 600px;
+        height: 400px;
+        margin: 30px 0;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
     
 }
