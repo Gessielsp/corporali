@@ -107,8 +107,8 @@ export default function PagAbdominais() {
                             </div>
                         </div>
                         <div id={styles.ondeAssistir}>
-                            <a id={styles.assistirNoSite} href="">Assistir no Site</a>
-                            <a id={styles.assistirNoYoutube} href="https://www.youtube.com/watch?v=oPrDigx3kyo&ab_channel=InstitutoCorporali" target="_blank">Assistir no YouTube</a>
+                            <Link id={styles.assistirNoSite} href="/video-abdominal">Assistir no Site</Link>
+                            <Link id={styles.assistirNoYoutube} href="https://www.youtube.com/watch?v=oPrDigx3kyo&ab_channel=InstitutoCorporali" target="_blank">Assistir no YouTube</Link>
                         </div>
                     </div>
                 </div>
