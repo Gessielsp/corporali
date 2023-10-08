@@ -37,38 +37,41 @@ export default function PagReparadores() {
                 </div>
             </div>
             <main id={styles.conteudoPrincipalReparadores}>
-                <div id={styles.sobreProcedimentosReparadores}>
-                    <div id={styles.bgAnalise} onClick={() => mostrarModal()}>
-                        <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube" />
+                <div id={styles.conteudoTextos}>
+                    <div id={styles.sobreProcedimentosReparadores}>
+                        <div id={styles.bgAnalise} onClick={() => mostrarModal()}>
+                            <Image id={styles.iconeYoutube} src={iconYoutubeVermelho} alt="Icone Youtube" />
+                        </div>
+                        <div id={styles.textoProcedimentosReparadores}>
+                            <h2 id={styles.tituloSobreReparadores}>Sobre os procedimentos</h2>
+                            <p className={styles.descricaoSobreReparadores}>Os procedimentos mamários são intervenções cirúrgicas ou não-cirúrgicas que visam melhorar a estética ou corrigir problemas relacionados aos seios femininos. Isso pode incluir cirurgias de aumento, redução ou levantamento dos seios, bem como procedimentos de reconstrução após mastectomia. </p>
+                            <p className={styles.descricaoSobreReparadores}>A essência dos procedimentos cirúrgicos reparadores reside na capacidade de devolver aos indivíduos a confiança em si mesmos e a funcionalidade de seus corpos. Uma ampla variedade de técnicas cirúrgicas é empregada para alcançar esses objetivos, abrangendo desde reconstruções complexas de áreas afetadas por queimaduras, traumas ou doenças, até procedimentos estéticos destinados a melhorar a harmonia facial e corporal.</p>
+                        </div>
                     </div>
-                    <div id={styles.textoProcedimentosReparadores}>
-                        <h2 id={styles.tituloSobreReparadores}>Sobre os procedimentos</h2>
-                        <p className={styles.descricaoSobreReparadores}>Os procedimentos mamários são intervenções cirúrgicas ou não-cirúrgicas que visam melhorar a estética ou corrigir problemas relacionados aos seios femininos. Isso pode incluir cirurgias de aumento, redução ou levantamento dos seios, bem como procedimentos de reconstrução após mastectomia. </p>
-                        <p className={styles.descricaoSobreReparadores}>A essência dos procedimentos cirúrgicos reparadores reside na capacidade de devolver aos indivíduos a confiança em si mesmos e a funcionalidade de seus corpos. Uma ampla variedade de técnicas cirúrgicas é empregada para alcançar esses objetivos, abrangendo desde reconstruções complexas de áreas afetadas por queimaduras, traumas ou doenças, até procedimentos estéticos destinados a melhorar a harmonia facial e corporal.</p>
+                    <div>
+                        <h2 className={styles.tituloProcedReparadores}>Câncer de Pele - Tratamento</h2>
+                        <p className={styles.descricaoProcedReparadores}>Os preenchimentos dérmicos injetáveis se tornaram os queridinhos do mundo da estética. Tratam-se de substâncias utilizadas para dar maior volume aos lábios, melhorar contornos da face, suavizar ou eliminar rugas, podendo até serem utilizados para melhorar a aparência de cicatrizes.</p>
+                    </div>
+                    <div>
+                        <h2 className={styles.tituloProcedReparadores}>Cirurgia Intima</h2>
+                        <p className={styles.descricaoProcedReparadores}>O excesso no tamanho dos seios causa problemas na saúde da mulher, como questões relacionadas à coluna, por exemplo – em outros casos, os problemas causados são de cunho emocional.
+                            Para resolver este problema, a mamoplastia redutora remove o excesso de gordura nos seios, bem como o tecido glandular e a pele. Este procedimento resulta em seios proporcionais ao corpo da paciente.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className={styles.tituloProcedReparadores}>Correção de Cicatriz</h2>
+                        <p className={styles.descricaoProcedReparadores}>Após acidentes ou procedimentos cirúrgicos, pessoas podem ficar com cicatrizes muito salientes. A cicatriz não pode ser completamente apagada, mas pode ser corrigida.
+                            Mesmo uma ferida que cicatriza bem pode resultar em uma cicatriz com má aparência. As opções de tratamento variam de acordo com o tipo e o grau de cicatrização e podem incluir:
+                        </p>
+                        <ul id={styles.unListReparadores}>
+                            <li className={styles.listDescricaoProcedReparadores}>Tratamentos tópicos simples.</li>
+                            <li className={styles.listDescricaoProcedReparadores}>Procedimentos minimamente invasivos.</li>
+                            <li className={styles.listDescricaoProcedReparadores}>Revisão cirúrgica com técnicas avançadas de fechamento da ferida.</li>
+                        </ul>
+                        <p className={styles.descricaoProcedReparadores}>A cirurgia de correção de cicatriz destina-se a minimizar a cicatriz de modo que fique mais uniforme com o seu tom de pele e a textura circundante. Apesar da correção da cicatriz proporcionar resultado estético mais agradável ou melhorar uma cicatriz que tenha má cicatrização, uma cicatriz não pode ser completamente apagada.</p>
                     </div>
                 </div>
-                <div>
-                    <h2 className={styles.tituloProcedReparadores}>Câncer de Pele - Tratamento</h2>
-                    <p className={styles.descricaoProcedReparadores}>Os preenchimentos dérmicos injetáveis se tornaram os queridinhos do mundo da estética. Tratam-se de substâncias utilizadas para dar maior volume aos lábios, melhorar contornos da face, suavizar ou eliminar rugas, podendo até serem utilizados para melhorar a aparência de cicatrizes.</p>
-                </div>
-                <div>
-                    <h2 className={styles.tituloProcedReparadores}>Cirurgia Intima</h2>
-                    <p className={styles.descricaoProcedReparadores}>O excesso no tamanho dos seios causa problemas na saúde da mulher, como questões relacionadas à coluna, por exemplo – em outros casos, os problemas causados são de cunho emocional.
-                        Para resolver este problema, a mamoplastia redutora remove o excesso de gordura nos seios, bem como o tecido glandular e a pele. Este procedimento resulta em seios proporcionais ao corpo da paciente.
-                    </p>
-                </div>
-                <div>
-                    <h2 className={styles.tituloProcedReparadores}>Correção de Cicatriz</h2>
-                    <p className={styles.descricaoProcedReparadores}>Após acidentes ou procedimentos cirúrgicos, pessoas podem ficar com cicatrizes muito salientes. A cicatriz não pode ser completamente apagada, mas pode ser corrigida.
-                        Mesmo uma ferida que cicatriza bem pode resultar em uma cicatriz com má aparência. As opções de tratamento variam de acordo com o tipo e o grau de cicatrização e podem incluir:
-                    </p>
-                    <ul id={styles.unListReparadores}>
-                        <li className={styles.listDescricaoProcedReparadores}>Tratamentos tópicos simples.</li>
-                        <li className={styles.listDescricaoProcedReparadores}>Procedimentos minimamente invasivos.</li>
-                        <li className={styles.listDescricaoProcedReparadores}>Revisão cirúrgica com técnicas avançadas de fechamento da ferida.</li>
-                    </ul>
-                    <p className={styles.descricaoProcedReparadores}>A cirurgia de correção de cicatriz destina-se a minimizar a cicatriz de modo que fique mais uniforme com o seu tom de pele e a textura circundante. Apesar da correção da cicatriz proporcionar resultado estético mais agradável ou melhorar uma cicatriz que tenha má cicatrização, uma cicatriz não pode ser completamente apagada.</p>
-                </div>
+            </main>    
                 <div id={styles.agendeConsultaReparadores}>
                     <div id={styles.conteudoAgendarConsultaReparadores}>
                         <div>
@@ -99,7 +102,7 @@ export default function PagReparadores() {
                         </li>
                     </ul>
                 </nav>
-            </main>
+            
             <Footer />
             <div id={styles.modal} className="modal" >
                 <div id={styles.conteudoModal}>
