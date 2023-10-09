@@ -150,7 +150,9 @@
     }
 }
 /* #setasProcedRestantes{} */
-/* .ProcedRestantes{} */
+.ProcedRestantes{
+    cursor: pointer;
+}
 #agendeConsultaFaciais{
     margin: 80px 0 0;
     background-image: url(../public/corporali/avulsos/aperto_maos_facial.jpg);
@@ -356,7 +358,7 @@
 
     }
     #tituloProcedRestantes{
-        width: 150px;
+        width: 250px;
         margin: 25px 0;
         
     }

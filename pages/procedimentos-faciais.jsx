@@ -12,13 +12,59 @@ const imgFacial = require("../public/corporali/procedimentos/facial_2.jpg");
 const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
+const imageCardUm = require("../public/corporali/dr_marcelo/marcelo_29.JPG");
+const imageCardDois = require("../public/corporali/dr_marcelo/marcelo_26.JPG");
+const imageCardTres = require("../public/corporali/dr_marcelo/marcelo_25.JPG");
+const imageCardQuatro = require("../public/corporali/dr_marcelo/marcelo_28.JPG");
+
 import { robotoCondensed } from "../fonts/fonts";
 
 import 'animate.css';
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+import { useState } from "react";
 
 
 export default function Pagfaciais() {
+    let [posicao, setPosicao] = useState(1);
+    let [dados, setDados] = useState([
+        {
+            titulo: "Redução de Rugas",
+            descricao: "Os preenchimentos dérmicos, como o ácido hialurônico, são frequentemente usados para suavizar rugas e linhas de expressão, especialmente ao redor dos olhos, boca e testa. Essas melhorias proporcionam uma aparência mais jovem e rejuvenescida, o que pode aumentar a confiança de alguém ao se sentir mais atraente e fresco.",
+            link: "https://linkdeacesso.com.br",
+            imagem: imageCardUm
+        },
+        {
+            titulo: "Volume Perdido",
+            descricao: "Com o envelhecimento, é comum perder volume nas maçãs do rosto, bochechas e lábios. Os preenchimentos podem restaurar esse volume perdido, proporcionando um contorno facial mais definido e harmonioso, o que pode melhorar a autoimagem.",
+            link: "https://linkdeacesso.com.br",
+            imagem: imageCardDois
+        },
+        {
+            titulo: "Melhoria dos Lábios",
+            descricao: "Lábios mais volumosos e definidos são uma tendência popular, e os preenchimentos labiais são uma maneira eficaz de alcançar essa aparência desejada. Ter lábios mais cheios e sensuais pode aumentar a autoestima de alguém, tornando-os mais confiantes em sua aparência.",
+            link: "https://linkdeacesso.com.br",
+            imagem: imageCardTres
+        }, {
+            titulo: "Correção de Assimetrias",
+            descricao: " Preenchimentos faciais podem ser usados para corrigir assimetrias faciais, como um queixo retraído ou bochechas desiguais. Ao criar uma aparência mais simétrica, os pacientes podem sentir-se mais seguros e satisfeitos com sua aparência.",
+            link: "https://linkdeacesso.com.br",
+            imagem: imageCardQuatro
+        },
+    ]);
+    function cardAnterior(){
+        if(posicao === 0){
+            setPosicao(posicao = 0)
+        } else if(posicao !== 0){
+            setPosicao(posicao = posicao -1)
+        }
+    }
+    function cardPosterior(){
+        if(posicao === 3){
+            setPosicao(posicao = 3)
+        }else if (posicao !== 3){
+            setPosicao(posicao = posicao +1)
+        }
+    }
     function mostrarModal() {
         const modal = document.querySelector('.modal');
         modal.style.display = "block";
@@ -84,18 +130,15 @@ export default function Pagfaciais() {
                 </div>
                 <div id={styles.preenchimentosRestantes}>
                     <div id={styles.conteudoProcedRestantes}>
-                        <Image id={styles.imgProcedRestantes} src={imgFacial} alt="Outros procedimentos faciais" width={300} />
+                        <Image id={styles.imgProcedRestantes} src={dados[posicao].imagem} alt="Outros procedimentos faciais" width={300} />
                         <div id={styles.boxProcedRestantes}>
-                            <h2 id={styles.tituloProcedRestantes}>Preenchimentos</h2>
-                            <p id={styles.descricaoProcedRestantes}>Com o passar dos anos, nossa pele perde gradualmente o volume e a elasticidade, resultando em rugas, linhas de expressão e sulcos. Os preenchimentos são uma solução eficaz para combater esses sinais do tempo.
-                                Esses procedimentos envolvem a injeção de substâncias seguras e aprovadas, como o ácido hialurônico, em áreas específicas do rosto. O ácido hialurônico é uma substância naturalmente presente na pele, que tem a capacidade de atrair e reter água,
-                                proporcionando volume e hidratação. Quando aplicado por um profissional experiente, os preenchimentos podem suavizar rugas e muito mais.
-                            </p>
+                            <h2 id={styles.tituloProcedRestantes}>{dados[posicao].titulo}</h2>
+                            <p id={styles.descricaoProcedRestantes}>{dados[posicao].descricao}</p>
                             <div id={styles.interacaoProcedRestantes}>
-                                <a id={styles.saberMaisProcedRestantes} href="#">Saber mais!</a>
+                                <a id={styles.saberMaisProcedRestantes} href={dados[posicao].link}>Saber mais!</a>
                                 <div id={styles.setasProcedRestantes}>
-                                    <Image className={styles.ProcedRestantes} src={setaEsquerda} alt="Seta esquerda para voltar" />
-                                    <Image className={styles.ProcedRestantes} src={setaDireita} alt="Seta direita para prosseguir" />
+                                    <Image className={styles.ProcedRestantes} onClick={() => cardAnterior()} src={setaEsquerda} alt="Seta esquerda para voltar" />
+                                    <Image className={styles.ProcedRestantes} onClick={() => cardPosterior()} src={setaDireita} alt="Seta direita para prosseguir" />
                                 </div>
                             </div>
                         </div>

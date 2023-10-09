@@ -75,6 +75,7 @@
 #imgBodyTite{
     height: 350px;
     width: 200px;
+
 }
 #imgMorpheus{
     height: 350px;
@@ -84,6 +85,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#setaEsquerda{
+    cursor: pointer;
+}
+#setaDireita{
+    cursor: pointer;
 }
 #descricaoSessaoUm{
     width: 500px;
