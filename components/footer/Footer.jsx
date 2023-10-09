@@ -8,6 +8,7 @@ import facebook from "../../public/corporali/icons/facebook.png";
 import instagram from "../../public/corporali/icons/instagram.png";
 import whatsapp from "../../public/corporali/icons/whatsapp.png";
 import youtube from "../../public/corporali/icons/youtube.png";
+import imgWebTech from "../../public/corporali/logos/WEB-TECH_logo.png";
 
 import Link from "next/link";
 
@@ -79,7 +80,7 @@ export default function Footer() {
                 </nav>
             </div>
             <div id={styles.webtechBox}>
-                <p>Desenvolvido por <a id={styles.webtech} href="#">© Web-Tech</a> | Todos os direitos reservados</p>
+                <a href="https://www.instagram.com/web_tech.dev/" target="_blank"><Image id={styles.webTech} src={imgWebTech} height={30} alt="imagem da Web-Tech" /></a>
             </div>
         </footer>
     )
