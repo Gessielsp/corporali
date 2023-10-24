@@ -50,7 +50,7 @@ export default function PagDrMarcelo() {
                     </div>
                     <div id={styles.linhaSobreMarcelo}></div>
                     <div>
-                        <p className={styles.descricaoSobreMarcelo}>O Dr. Marcelo Moreira é um cirurgião plástico apaixonado e dedicado à sua profissão. Sua expertise e compromisso com a excelência se destacam em cada intervenção cirúrgica. Combinando a arte da cirurgia com empatia e compaixão pelos pacientes, o Dr. Marcelo é a escolha confiável para quem busca cuidados estéticos excepcionais.</p>
+                        <p className={styles.descricaoSobreMarcelo}>O Dr. Marcelo Moreira, Membro Titular da Sociedade Brasileira de Cirurgia Plástica (SBCP), é um cirurgião plástico altamente qualificado. Possui uma Residência Médica em Cirurgia Plástica credenciada pelo MEC (Ministério da Educação e Cultura) e pela SBCP, realizada na Universidade Federal de Uberlândia (UFU). Seu registro médico é o CRM-DF 15052, com RQE 11961.</p>
                     </div>
                 </div>
             </div>
@@ -105,9 +105,9 @@ export default function PagDrMarcelo() {
                 </div>
             </div>
 
-            <div id={styles.linhaAbaixoGaleria}></div>
+            {/* <div id={styles.linhaAbaixoGaleria}></div> */}
 
-            <div id={styles.carreiraMarcelo}>
+            {/* <div id={styles.carreiraMarcelo}>
                 <div>
                     <h2 id={styles.tituloSobreCarreira}>Carreira Profissional</h2>
                     <p id={styles.descricaoSobreCarreira}>Dr. Marcelo Moreira tem uma carreira brilhante na cirurgia plástica, destacando-se pela paixão, dedicação à excelência e empatia com os pacientes.</p>
@@ -140,7 +140,7 @@ export default function PagDrMarcelo() {
                         <p className={styles.descricaoCarreira}>Dr. Marcelo Henrique possui uma sólida formação acadêmica em Biologia Molecular, com destaque em pesquisa genética. Seu doutorado em Genética Molecular resultou em contribuições significativas para a compreensão de doenças hereditárias. Hoje, como cirurgião plástico experiente, ele aplica seu conhecimento acadêmico em prol de resultados cirúrgicos excepcionais.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <nav id={styles.navegacaoMarcelo}>
                 <ul id={styles.linksSessaoMarcelo}>

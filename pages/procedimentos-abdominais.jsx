@@ -54,13 +54,9 @@ export default function PagAbdominais() {
                     <h2 className={styles.tituloProcedAbdominais}>Lipoaspiração/Lipoescultura</h2>
                     <p className={styles.descricaoProcedAbdominais}>A lipoaspiração é uma cirurgia plástica realizada com o intuito de melhorar o contorno corporal através da sucção dos excessos de gordura localizados em áreas como, por exemplo, barriga, braços, coxas, flancos (laterais do corpo), costas e papada. A diferença entre lipoaspiração e lipoescultura é que na lipoescultura, parte da gordura é tratada e reposicionada em locais estratégicos do corpo, como glúteos, sulcos do rosto, coxas, entre outros.</p>
                 </div>
-                {/* <div id={styles.lipoaspiracao}>
-                    <h2 className={styles.tituloProcedAbdominais}>Lipoaspiração</h2>
-                    <p className={styles.descricaoProcedAbdominais}>A lipoaspiração é uma cirurgia plástica realizada com o intuito de melhorar o contorno do corpo através da eliminação do excesso de gordura localizada em áreas do corpo, como por exemplo: barriga, braços, coxas, flancos (laterais do corpo) ou costas. Este procedimento é indicado para pacientes que ainda não chegaram aos 60 anos, preferencialmente pacientes mais jovens.</p>
-                </div> */}
                 <div id={styles.vibrolipoaspiracao}>
                     <h2 className={styles.tituloProcedAbdominais}>Vibrolipospiração</h2>
-                    <p className={styles.descricaoProcedAbdominais}>A vibrolipospiração se trata da remoção de gorduras através de uma lipoaspiração vibratória. O procedimento é feito com um aparelho que possui um motor de alto desempenho, que quando acoplado a cânulas de lipoaspiração, potencializa o procedimento tradicional. O aparelho sempre está acoplado a cânulas de lipoaspiração, o que potencializa e intensifica os movimentos de vai e vem da lipoaspiração tradicional. O pós-operatório deste procedimento pode ter menor edema e maior retração da pele nas áreas operadas.</p>
+                    <p className={styles.descricaoProcedAbdominais}>A vibrolipospiração se trata da remoção de gorduras através de uma lipoaspiração vibratória. O procedimento é feito com um aparelho que possui um motor de alto desempenho, que quando acoplado a cânulas de lipoaspiração, potencializa o procedimento, intensificando os movimentos de vai e vem da lipoaspiração tradicional. O pós-operatório deste procedimento pode ter menor edema e maior retração da pele nas áreas operadas.</p>
                 </div>
                 <nav id={styles.navegacaoAbdominais}>
                     <ul id={styles.listaSessaoAdbominais}>

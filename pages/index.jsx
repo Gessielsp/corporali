@@ -6,7 +6,7 @@ import styles from '../styles/index.module.scss';
 
 import { robotoCondensed } from '../fonts/fonts';
 
-const imgDoutor = require('../public/corporali/dr_marcelo/marcelo_0.JPG');
+const imgDoutor = require('../public/corporali/dr_marcelo/marcelo_32.JPG');
 const setaEsquerda = require('../public/corporali/icons/seta_branca_esquerda.png');
 const setaDireita = require('../public/corporali/icons/seta_branca_direita.png');
 const imgRelogio = require('../public/corporali/icons/relogio.png');
@@ -240,7 +240,7 @@ export default function Home() {
             <div id={styles.caixadasInformacoesdaClinica}>
               <div className={styles.clinicainformacoes}>
                 <Image id={styles.iconEmail} src={imgGmail} alt="Icone email" />
-                <p className={styles.boxDosTextos}>institutocorporalli@gmail.com</p>
+                <p className={styles.boxDosTextos}>institutocorporali@hotmail.com.br</p>
               </div>
               <div className={styles.clinicainformacoes}>
                 <Image id={styles.iconRelogio} src={imgRelogio} alt="Icone relogio" />

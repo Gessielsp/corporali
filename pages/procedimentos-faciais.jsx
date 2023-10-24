@@ -8,7 +8,6 @@ import Image from "next/image";
 
 const setaEsquerda = require("../public/corporali/icons/seta_esquerda_verde.png");
 const setaDireita = require("../public/corporali/icons/seta_direita_verde.png");
-const imgFacial = require("../public/corporali/procedimentos/facial_2.jpg");
 const iconeYoutubeVermelho = require("../public/corporali/icons/youtube_vermelho.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal.png");
 
@@ -34,12 +33,6 @@ export default function Pagfaciais() {
             imagem: imageCardUm
         },
         {
-            titulo: "Volume Perdido",
-            descricao: "Com o envelhecimento, é comum perder volume nas maçãs do rosto, bochechas e lábios. Os preenchimentos podem restaurar esse volume perdido, proporcionando um contorno facial mais definido e harmonioso, o que pode melhorar a autoimagem.",
-            link: "https://linkdeacesso.com.br",
-            imagem: imageCardDois
-        },
-        {
             titulo: "Melhoria dos Lábios",
             descricao: "Lábios mais volumosos e definidos são uma tendência popular, e os preenchimentos labiais são uma maneira eficaz de alcançar essa aparência desejada. Ter lábios mais cheios e sensuais pode aumentar a autoestima de alguém, tornando-os mais confiantes em sua aparência.",
             link: "https://linkdeacesso.com.br",
@@ -59,9 +52,9 @@ export default function Pagfaciais() {
         }
     }
     function cardPosterior(){
-        if(posicao === 3){
-            setPosicao(posicao = 3)
-        }else if (posicao !== 3){
+        if(posicao === 2){
+            setPosicao(posicao = 2)
+        }else if (posicao !== 2){
             setPosicao(posicao = posicao +1)
         }
     }
@@ -106,7 +99,7 @@ export default function Pagfaciais() {
                 </div>
                 <div>
                     <h2 className={styles.tituloProcedFaciais}>Lifting Facial</h2>
-                    <p className={styles.descricaoProcedFaciais}>Com o passar dos anos, as pálpebras ficam flácidas e sua queda pode atrapalhar o campo de visão. A Blefaroplastia tem o intuito de corrigir essa questão, que tanto atrapalha a visão de pessoas na terceira idade. Este procedimento ajuda tanto com a estética, quanto com a qualidade do seu campo de vista do paciente.</p>
+                    <p className={styles.descricaoProcedFaciais}>Com o passar dos anos, é natural que a pele perca sua elasticidade. A flacidez gerada por anos de expressões faciais incomoda muitas pessoas, que por sua vez recorrem a procedimentos estéticos. Não é uma tarefa fácil eliminar a flacidez que tanto incomoda homens e mulheres, mas é possível resolver essa questão complexa com o Lifting Facial, que previne ou corrige todos os sinais que apareceram na face com o tempo</p>
                 </div>
                 <div>
                     <h2 className={styles.tituloProcedFaciais}>Lifting Frontal</h2>

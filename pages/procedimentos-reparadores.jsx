@@ -44,18 +44,21 @@ export default function PagReparadores() {
                         </div>
                         <div id={styles.textoProcedimentosReparadores}>
                             <h2 id={styles.tituloSobreReparadores}>Sobre os procedimentos</h2>
-                            <p className={styles.descricaoSobreReparadores}>Os procedimentos mamários são intervenções cirúrgicas ou não-cirúrgicas que visam melhorar a estética ou corrigir problemas relacionados aos seios femininos. Isso pode incluir cirurgias de aumento, redução ou levantamento dos seios, bem como procedimentos de reconstrução após mastectomia. </p>
+                            <p className={styles.descricaoSobreReparadores}>Procedimentos reparadores são intervenções médicas que visam corrigir ou restaurar funções ou aspectos físicos comprometidos devido a lesões, defeitos congênitos, cirurgias anteriores ou envelhecimento. Esses procedimentos incluem cirurgias plásticas, reconstrução de órgãos, enxertos de tecidos e outros métodos terapêuticos.</p>
                             <p className={styles.descricaoSobreReparadores}>A essência dos procedimentos cirúrgicos reparadores reside na capacidade de devolver aos indivíduos a confiança em si mesmos e a funcionalidade de seus corpos. Uma ampla variedade de técnicas cirúrgicas é empregada para alcançar esses objetivos, abrangendo desde reconstruções complexas de áreas afetadas por queimaduras, traumas ou doenças, até procedimentos estéticos destinados a melhorar a harmonia facial e corporal.</p>
                         </div>
                     </div>
                     <div>
                         <h2 className={styles.tituloProcedReparadores}>Câncer de Pele - Tratamento</h2>
-                        <p className={styles.descricaoProcedReparadores}>Os preenchimentos dérmicos injetáveis se tornaram os queridinhos do mundo da estética. Tratam-se de substâncias utilizadas para dar maior volume aos lábios, melhorar contornos da face, suavizar ou eliminar rugas, podendo até serem utilizados para melhorar a aparência de cicatrizes.</p>
+                        <p className={styles.descricaoProcedReparadores}>O tratamento de câncer de pele, bem como qualquer forma de câncer, pode requerer cirurgia para remover os tumores.
+                            O cirurgião plástico remove, cirurgicamente, lesões cancerígenas e demais lesões da pele utilizando técnicas especializadas para preservar sua saúde e sua aparência. Embora nenhuma cirurgia fique sem cicatrizes, o cirurgião plástico fará o possível para tratar o câncer de pele sem mudar radicalmente sua aparência.
+                            Para algumas pessoas, a reconstrução pode exigir mais de um procedimento para que se obtenham os melhores resultados.
+                        </p>
                     </div>
                     <div>
                         <h2 className={styles.tituloProcedReparadores}>Cirurgia Intima</h2>
-                        <p className={styles.descricaoProcedReparadores}>O excesso no tamanho dos seios causa problemas na saúde da mulher, como questões relacionadas à coluna, por exemplo – em outros casos, os problemas causados são de cunho emocional.
-                            Para resolver este problema, a mamoplastia redutora remove o excesso de gordura nos seios, bem como o tecido glandular e a pele. Este procedimento resulta em seios proporcionais ao corpo da paciente.
+                        <p className={styles.descricaoProcedReparadores}>Também conhecida como labioplastia ou ninfoplastia, a cirurgia íntima tem como intuito levar as técnicas e benefícios da Cirurgia Plástica à região íntima da mulher.
+                            Este procedimento visa minimizar queixas estéticas ou desconforto causado por excessos de pele ou assimetrias na região da vulva, dando uma melhor proporcionalidade aos pequenos lábios em relação aos grandes lábios e toda a vulva.
                         </p>
                     </div>
                     <div>
