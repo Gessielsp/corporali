@@ -38,7 +38,7 @@ export default function Footer() {
                 </div>
                 <nav id={styles.navegacaoFooter}>
                     <div id={styles.caixaDrMarcelo}>
-                        <h3 className={styles.titulosFooter}>Dr. Marcelo Henrique</h3>
+                        <h3 className={styles.titulosFooter}>Dr. Marcelo Moreira</h3>
                         <p className={styles.descricaoFooter}>CRM-DF 4429 PJ RT DR. MARCELO MOREIRA DE ARAÚJO – CIRURGIÃO PLÁSTICO CRM-DF 15052 RQE 11961</p>
                     </div>
                     <div id={styles.caixaProcedimentos}>

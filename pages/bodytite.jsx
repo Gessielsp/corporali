@@ -24,27 +24,27 @@ import { useState } from "react";
 
 
 export default function PagBodytite() {
-    let [posicao, setPosicao] = useState(1);
+    let [posicao, setPosicao] = useState(0);
     let [dadosBodytite, setDadosBodytite] = useState([
         {
-            titulo: "Tecnologia de radiofrequência fracionada para a face!",
+            titulo: "Tecnologia de radiofrequência para todo o corpo!",
             descricao: "O equipamento BodyTite é a tecnologia médica para tratamentos minimamente invasivos de remodelação corporal e facial, com resultados cirúrgicos e cicatrizes mínimas. Essa tecnologia oferece uma remodelação 3D do corpo, com uma contração tridimensional da derme, tecido conjuntivo subcutâneo e tecido adiposo profundo, por meio da lipólise.",
         },
         {
-            titulo: "Tecnologia de radiofrequência fracionada para a face!",
-            descricao: "O Morpheus é uma tecnologia de radiofrequência fracionada que pode ser utilizada tanto para o corpo quanto para a face. Com agulhas revestidas em ouro, essa tecnologia permite atingir camadas profundas da pele, melhorando a aparência da pele e reduzindo a aparência de rugas, linhas finas e flacidez. É uma solução eficaz para quem busca reduzir a gordura e melhorar a aparência da pele, com resultados superiores e downtime reduzido em comparação a procedimentos invasivos convencionais.",
+            titulo: "Tecnologia de radiofrequência para todo o corpo!",
+            descricao: "Confira algumas caracteristicas do equipamento: procedimento minimamente evasivo. sem grandes cicatrizes, resultados superiores em contorno da região tratada, Aumento significativo da contração da pele(até 47% de contração da pele observada em estudos clinicos), resultado uniforme do corpo do paciente, menor incidência de hematomas, inchaço e dor, downtime reduzido(se comparado a procedimentos cirurgicos) e padrões de segurança superiores e comprovados.",
         },
     ]);
     let [dadosMopheus, setDadosMopheus] = useState([
         {
-            titulo: "MORPHEUS FACE",
-            subTitulo: "Tecnologia de radiofrequência fracionada para a face!",
-            descricao: "O Morpheus oferece a tecnologia ideal para remodelação adiposa subdérmica, por meio da coagulação da gordura e contração do tecido conjuntivo. A ponteira Morpheus Face oferece a mais avançada tecnologia de radiofrequência fracionada, permitindo aos médicos, atingirem camadas profundas da pele do paciente com 24 agulhas revestidas em ouro.",
+            titulo: "MORPHEUS Face",
+            subTitulo: "Tecnologia de radiofrequência fracionada para todo o corpo!",
+            descricao: "O Morpheus oferece a tecnologia ideal para remodelação adiposa subdérmica, por meio da coagulação da gordura e contração do tecido conjuntivo. A ponteira Morpheus Face oferece a mais avançada tecnologia de radiofrequência fracionada, permitindo aos médicos, atingirem camadas profundas da pele do paciente com 24 agulhas revestidas em ouro. Sua tecnologia é indicada para os todos os fototipos de pele.",
         },
         {
             titulo: "MORPHEUS Corpo",
-            subTitulo: "Tecnologia de radiofrequência fracionada para a face!",
-            descricao: " Morpheus Corpo é uma tecnologia de radiofrequência fracionada para o corpo. Ele oferece até 8mm de profundidade na atuação da sua tecnologia, consistindo em uma grade de 40 agulhas revestidas em ouro. Essa tecnologia é indicada para remodelação adiposa subdérmica, por meio da coagulação da gordura e contração do tecido conjuntivo. O Morpheus Corpo pode ser programado para tratar áreas grandes do corpo com agilidade, oferecendo resultados superiores e downtime reduzido em comparação a procedimentos invasivos convencionais.",
+            subTitulo: "Tecnologia de radiofrequência fracionada para todo o corpo!",
+            descricao: "A ponteira Morpheus Body oferece até 8mm de profundidade na atuação da sua tecnologia de radiofrequência fracionada. Essa novidade exclusiva é ideal para áreas maiores, consistindo numa grade de 40 agulhas revestidas em ouro. Morpheus Body pode ser programado para tratar áreas grandes do corpo com agilidade. Sem downtime: Após o procedimento, os pacientes podem ir para casa e logo retomar suas atividades habituais."
         },
     ]);
     function cardAnterior() {

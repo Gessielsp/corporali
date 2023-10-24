@@ -49,7 +49,7 @@ export default function PagClinica(){
                     </div>
                     <div className={styles.sobreClinicaDois}>
                         <h2 className={styles.subTitulosSobre}>A Equipe</h2>
-                        <p className={styles.descricaoSobre}>A equipe da Corporali é especializada em cirurgia plástica e estética, comprometida com a excelência. Com cirurgiões altamente qualificados, garantimos resultados excepcionais com segurança e inovação. Na Corporali, acreditamos que a autoestima e a confiança são essenciais para uma vida plena. Visite nossa clínica e realize seus sonhos de beleza e bem-estar. Estamos aqui para você! </p>
+                        <p className={styles.descricaoSobre}>A nossa equipe é especializada em cirurgia plástica e estética, com o cirurgião altamente qualificado, garantimos resultados excepcionais com segurança e inovação. Aqui acreditamos que a autoestima e a confiança são essenciais para uma vida plena. Visite nossa clínica e realize seus sonhos de beleza e bem-estar. Estamos aqui para você!</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgJessicaToledo}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Faço parte da equipe administrativa. Sou secretaria do Dr tem 2 meses.  Sou responsável por todo agendamento de cirurgia, consultas iniciais e retornos.</p>
+                                    <p className={styles.descricaoFuncionaria}>Sou técnica de enfermagem no consultório auxilio nas consultas de pré e pós-operatório e sou instrumentadora no centro cirurgico.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Jessica Toledo</h2>
@@ -111,7 +111,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgPaulaMelo}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Estou com dr há 5 anos. Fico tanto no centro cirúrgico quanto no consultório. No centro cirúrgico faço o papel de Instrumentadora. No consultório ajudo o dr no pré e pós-operatório.</p>
+                                    <p className={styles.descricaoFuncionaria}>Sou secretária responsável por todo agendamento de cirurgias, consultas iniciais e retornos.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Paula Melo</h2>
@@ -121,7 +121,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgLorranaBeatriz}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Estou com dr há 5 anos. Fico tanto no centro cirúrgico quanto no consultório. No centro cirúrgico faço o papel de Instrumentadora.</p>
+                                    <p className={styles.descricaoFuncionaria}>Sou enfermeiro e fico reponsável pelo pós-operatório imediato das pacientes. Fico com elas no periodo noturno e acompanho até a alta hospitalar.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Lorrana Beatriz</h2>
