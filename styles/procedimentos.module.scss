@@ -1,0 +1,309 @@
+@import "../styles//cores.module.scss";
+
+/* INICIO SESSAO BANNER */
+#bordaSuperior{
+    height: 2px;
+    background-color: $primarycolor;
+    margin-bottom: 50px;
+}
+#banner{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.bannerMamarios{
+    background-image: url(../public/corporali/procedimentos/mamario.jpg);    
+}
+.bannerAbdominais{
+    background-image: url(../public/corporali/procedimentos/abdominal_2.jpg);
+}
+.bannerFaciais{
+    background-image: url(../public/corporali/procedimentos/facial.jpg);
+}
+.bannerReparadores{
+    background-image: url(../public/corporali/procedimentos/reparadores.jpg);
+}
+#bgBanner{
+    background-color: #18181894;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boxBanner{
+    width: 80%;
+}
+#tituloBanner{
+    color: #fff;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#descricaoBanner{
+    color: #A8A8A8;
+    border-left: 3px solid transparent;
+    padding-left: 10px;
+    font-size: 18px;
+}
+/* FIM SESSAO BANNER */
+
+/* INICIO SESSAO PRINCIPAL */
+#conteudoPrincipal{
+    display: flex;
+    justify-content: center;
+}
+#sessaoPrincipal{
+    border-top: 3px solid $primarycolor;
+    border-bottom: 3px solid $primarycolor;
+    padding-top: 50px;
+    width: 90%;
+    margin: 50px 0;
+}
+#sobreProcedimentos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#imagemProcedimentos {
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#iconeYoutube {
+    width: 100px;
+    height: 100px;
+}
+#caixaSobre{
+    width: 50%;
+}
+.imgProcedimentoMamarios{
+    background-image: url(../public/corporali/procedimentos/protese.png);
+}
+.imgProcedimentoAbdominais{
+    background-image: url(../public/corporali/procedimentos/abdominal.jpg);
+}
+.imgProcedimentoFaciais{
+    background-image: url(../public/corporali/procedimentos/facial.jpg);
+}
+.imgProcedimentoReparadores{
+    background-image: url(../public/corporali/procedimentos/abdominal_2.jpg);
+}
+#tituloSobre{
+    color: $primarycolor;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.descricaoProcedimentos{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: justify;
+}
+.caixaProcedimentos{
+    margin-bottom: 80px;
+}
+.tituloProcedimentos{
+    color: $primarycolor;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.caixaOndeAssistir{
+    display: flex;
+    margin-top: 50px;
+}
+.boxAssistirNoSite{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $primarycolor;
+    text-decoration: none;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    color: #181818;
+    margin-right: 40px;
+}
+.boxAssistirNoYoutube{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ff0000;
+    text-decoration: none;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+.iconeYoutube{
+    height: 20px;
+    width: 30px;
+}
+.iconeTela{
+    height: 20px;
+    width: 20px;
+}
+/* FIM SESSAO PRINCIPAL */
+
+/* INICIO SESSAO INTERATIVA | OBS: ESTA SESSAO CONTÉM APENAS NA PAGINA DE PROCEDIMENTOS ABDOMINAIS */
+#sessaoInterativa{
+    border-top: 3px solid $primarycolor;
+    border-bottom: 3px solid $primarycolor;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+#imagemSessaoInterativa{
+    width: 300px;
+    height: 400px;
+}
+#caixaDescricaoInterativa{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#tituloInterativa{
+    color: $primarycolor;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+#descricaoInterativa{
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+#caixaInterativa{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+#linkInterativo{
+    border: 3px solid $primarycolor;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    &:hover{
+        background-color: $primarycolor;
+        color: #181818;
+        font-weight: bold;
+    }
+}
+#caixaSetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+#setaInterativa{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+    &:hover{
+        background-color: #2b2a2a;
+    }
+}
+/* FIM SESSAO INTERATIVA */
+
+/* INICIO SESSAO LINKS */
+#sessaoLinks{
+    padding: 50px 0;
+}
+#listaDeLinks{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.linksDoSite{
+    background-color: $primarycolor;
+    display:block;
+    width: 180px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #181818;
+    font-weight: bold;
+    &:hover{
+        background-color: #074439;
+        color: #fff;
+    }
+}
+/* FIM SESSAO LINKS */
+
+/* INICIO AGENDAR CONSULTA */
+#agendarConsulta{
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.agendarConsultaMamarios{
+    background-image: url(../public/corporali/avulsos/aperto_maos_mamarios.jpg);
+}
+.agendarConsultaAbdominais{
+    background-image: url(../public/corporali/avulsos/aperto_maos_abdominais.jpg);
+    background-position: 0 -190px;
+}
+.agendarConsultaFaciais{
+    background-image: url(../public//corporali/avulsos/aperto_maos_facial.jpg);
+}
+.agendarConsultaReparadores{
+    background-image: url(../public//corporali/avulsos/aperto_maos_reparadores.jpg);
+}
+#bgAgendarConsulta{
+    background-color: #18181894;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#conteudoAgendarConsulta{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#caixaAgendarConsulta{
+
+}
+#tituloAgendarConsulta{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: $primarycolor;
+    margin-bottom: 30px;
+}
+#descricaoAgendarConsulta{
+    color: #fff;
+    font-size: 18px;
+}
+#linkAgendarConsulta{
+    border: 3px solid $primarycolor;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    &:hover{
+        background-color: $primarycolor;
+        color: #181818;
+        font-weight: bold;
+    }
+}
+/* FIM AGENDAR CONSULTA */
