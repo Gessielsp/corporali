@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { robotoCondensed } from "@/fonts/fonts";
+import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 
 const iconeYoutube = require("../public/corporali/icons/youtube_vermelho.png");
 const setaDireitaVerde = require("../public/corporali/icons/seta_direita_verde.png");
@@ -259,6 +260,7 @@ export default function TesteFacial(){
             </div>
 
             <Footer/>
+            <InstaWhatsappFlut/>
         </div>
     )
 }

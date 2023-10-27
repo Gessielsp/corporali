@@ -129,6 +129,7 @@
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 35px;
+    
 }
 .caixaOndeAssistir{
     display: flex;
@@ -167,10 +168,9 @@
 }
 /* FIM SESSAO PRINCIPAL */
 
-/* INICIO SESSAO INTERATIVA | OBS: ESTA SESSAO CONTÉM APENAS NA PAGINA DE PROCEDIMENTOS ABDOMINAIS */
+/* INICIO SESSAO INTERATIVA | OBS: ESTA SESSAO CONTÉM APENAS NA PAGINA DE PROCEDIMENTOS FACIAIS */
 #sessaoInterativa{
     border-top: 3px solid $primarycolor;
-    border-bottom: 3px solid $primarycolor;
     padding: 50px 0;
     display: flex;
     justify-content: space-around;
@@ -234,6 +234,7 @@
 
 /* INICIO SESSAO LINKS */
 #sessaoLinks{
+    border-top: 3px solid $primarycolor;
     padding: 50px 0;
 }
 #listaDeLinks{
