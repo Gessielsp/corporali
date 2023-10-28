@@ -21,6 +21,7 @@ import 'animate.css';
 
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
 import { useState } from "react";
+import Head from "next/head";
 
 
 export default function PagBodytite() {
@@ -63,6 +64,25 @@ export default function PagBodytite() {
     }
     return (
         <div className={robotoCondensed.className}>
+            <Head>
+                <meta charset="utf-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <title>BodyTite Corporali - Remodelação Corporal e Facial Avançada</title>
+                <meta name="description" content="O BodyTite é uma tecnologia médica avançada para tratamentos minimamente invasivos de remodelação corporal e facial. Oferece resultados cirúrgicos e cicatrizes mínimas, promovendo uma remodelação 3D do corpo com contração tridimensional da derme, tecido conjuntivo subcutâneo e tecido adiposo profundo através da lipólise."/>
+                <meta property="og:site_name" content="BodyTite - Tecnologia Médica Avançada"/>
+                <meta property="og:title" content="BodyTite - Remodelação Corporal e Facial Avançada"/>
+                <meta property="og:description" content="Transforme sua aparência com o BodyTite. Resultados cirúrgicos, cicatrizes mínimas e remodelação 3D do corpo. Tecnologia de contração tridimensional da derme, tecido conjuntivo subcutâneo e tecido adiposo profundo através da lipólise."/>
+                <meta property="og:locale" content="pt_BR"/>
+                <meta property="og:url" content="https://institutocorporali.com.br/bodytite"/>
+                <meta property="og:type" content="website"/>
+                <meta name="keywords" content="BodyTite, remodelação corporal, remodelação facial, tecnologia médica, tratamentos minimamente invasivos, lipólise, contração tridimensional, resultados cirúrgicos, cicatrizes mínimas"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="googlebot" content="index,follow"/>
+                <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
+                <link rel="canonical" href="https://institutocorporali.com.br/bodytite"/>
+            </Head>
+
             <Header />
             <div id={styles.bannerBodytite}>
                 <div id={styles.bgBanner}>

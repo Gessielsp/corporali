@@ -1,5 +1,7 @@
-import Header from "../components/header/Header";
 import Link from "next/link";
+import Head from "next/head";
+
+import Header from "../components/header/Header";
 
 import styles from "../styles/errorsPage.module.scss";
 
@@ -8,6 +10,19 @@ import { robotoCondensed } from "@/fonts/fonts";
 export default function NotFound() {
   return (
     <div>
+      <Head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Página não encontrada - Instituto Corporali</title>
+        <meta name="description" content="Desculpe, a página que você está procurando não foi encontrada. Verifique o URL ou navegue pelo nosso site para encontrar o conteúdo desejado." />
+        <meta name="robots" content="noindex,follow" />
+        <meta name="googlebot" content="noindex,follow" />
+        <meta name="author" content="Nome da sua Empresa ou Site" />
+        <link rel="canonical" href="https://institutocorporali.com.br/" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Header/>
       <div id={styles.conteudoPrincipal} className={robotoCondensed.className}>
         <div id={styles.conteudo}>

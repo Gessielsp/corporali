@@ -1,6 +1,8 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
+import Head from "next/head";
+
 import styles from "../styles/pagClinica.module.scss";
 
 import { robotoCondensed } from "../fonts/fonts";
@@ -8,9 +10,28 @@ import Link from "next/link";
 
 import 'animate.css';
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+
 export default function PagClinica(){
     return(
         <div className={robotoCondensed.className}>
+            <Head>
+                <title>Clínica Corporali | Instituto Corporali | Cirurgia Plástica e Estética</title>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="description" content="Com um enfoque especializado em cirurgias mamárias, faciais, abdominais e reparadoras, nossa equipe altamente qualificada e experiente busca proporcionar transformações positivas através de procedimentos cirúrgicos de excelência."/>
+                <meta property="og:site_name" content="Clínica de Cirurgia Plástica Dr. Marcelo Moreira"/>
+                <meta property="og:title" content="A Clínica de Cirurgia Plástica Dr. Marcelo Moreira"/>
+                <meta property="og:description" content="Transformamos sonhos em realidade, promovendo a autoestima e confiança dos nossos pacientes com procedimentos personalizados e resultados excepcionais. Localizada na Asa Sul, Brasília."/>
+                <meta property="og:locale" content="pt_BR"/>
+                <meta property="og:url" content="https://institutocorporali.com.br/clinica"/>
+                <meta property="og:type" content="website"/>
+                <meta name="keywords" content="equipe corporali, time corporali, estética, Dr. Marcelo Moreira, cirurgião plástico, Brasília, procedimentos personalizados, resultados excepcionais, Asa Sul"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="googlebot" content="index,follow"/>
+                <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
+                <link rel="canonical" href="https://institutocorporali.com.br/clinica"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             <Header/> 
             {/*INICIO PRIMEIRA SESSAO */}
             <div id={styles.bannerClinica}>

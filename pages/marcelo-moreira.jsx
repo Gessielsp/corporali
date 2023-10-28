@@ -14,6 +14,7 @@ import styles from "../styles/pagDrMarcelo.module.scss";
 
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import { robotoCondensed, bebasNeue } from "../fonts/fonts";
 
@@ -24,6 +25,24 @@ export default function PagDrMarcelo() {
     return (
         <div className={robotoCondensed.className}>
             <Header />
+            <Head>
+                <title>Dr. Marcelo Moreira | Instituto Corporali</title>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="description" content="Na nossa clínica, acreditamos em transformar vidas, elevando a autoestima e confiança dos pacientes com procedimentos cirúrgicos personalizados que entregam resultados excepcionais."/>
+                <meta property="og:site_name" content="Clínica de Cirurgia Plástica Dr. Marcelo Moreira"/>
+                <meta property="og:title" content="A Clínica de Cirurgia Plástica Dr. Marcelo Moreira"/>
+                <meta property="og:description" content="No Instituto Corporali, estamos comprometidos em fazer sonhos se tornarem realidade, trazendo confiança e autoestima aos nossos pacientes com procedimentos personalizados e resultados surpreendentes."/>
+                <meta property="og:locale" content="pt_BR"/>
+                <meta property="og:url" content="https://institutocorporali.com.br/marcelo-moreira"/>
+                <meta property="og:type" content="website"/>
+                <meta name="keywords" content="Dr. Marcelo Moreira, Marcelo Moreira Cirurgião, estética, Dr. Marcelo Moreira, cirurgião plástico, Brasília, procedimentos personalizados, resultados excepcionais, Asa Sul"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="googlebot" content="index,follow"/>
+                <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
+                <link rel="canonical" href="https://institutocorporali.com.br/marcelo-moreira"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
             <div id={styles.bannerMarcelo}>
                 <div id={styles.bgMarcelo}>
                     <div id={styles.conteudoMarcelo}>
