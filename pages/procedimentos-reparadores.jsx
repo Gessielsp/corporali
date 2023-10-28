@@ -89,7 +89,7 @@ export default function PagReparadores() {
                 <nav id={styles.navegacaoReparadores}>
                     <ul id={styles.linksReparadores}>
                         <li>
-                            <Link className={styles.linksReparadores} href="/procedimentos-mamarios">Mamarios</Link>
+                            <Link className={styles.linksReparadores} href="/procedimentos-mamarios">Mamários</Link>
                         </li>
                         <li>
                             <Link className={styles.linksReparadores} href="/procedimentos-faciais">Faciais</Link>

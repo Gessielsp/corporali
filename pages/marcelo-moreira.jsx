@@ -6,9 +6,9 @@ const fotoSobreMarceloDois = require("../public/corporali/dr_marcelo/marcelo_2.J
 const fotoSobreMarceloTres = require("../public/corporali/dr_marcelo/marcelo_4.JPG");
 
 const fotoGaleriaUm = require("../public/corporali/dr_marcelo/marcelo_7.JPG");
-const fotoGaleriaDois = require("../public/corporali/dr_marcelo/marcelo_6.JPG");
-const fotoGaleriaTres = require("../public/corporali/dr_marcelo/marcelo_13.JPG");
-const fotoGaleriaQuatro = require("../public/corporali/dr_marcelo/marcelo_5.JPG");
+const fotoGaleriaDois = require("../public/corporali/dr_marcelo/marcelo_00.JPG");
+const fotoGaleriaTres = require("../public/corporali/dr_marcelo/marcelo_6.JPG");
+const fotoGaleriaQuatro = require("../public/corporali/dr_marcelo/marcelo_01.JPG");
 
 import styles from "../styles/pagDrMarcelo.module.scss";
 
@@ -94,13 +94,13 @@ export default function PagDrMarcelo() {
                         <Image className={styles.fotosGaleria} src={fotoGaleriaUm} alt="Doutor Marcelo se arrumando para mais uma cirurgia" />
                     </div>
                     <div className={styles.boxFotoGaleria}>
-                        <Image className={styles.fotosGaleria} src={fotoGaleriaDois} alt="Doutor Marcelo lavando as mãos" />
+                        <Image className={styles.fotosGaleria} src={fotoGaleriaDois} alt="Doutor Marcelo com blusa social" />
                     </div>
                     <div className={styles.boxFotoGaleria}>
                         <Image className={styles.fotosGaleria} src={fotoGaleriaTres} alt="Doutor Marcelo posando para foto numa sala de cirugia" />
                     </div>
                     <div className={styles.boxFotoGaleria}>
-                        <Image className={styles.fotosGaleria} src={fotoGaleriaQuatro} alt="Doutor Marcelo conversando com sua parceira de cirurgia" />
+                        <Image className={styles.fotosGaleria} src={fotoGaleriaQuatro} alt="Doutor Marcelo com terno" />
                     </div>
                 </div>
             </div>

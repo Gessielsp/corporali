@@ -61,7 +61,7 @@ export default function PagAbdominais() {
                 <nav id={styles.navegacaoAbdominais}>
                     <ul id={styles.listaSessaoAdbominais}>
                         <li>
-                            <Link className={styles.linksAbdominais} href="/procedimentos-mamarios">Mamarios</Link>
+                            <Link className={styles.linksAbdominais} href="/procedimentos-mamarios">Mamários</Link>
                         </li>
                         <li>
                             <Link className={styles.linksAbdominais} href="/procedimentos-reparadores">Reparadores</Link>

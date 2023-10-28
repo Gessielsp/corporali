@@ -152,7 +152,7 @@ export default function Pagfaciais() {
             <nav id={styles.navegacaoFaciais}>
                 <ul id={styles.linksSessaoFaciais}>
                     <li>
-                        <Link className={styles.linksFaciais} href="/procedimentos-mamarios">Mamarios</Link>
+                        <Link className={styles.linksFaciais} href="/procedimentos-mamarios">Mamários</Link>
                     </li>
                     <li>
                         <Link className={styles.linksFaciais} href="/procedimentos-reparadores">Reparadores</Link>
