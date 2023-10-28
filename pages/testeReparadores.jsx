@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+import Head from "next/head";
 
 const iconeYoutube = require("../public/corporali/icons/youtube_vermelho.png");
 const iconTela = require("../public/corporali/icons/tela_preta.png");
@@ -15,6 +16,26 @@ const iconTela = require("../public/corporali/icons/tela_preta.png");
 export default function testeReparadores() {
   return (
     <div id={styles.pagina} className={robotoCondensed.className}>
+        <Head>
+            <title>Procedimentos Reparadores - Restauração e Transformação</title>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="description" content="Descubra os procedimentos reparadores e restaurativos que podem transformar vidas e promover a restauração. Nossa equipe altamente qualificada realiza cirurgias e tratamentos reparadores com foco na recuperação, confiança e transformação." />
+            <meta property="og:site_name" content="Procedimentos Reparadores - Restauração e Transformação" />
+            <meta property="og:title" content="Procedimentos Reparadores - Restauração e Transformação" />
+            <meta property="og:description" content="Explore os procedimentos reparadores que podem impactar positivamente a vida, promover a restauração e a transformação. Nossa equipe qualificada oferece cirurgias e tratamentos reparadores para recuperação, confiança e bem-estar." />
+            <meta property="og:locale" content="pt-BR" />
+            <meta property="og:url" content="https://institutocorporali.com.br/procedimentos-reparadores" />
+            <meta property="og:type" content="website" />
+            <meta name="keywords" content="procedimentos reparadores, cirurgia reparadora, tratamentos restauradores, recuperação, confiança, transformação, cirurgia plástica reparadora" />
+            <meta name="robots" content="index,follow" />
+            <meta name="googlebot" content="index,follow" />
+            <meta name="author" content="WEBTECH - Soluções em Tecnologia" />
+            <link rel="canonical" href="https://institutocorporali.com.br/procedimentos-reparadores" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <Header/>
         <div id={styles.bordaSuperior}></div>
         <div id={styles.banner} className={styles.bannerReparadores}>

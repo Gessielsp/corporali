@@ -5,6 +5,7 @@ import Footer from "@/components/footer/Footer";
 
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
@@ -16,6 +17,26 @@ const iconTela = require("../public/corporali/icons/tela_preta.png");
 export default function testeAbdominal() {
   return (
     <div id={styles.pagina} className={robotoCondensed.className}>
+        <Head>
+            <title>Procedimentos Abdominais - Cirurgia Abdominal de Precisão</title>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="description" content="Descubra a cirurgia abdominal de precisão com procedimentos abdominais. Realizados por cirurgiões altamente treinados, essas intervenções abrangem uma variedade de condições médicas na região abdominal. Acesse, repare, remova e reconstrua estruturas da parede abdominal com técnicas precisas."/>
+            <meta property="og:site_name" content="Procedimentos Abdominais - Cirurgia de Precisão"/>
+            <meta property="og:title" content="Procedimentos Abdominais - Cirurgia Abdominal de Precisão"/>
+            <meta property="og:description" content="Transforme a sua saúde abdominal com procedimentos cirúrgicos precisos. Tratamos uma variedade de condições médicas na região abdominal, com cirurgiões altamente treinados. Acesse, repare, remova e reconstrua estruturas da parede abdominal com técnicas precisas."/>
+            <meta property="og:locale" content="pt_BR"/>
+            <meta property="og:url" content="https://institutocorporali.com.br/procedimentos-abdominais"/>
+            <meta property="og:type" content="website"/>
+            <meta name="keywords" content="procedimentos abdominais, cirurgia abdominal, cirurgia de precisão, região abdominal, cirurgiões altamente treinados, técnicas precisas, reparação abdominal, remoção de tecido abdominal"/>
+            <meta name="robots" content="index,follow"/>
+            <meta name="googlebot" content="index,follow"/>
+            <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
+            <link rel="canonical" href="https://institutocorporali.com.br/procedimentos-abdominais"/>
+            <link rel="icon" href="/favicon.ico"/>
+        </Head>
+
         <Header/>
         <div id={styles.bordaSuperior}></div>
         <div id={styles.banner} className={styles.bannerAbdominais}>

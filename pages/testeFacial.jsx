@@ -7,6 +7,7 @@ import Footer from "@/components/footer/Footer";
 
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
@@ -64,6 +65,26 @@ export default function TesteFacial(){
     }
     return(
         <div id={styles.pagina} className={robotoCondensed.className}>
+            <Head>
+                <meta charset="utf-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <title>Procedimentos Faciais - Aperfeiçoamento e Rejuvenescimento Facial</title>
+                <meta name="description" content="Descubra a arte do aperfeiçoamento e rejuvenescimento facial com procedimentos faciais. Realizados por profissionais altamente especializados, essas intervenções estéticas e cirúrgicas buscam melhorar a função e aparência da face. Corrija imperfeições, alcance a aparência desejada e retarde os sinais de envelhecimento."/>
+                <meta property="og:site_name" content="Procedimentos Faciais - Aperfeiçoamento e Rejuvenescimento Facial"/>
+                <meta property="og:title" content="Procedimentos Faciais - Aperfeiçoamento e Rejuvenescimento Facial"/>
+                <meta property="og:description" content="Alcance a aparência desejada com procedimentos faciais. Profissionais altamente especializados realizam intervenções para melhorar a função e estética facial, corrigir imperfeições e retardar os sinais de envelhecimento."/>
+                <meta property="og:locale" content="pt_BR"/>
+                <meta property="og:url" content="https://institutocorporali.com.br/procedimentos-faciais"/>
+                <meta property="og:type" content="website"/>
+                <meta name="keywords" content="procedimentos faciais, aperfeiçoamento facial, rejuvenescimento facial, cirurgia plástica facial, dermatologia estética, correção de imperfeições faciais, retardar envelhecimento facial"/>
+                <meta name="robots" content="index,follow"/>
+                <meta name="googlebot" content="index,follow"/>
+                <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
+                <link rel="canonical" href="https://institutocorporali.com.br/procedimentos-faciais"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+
             <Header/>
             <div id={styles.bordaSuperior}></div>
             <div id={styles.banner} className={styles.bannerFaciais}>

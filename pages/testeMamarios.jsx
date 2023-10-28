@@ -3,6 +3,7 @@ import styles from "../styles/procedimentos.module.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,6 +17,25 @@ const iconTela = require("../public/corporali/icons/tela_preta.png");
 export default function testeMamarios() {
   return (
     <div id={styles.pagina} className={robotoCondensed.className}>
+        <Head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Procedimentos Mamários - Transformação e Autoestima</title>
+            <meta name="description" content="Descubra o poder da transformação e autoestima com procedimentos mamários. Muitas vezes chamados de cirurgias plásticas ou estéticas da mama, essas intervenções têm um impacto significativo na vida das pessoas. Vão além da estética e podem melhorar a autoestima, confiança e bem-estar emocional." />
+            <meta property="og:site_name" content="Procedimentos Mamários - Transformação e Autoestima" />
+            <meta property="og:title" content="Procedimentos Mamários - Transformação e Autoestima" />
+            <meta property="og:description" content="Descubra o impacto positivo dos procedimentos mamários na vida. Além de questões estéticas, essas cirurgias têm o poder de elevar a autoestima, confiança e bem-estar emocional das pessoas." />
+            <meta property="og:locale" content="pt_BR" />
+            <meta property="og:url" content="https://institutocorporali.com.br/procedimentos-mamarios" />
+            <meta property="og:type" content="website" />
+            <meta name="keywords" content="procedimentos mamários, cirurgia plástica da mama, estética mamária, autoestima, confiança, bem-estar emocional, transformação da mama" />
+            <meta name="robots" content="index,follow" />
+            <meta name="googlebot" content="index,follow" />
+            <meta name="author" content="WEBTECH - Soluções em Tecnologia" />
+            <link rel="canonical" href="https://institutocorporali.com.br/procedimentos-mamarios" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Header/>
         <div id={styles.bordaSuperior}></div>
         <div id={styles.banner} className={styles.bannerMamarios}>
