@@ -320,6 +320,80 @@
 }
 /* FIM AGENDAR CONSULTA */
 
+/* INICIO MODAL */
+#modal{
+    background-color: #20E2BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#boxOndeAssistir{
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+#descricaoModal{
+    padding: 0 20px;
+}
+#boxFecharModal{
+    background-color: #ADFF00;
+    width: 150px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    &:hover{
+        background-color: #9ad123;
+    }
+}
+#fecharModal{
+    color: #181818;
+    width: 20px;
+    height: 20px;
+}
+#caixaEscolhasModal{
+    display: flex;
+    justify-content: space-between;
+}
+#ondeAssistir{
+    display: flex;
+    column-gap: 5px;
+}
+#assistirNoSite{
+    background-color: #181818;
+    width: 150px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        background-color: #333333;
+    }
+}
+#assistirNoYoutube{
+    background-color: #FF0000;
+    width: 150px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        background-color: #b90b0b;
+    }
+}
+/* FIM MODAL */
+
 @media screen and (min-width: 320px) and (max-width: 1024px) {
     #banner{
         height: 300px;

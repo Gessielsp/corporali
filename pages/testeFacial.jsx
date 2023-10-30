@@ -17,12 +17,15 @@ const setaDireitaVerde = require("../public/corporali/icons/seta_direita_verde.p
 const setaEsquerdaVerde = require("../public/corporali/icons/seta_esquerda_verde.png");
 const iconYoutubeBranco = require("../public/corporali/icons/youtube_branco.png");
 const iconTela = require("../public/corporali/icons/tela_preta.png");
+const fecharModalX = require("../public/corporali/icons/fechar_modal_preta.png")
 
 const imagemInterativaUm = require("../public/corporali/dr_marcelo/marcelo_29.JPG")
 const imagemInterativaDois = require("../public/corporali/dr_marcelo/marcelo_26.JPG")
 const imagemInterativaTres = require("../public/corporali/dr_marcelo/marcelo_25.JPG")
 
 export default function TesteFacial(){
+    let [modalIsOnline, setModalIsOnline] = useState(false);
+
     let [posicao, setPosicao] = useState(1);
     let [dados, setDados] = useState([
         {
@@ -55,19 +58,14 @@ export default function TesteFacial(){
             setPosicao(posicao = posicao +1)
         }
     }
-    function mostrarModal() {
-        const modal = document.querySelector('.modal');
-        modal.style.display = "block";
-    }
-    function fecharModal() {
-        const modal = document.querySelector('.modal');
-        modal.style.display = "none";
-    }
+    const abreModal = () => setModalIsOnline(true);
+    const fechaModal = () => setModalIsOnline(false);
+    
     return(
         <div id={styles.pagina} className={robotoCondensed.className}>
             <Head>
-                <meta charset="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta charSet="utf-8"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <title>Procedimentos Faciais - Aperfeiçoamento e Rejuvenescimento Facial</title>
                 <meta name="description" content="Descubra a arte do aperfeiçoamento e rejuvenescimento facial com procedimentos faciais. Realizados por profissionais altamente especializados, essas intervenções estéticas e cirúrgicas buscam melhorar a função e aparência da face. Corrija imperfeições, alcance a aparência desejada e retarde os sinais de envelhecimento."/>
@@ -99,7 +97,7 @@ export default function TesteFacial(){
             <main id={styles.conteudoPrincipal}>
                 <section id={styles.sessaoPrincipal}>
                     <div id={styles.sobreProcedimentos}>
-                        <div id={styles.imagemProcedimentos} className={styles.imgProcedimentoFaciais}>
+                        <div id={styles.imagemProcedimentos} onClick={() => abreModal()} className={styles.imgProcedimentoFaciais}>
                             <Image id={styles.iconeYoutube} src={iconeYoutube} alt="Icone Youtube"/>
                         </div>
                         <div id={styles.caixaSobre}>
@@ -282,6 +280,27 @@ export default function TesteFacial(){
 
             <Footer/>
             <InstaWhatsappFlut/>
+            {modalIsOnline ? 
+            <div id={styles.modal} className="modal" >
+                <div id={styles.boxOndeAssistir}>
+                    <h4>Escolha onde assistir</h4>
+                </div>
+                <div>
+                    <p id={styles.descricaoModal}>Gostaria de visualizar o vídeo neste site ou no YouTube, no canal do Instituto Corporali?</p>
+                </div>
+                <div id={styles.caixaEscolhasModal}>
+                    <div>
+                        <div id={styles.boxFecharModal} className="btnFecharModal" onClick={() => fechaModal()}>
+                            <Image id={styles.fecharModal} src={fecharModalX} alt="Fechar Modal" width={15} height={15}/>
+                            Fechar
+                        </div>
+                    </div>
+                    <div id={styles.ondeAssistir}>
+                        <Link id={styles.assistirNoSite} href="/video-faciais">Assistir no Site</Link>
+                        <Link id={styles.assistirNoYoutube} href="https://www.youtube.com/@institutocorporali1294" target="_blank">Assistir no YouTube</Link>
+                    </div>
+                </div>
+            </div> : null}
         </div>
     )
 }
