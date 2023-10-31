@@ -58,7 +58,7 @@ export default function VideoFacial() {
             <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
             <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Reparadores, Abdominais, Mamarios e muito mais.</p>
           </div>
-          <a id={styles.linkVoltar} href="/procedimentos-faciais">Voltar para Faciais</a>
+          <Link id={styles.linkVoltar} href="/procedimentos-faciais">Voltar para Faciais</Link>
         </div>
 
         <div id={styles.videosRelacionado}>

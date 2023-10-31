@@ -266,7 +266,7 @@ export default function ProcedimentosFaciais(){
                 </section>
             </main>
             
-            <div id={styles.agendarConsulta} className={styles.agendarConsultaAbdominais}>
+            <div id={styles.agendarConsulta} className={styles.agendarConsultaFaciais}>
                 <div id={styles.bgAgendarConsulta}>
                     <div id={styles.conteudoAgendarConsulta}>
                         <div id={styles.caixaAgendarConsulta}>
