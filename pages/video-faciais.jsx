@@ -7,11 +7,12 @@ import styles from "../styles/videos.module.scss";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+import Footer from "@/components/footer/Footer";
 
 
 export default function VideoFacial() {
   return (
-    <div>
+    <div className={robotoCondensed.className}>
       <Head>
         <title>Vídeos de Procedimentos Faciais - Transformação e Rejuvenescimento</title>
         <meta charset="utf-8" />
@@ -33,7 +34,7 @@ export default function VideoFacial() {
       </Head>
       <Header/>
 
-      <div id={styles.bgFaciais} className={`${robotoCondensed.className} ${styles.conteudoPrincipal}`}>
+      <div id={styles.bgFaciais} className={styles.conteudoPrincipal}>
         <div id={styles.bgConteudo}>
           <div id={styles.conteudo}>
               <div id={styles.caixaDescricao}>
@@ -50,6 +51,52 @@ export default function VideoFacial() {
           </div>
         </div>
       </div>
+
+      <div id={styles.sessaoVideosRelacionados}>
+        <div id={styles.caixaDescricaoRelacionados}>
+          <div>
+            <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
+            <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Reparadores, Abdominais, Mamarios e muito mais.</p>
+          </div>
+          <a id={styles.linkVoltar} href="/procedimentos-faciais">Voltar para Faciais</a>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/sBZghHsRjQY?si=QPB4WrHj0CnftEIb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Preenchimentos</h2>
+            <p className={styles.descricaoRelacionados}>Deseja restaurar o volume e a juventude da sua pele? Em nosso vídeo informativo sobre preenchimento dérmico, você aprenderá como esse tratamento não cirúrgico pode rejuvenescer sua aparência.</p>
+          </div>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/j5HyHBhacow?si=L1B5Vzrgk740AESW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Toxina Butolínica</h2>
+            <p className={styles.descricaoRelacionados}>Quer saber como a toxina botulínica pode ajudar a suavizar rugas e linhas de expressão? Em nosso vídeo informativo sobre toxina botulínica, você descobrirá como esse tratamento estético pode rejuvenescer sua pele.</p>
+          </div>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/Cx3WX6zCFxk?si=UrjUfe1jpbrYx69E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Lifting Facial</h2>
+            <p className={styles.descricaoRelacionados}>Quer recuperar uma aparência mais jovem e radiante? Em nosso vídeo informativo sobre lifting facial, você descobrirá como esse procedimento pode suavizar rugas e restaurar a firmeza da pele.</p>
+          </div>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/lJwp4nt1Baw?si=dFcxjG96KmQ3ezwH" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Lifting Frontal</h2>
+            <p className={styles.descricaoRelacionados}>As rugas e a flacidez facial podem ser coisa do passado! Em nosso vídeo informativo sobre lifting frontal, você aprenderá como esse procedimento pode rejuvenescer a área da testa e das sobrancelhas. </p>
+          </div>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/YQ7rQaBPXTs?si=2sO5wusAkwQhck93" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Blefaroplastia</h2>
+            <p className={styles.descricaoRelacionados}>Olhos cansados e caídos? Em nosso vídeo informativo sobre blefaroplastia, você descobrirá como essa cirurgia pode rejuvenescer a área ao redor dos olhos. Explore o processo cirúrgico, desde a consulta inicial até a fase de recuperação, e veja como a blefaroplastia pode iluminar seu olhar.</p>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
       <InstaWhatsappFlut/>
     </div>
   )
