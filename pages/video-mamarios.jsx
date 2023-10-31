@@ -7,10 +7,11 @@ import styles from "../styles/videos.module.scss";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+import Footer from "@/components/footer/Footer";
 
 export default function VideoMamarios() {
   return (
-    <div>
+    <div className={robotoCondensed.className}>
       <Head>
         <title>Vídeos de Procedimentos Mamários - Transformação e Autoestima</title>
         <meta charset="utf-8" />
@@ -32,7 +33,7 @@ export default function VideoMamarios() {
       </Head>
       <Header/>
 
-      <div id={styles.bgReparadores} className={`${robotoCondensed.className} ${styles.conteudoPrincipal}`}>
+      <div id={styles.bgReparadores} className={styles.conteudoPrincipal}>
         <div id={styles.bgConteudo}>
           <div id={styles.conteudo}>
               <div id={styles.caixaDescricao}>
@@ -49,6 +50,31 @@ export default function VideoMamarios() {
           </div>
         </div>
       </div>
+
+      <div id={styles.sessaoVideosRelacionados}>
+        <div id={styles.caixaDescricaoRelacionados}>
+          <div>
+            <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
+            <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Faciais, Abdominais, Reparadores e muito mais.</p>
+          </div>
+          <a id={styles.linkVoltar} href="/procedimentos-mamarios">Voltar para Mamários</a>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/Bd6LFb-0ouk?si=ykjVHzRDHPz4alXv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Mamoplastia Redutora</h2>
+            <p className={styles.descricaoRelacionados}>Em busca de seios mais leves e proporcionais? Em nosso vídeo informativo sobre mamoplastia redutora, você entenderá como essa cirurgia pode transformar o tamanho e a forma dos seios. Explore o processo cirúrgico, desde a consulta inicial até a fase de recuperação, e descubra como a mamoplastia redutora pode aliviar o desconforto e restaurar sua autoconfiança.</p>
+          </div>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/WT-k7XrfDFA?si=PtMhQggQMU4_zZkr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Prótese de Mamas</h2>
+            <p className={styles.descricaoRelacionados}>Seja você mesma, só que melhor! Em nosso vídeo informativo sobre prótese de mamas, você entenderá como esse procedimento pode realçar o tamanho e a forma dos seios. Descubra os detalhes da cirurgia, desde a escolha da prótese até a fase de recuperação, e veja como a prótese de mamas pode elevar sua autoestima.</p>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
       <InstaWhatsappFlut/>
     </div>
   )

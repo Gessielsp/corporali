@@ -9,7 +9,7 @@ import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut"
 
 export default function VideoReparadores() {
   return (
-    <div>
+    <div className={robotoCondensed.className}>
       <Head>
         <title>Vídeos de Procedimentos Reparadores - Transformação e Restauração</title>
         <meta charset="utf-8" />
@@ -32,7 +32,7 @@ export default function VideoReparadores() {
 
       <Header/>
 
-      <div id={styles.bgReparadores} className={`${robotoCondensed.className} ${styles.conteudoPrincipal}`}>
+      <div id={styles.bgReparadores} className={styles.conteudoPrincipal}>
         <div id={styles.bgConteudo}>
           <div id={styles.conteudo}>
               <div id={styles.caixaDescricao}>
@@ -49,6 +49,25 @@ export default function VideoReparadores() {
           </div>
         </div>
       </div>
+
+      <div id={styles.sessaoVideosRelacionados}>
+        <div id={styles.caixaDescricaoRelacionados}>
+          <div>
+            <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
+            <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Faciais, Abdominais, Mamarios e muito mais.</p>
+          </div>
+          <a id={styles.linkVoltar} href="/procedimentos-reparadores">Voltar para Reparadores</a>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div className={styles.boxVideos}>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/qAKlC_E7OrM?si=KgS79EXJUMvrgAzI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Câncer de Pele</h2>
+            <p className={styles.descricaoRelacionados}>A conscientização é a melhor defesa! Em nosso vídeo informativo sobre câncer de pele, você aprenderá a importância da detecção precoce e da prevenção dessa doença. Explore os sinais de alerta, saiba como se proteger dos danos do sol e compreenda as opções de tratamento disponíveis. Este vídeo é um guia valioso para manter sua pele saudável e proteger sua saúde.</p>
+          </div>
+        </div>
+      </div>
+
       <InstaWhatsappFlut/>
     </div>
   )

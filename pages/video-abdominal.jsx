@@ -7,13 +7,14 @@ import styles from "../styles/videos.module.scss";
 
 import { robotoCondensed } from "@/fonts/fonts";
 import InstaWhatsappFlut from "@/components/instaWhatsappFlut/InstaWhatsappFlut";
+import Footer from "@/components/footer/Footer";
 
 export default function VideoAbdominal() {
   return (
-    <div>
+    <div className={robotoCondensed.className}>
       <Head>
         <title>Vídeos de Procedimentos Abdominais - Transformação e Bem-Estar</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Assista a vídeos informativos e educativos sobre procedimentos abdominais. Descubra como cirurgias abdominais podem transformar vidas e promover o bem-estar. Veja procedimentos em detalhes e saiba mais sobre as opções disponíveis." />
@@ -33,7 +34,7 @@ export default function VideoAbdominal() {
       <Header/>
 
 
-      <div id={styles.bgAbdominais} className={`${robotoCondensed.className} ${styles.conteudoPrincipal}`}>
+      <div id={styles.bgAbdominais} className={styles.conteudoPrincipal}>
         <div id={styles.bgConteudo}>
           <div id={styles.conteudo}>
             <div id={styles.caixaDescricao}>
@@ -50,6 +51,31 @@ export default function VideoAbdominal() {
           </div>
         </div>
       </div>
+
+      <div id={styles.sessaoVideosRelacionados}>
+        <div id={styles.caixaDescricaoRelacionados}>
+          <div>
+            <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
+            <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Reparadores, Faciais, Mamarios e muito mais.</p>
+          </div>
+          <a id={styles.linkVoltar} href="/procedimentos-abdominais">Voltar para Abdominais</a>
+        </div>
+
+        <div id={styles.videosRelacionado}>
+          <div>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/iRy543K35ck?si=ujuqIbXbNk0WdW1L" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Lipoaspiração</h2>
+            <p className={styles.descricaoRelacionados}>Em busca de contornos mais suaves e definidos? Em nosso vídeo informativo sobre lipoaspiração, você descobrirá como esse procedimento pode eliminar o excesso de gordura. Explore os detalhes da cirurgia, desde a consulta inicial até a fase de recuperação, e veja como a lipoaspiração pode esculpir seu corpo.</p>
+          </div>
+          <div>
+            <iframe className={styles.iframeVideoRelacionado} src="https://www.youtube.com/embed/oPrDigx3kyo?si=wD4tfV3-lUUUNlfo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <h2 className={styles.tituloRelacionados}>Abdominoplastia</h2>
+            <p className={styles.descricaoRelacionados}>O sonho de um abdômen firme e esculpido pode ser realidade! Em nosso vídeo informativo sobre abdominoplastia, você aprenderá como esse procedimento pode transformar a aparência da região abdominal. Saiba o que envolve o processo cirúrgico, desde a avaliação inicial até o pós-operatório, e veja como a abdominoplastia pode mudar sua vida.</p>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
       <InstaWhatsappFlut/>
     </div>
   )
