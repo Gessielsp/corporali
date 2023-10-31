@@ -56,7 +56,7 @@ export default function VideoReparadores() {
             <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
             <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Faciais, Abdominais, Mamarios e muito mais.</p>
           </div>
-          <a id={styles.linkVoltar} href="/procedimentos-reparadores">Voltar para Reparadores</a>
+          <Link id={styles.linkVoltar} href="/procedimentos-reparadores">Voltar para Reparadores</Link>
         </div>
 
         <div id={styles.videosRelacionado}>

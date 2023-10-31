@@ -57,7 +57,7 @@ export default function VideoMamarios() {
             <h2 id={styles.tituloSobreRelacionados}>Videos Relacionados</h2>
             <p id={styles.descricaoSobreRelacionados}>Aproveite para verificar outros videos do nosso canal. Temos conteúdo sobre procedimentos Faciais, Abdominais, Reparadores e muito mais.</p>
           </div>
-          <a id={styles.linkVoltar} href="/procedimentos-mamarios">Voltar para Mamários</a>
+          <Link id={styles.linkVoltar} href="/procedimentos-mamarios">Voltar para Mamários</Link>
         </div>
 
         <div id={styles.videosRelacionado}>

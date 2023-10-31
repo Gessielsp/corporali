@@ -127,7 +127,7 @@ export default function ProcedimentosReparadores() {
                     </section>
                 </section>
             </main> 
-            <div id={styles.agendarConsulta} className={styles.agendarConsultaAbdominais}>
+            <div id={styles.agendarConsulta} className={styles.agendarConsultaReparadores}>
                 <div id={styles.bgAgendarConsulta}>
                     <div id={styles.conteudoAgendarConsulta}>
                         <div id={styles.caixaAgendarConsulta}>

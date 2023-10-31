@@ -130,7 +130,7 @@ export default function ProcedimentosMamarios() {
                 </section>
             </main>
 
-            <div id={styles.agendarConsulta} className={styles.agendarConsultaAbdominais}>
+            <div id={styles.agendarConsulta} className={styles.agendarConsultaMamarios}>
                 <div id={styles.bgAgendarConsulta}>
                     <div id={styles.conteudoAgendarConsulta}>
                         <div id={styles.caixaAgendarConsulta}>
