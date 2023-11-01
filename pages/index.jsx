@@ -28,28 +28,55 @@ import InstaWhatsappFlut from '../components/instaWhatsappFlut/InstaWhatsappFlut
 import LinhaHorizontalLonga from '../components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
 import 'animate.css';
+import { useState } from 'react';
 
 export default function Home() {
+  const [nome, setNome] = useState("")
+  const [telefone, setTelefone] = useState("")
+  const [email, setEmail] = useState("")
+  const [mensagem, setMensagem] = useState("")
+
+  async function enviarMensagemCorporali(event){
+    event.preventDefault();
+    try {
+      const resposta = await fetch("/api/enviarEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ nome, telefone, email, mensagem })
+      })
+
+      if(resposta.ok){
+        window.alert("Email enviado com sucesso")
+      }else{
+        window.alert("O email nao foi enviado")
+        console.log("Vejamos o por que nao foi enviado",resposta.ok)
+      }
+    } catch (error) {
+      window.alert("Não conseguimos nem tentar a requisição")
+    }
+  }
   return (
     <div className={robotoCondensed.className}>
       <Head>
         <title>Instituto Corporali - Cirurgia Plástica e Estética</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Instituto Corporali - Cirurgia Plástica e Estética em Brasília. Profissionais altamente qualificados, tecnologia de ponta e conforto para nossos pacientes."/>
-        <meta property="og:site_name" content="Instituto Corporali"/>
-        <meta property="og:title" content="Instituto Corporali - Cirurgia Plástica e Estética"/>
-        <meta property="og:description" content="Cirurgia Plástica e Estética em Brasília. Profissionais altamente qualificados, tecnologia de ponta e conforto para nossos pacientes."/>
-        <meta property="og:locale" content="pt_BR"/>
-        <meta property="og:url" content="https://institutocorporali.com.br/"/>
-        <meta property="og:type" content="website"/>
-        <meta name="keywords" content="cirurgia plástica, estética, Instituto Corporali, Brasília, cirurgião plástico, procedimentos estéticos, Dr. Marcelo Moreira"/>
-        <meta name="robots" content="index,follow"/>
-        <meta name="googlebot" content="index,follow"/>
-        <meta name="author" content="WEBTECH - Soluções em Tecnologia"/>
-        <link rel="canonical" href="https://institutocorporali.com.br/"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Instituto Corporali - Cirurgia Plástica e Estética em Brasília. Profissionais altamente qualificados, tecnologia de ponta e conforto para nossos pacientes." />
+        <meta property="og:site_name" content="Instituto Corporali" />
+        <meta property="og:title" content="Instituto Corporali - Cirurgia Plástica e Estética" />
+        <meta property="og:description" content="Cirurgia Plástica e Estética em Brasília. Profissionais altamente qualificados, tecnologia de ponta e conforto para nossos pacientes." />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content="https://institutocorporali.com.br/" />
+        <meta property="og:type" content="website" />
+        <meta name="keywords" content="cirurgia plástica, estética, Instituto Corporali, Brasília, cirurgião plástico, procedimentos estéticos, Dr. Marcelo Moreira" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="author" content="WEBTECH - Soluções em Tecnologia" />
+        <link rel="canonical" href="https://institutocorporali.com.br/" />
       </Head>
 
       <Header />
@@ -101,21 +128,21 @@ export default function Home() {
           <div id={styles.caixaDoisprocedimentos}>
             <div className={styles.caixaPequenaProcedimentos}>
               <div className={styles.caixaProcedimento}>
-                <Image className={styles.iconesProcedimento} src={iconeMamario} alt="Icone Mamarios"/>
+                <Image className={styles.iconesProcedimento} src={iconeMamario} alt="Icone Mamarios" />
                 <a className={styles.linksProcedimentos} href="procedimentos-mamarios">Mamários</a>
               </div>
               <div className={styles.caixaProcedimento}>
-                <Image className={styles.iconesProcedimento} src={iconeAbdominal} alt="Icone Abdominais"/>
+                <Image className={styles.iconesProcedimento} src={iconeAbdominal} alt="Icone Abdominais" />
                 <a className={styles.linksProcedimentos} href="procedimentos-abdominais">Abdominais</a>
               </div>
             </div>
             <div className={styles.caixaPequenaProcedimentos}>
               <div className={styles.caixaProcedimento}>
-                <Image className={styles.iconesProcedimento} src={iconeReparadores} alt="Icone Reparadores"/>
+                <Image className={styles.iconesProcedimento} src={iconeReparadores} alt="Icone Reparadores" />
                 <a className={styles.linksProcedimentos} href="procedimentos-reparadores">Reparadores</a>
               </div>
               <div className={styles.caixaProcedimento}>
-                <Image className={styles.iconesProcedimento} src={iconeFacial} alt="Icone Faciais"/>
+                <Image className={styles.iconesProcedimento} src={iconeFacial} alt="Icone Faciais" />
                 <a className={styles.linksProcedimentos} href="procedimentos-faciais">Faciais</a>
               </div>
             </div>
@@ -228,18 +255,18 @@ export default function Home() {
               <p id={styles.textoContateNos}>Fique a vontade para nos contatar, será um prazer receber você em nossa clínica.</p>
             </div>
             <div id={styles.secForm}>
-              <form id={styles.formContatos} action="" method="post">
+              <form id={styles.formContatos} onSubmit={enviarMensagemCorporali} method="post">
                 <label htmlFor="nome" className={styles.nomesDoFormularios}>Nome</label>
-                <input type="text" id={styles.nome} placeholder='Digite seu nome' />
+                <input type="name" value={nome} onChange={(e) => setNome(e.target.value)} id={styles.nome} placeholder='Digite seu nome' required/>
 
-                <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contatos</label>
-                <input type="text" id={styles.contatos} placeholder='Digite seu telefone aqui' />
+                <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contato</label>
+                <input type="number" id={styles.contatos} value={telefone} onChange={(e) => setTelefone(e.target.value)} placeholder='Digite seu telefone aqui' required/>
 
                 <label htmlFor="email" className={styles.nomesDoFormularios}>E-mail</label>
-                <input type="email" id={styles.email} placeholder='Digite seu email' />
+                <input type="email" id={styles.email} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Digite seu email' required/>
 
                 <label htmlFor="mensagem" className={styles.nomesDoFormularios}>Mensagem</label>
-                <textarea name="MensagemTexto" id={styles.mensagem} cols="30" rows="10" placeholder='Digite sua mensagem'></textarea>
+                <textarea name="MensagemTexto" id={styles.mensagem} value={mensagem} onChange={(e) => setMensagem(e.target.value)} cols="30" rows="10" placeholder='Digite sua mensagem' required></textarea>
                 <button id={styles.butaoContatos}>Enviar</button>
               </form>
             </div>
@@ -277,7 +304,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <InstaWhatsappFlut/>
+      <InstaWhatsappFlut />
     </div>
   )
 }

@@ -13,10 +13,14 @@
     "eslint": "8.49.0",
     "eslint-config-next": "^13.5.2",
     "next": "^13.5.2",
+    "nodemailer": "^6.9.7",
     "package.json": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "sass": "^1.67.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
   }
 }

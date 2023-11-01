@@ -16,6 +16,8 @@ const iconYoutubeBranco = require("../public/corporali/icons/youtube_branco.png"
 const iconTela = require("../public/corporali/icons/tela_preta.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal_preta.png")
 
+import 'animate.css';
+
 export default function ProcedimentosAbdominais() {
     let [modalIsOnline, setModalIsOnline] = useState(false);
 
