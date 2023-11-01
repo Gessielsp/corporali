@@ -16,6 +16,9 @@ const iconYoutubeBranco = require("../public/corporali/icons/youtube_branco.png"
 const iconTela = require("../public/corporali/icons/tela_preta.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal_preta.png");
 
+import 'animate.css';
+
+
 export default function ProcedimentosMamarios() {
     let [modalIsOnline, setModalIsOnline] = useState(false);
 
@@ -48,7 +51,7 @@ export default function ProcedimentosMamarios() {
             <div id={styles.banner} className={styles.bannerMamarios}>
                 <div id={styles.bgBanner}>
                     <div id={styles.boxBanner}>
-                        <h1 id={styles.tituloBanner}>Procedimentos Mamarios</h1>
+                        <h1 id={styles.tituloBanner} className="animate__animated animate__backInRight">Procedimentos Mamarios</h1>
                         <p id={styles.descricaoBanner}>Procedimentos reparadores são tratamentos estéticos que visam melhorar a aparência da pele e reduzir sinais de envelhecimento, incluindo técnicas como peelings químicos e preenchimentos dérmicos.</p>
                     </div>
                 </div>

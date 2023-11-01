@@ -16,6 +16,9 @@ const iconeYoutube = require("../public/corporali/icons/youtube_vermelho.png");
 const iconTela = require("../public/corporali/icons/tela_preta.png");
 const fecharModalX = require("../public/corporali/icons/fechar_modal_preta.png");
 
+import 'animate.css';
+
+
 export default function ProcedimentosReparadores() {
     let [modalIsOnline, setModalIsOnline] = useState(false);
 

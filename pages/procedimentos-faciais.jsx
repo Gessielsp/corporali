@@ -23,6 +23,9 @@ const imagemInterativaUm = require("../public/corporali/dr_marcelo/marcelo_29.JP
 const imagemInterativaDois = require("../public/corporali/dr_marcelo/marcelo_26.JPG")
 const imagemInterativaTres = require("../public/corporali/dr_marcelo/marcelo_25.JPG")
 
+import 'animate.css';
+
+
 export default function ProcedimentosFaciais(){
     let [modalIsOnline, setModalIsOnline] = useState(false);
 
