@@ -21,9 +21,11 @@ const iconeFacial = require('../public/corporali/icons/icon-facial.png');
 const iconeReparadores = require('../public/corporali/icons/icon-reparadores.png');
 const iconeMamario = require('../public/corporali/icons/icon-mamarios.png');
 
-
 import Header from '../components/header/Header';
 import InstaWhatsappFlut from '../components/instaWhatsappFlut/InstaWhatsappFlut';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import LinhaHorizontalLonga from '../components/linhaHorizontalLonga/LinhaHorizontalLonga.jsx';
 
@@ -36,6 +38,17 @@ export default function Home() {
   const [email, setEmail] = useState("")
   const [mensagem, setMensagem] = useState("")
 
+  const notify = () => toast.success('Solicitação enviada!', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });;
+
   async function enviarMensagemCorporali(event){
     event.preventDefault();
     try {
@@ -46,17 +59,18 @@ export default function Home() {
         },
         body: JSON.stringify({ nome, telefone, email, mensagem })
       })
-
-      if(resposta.ok){
+      
+      /* if(resposta.ok){
         window.alert("Email enviado com sucesso")
       }else{
         window.alert("O email nao foi enviado")
-        console.log("Vejamos o por que nao foi enviado",resposta.ok)
-      }
+      } */
     } catch (error) {
-      window.alert("Não conseguimos nem tentar a requisição")
+      /* window.alert("Não conseguimos nem tentar a requisição") */
+      return false
     }
   }
+
   return (
     <div className={robotoCondensed.className}>
       <Head>
@@ -257,17 +271,17 @@ export default function Home() {
             <div id={styles.secForm}>
               <form id={styles.formContatos} onSubmit={enviarMensagemCorporali} method="post">
                 <label htmlFor="nome" className={styles.nomesDoFormularios}>Nome</label>
-                <input type="name" value={nome} onChange={(e) => setNome(e.target.value)} id={styles.nome} placeholder='Digite seu nome' required/>
+                <input type="name" value={nome} onChange={(e) => setNome(e.target.value)} id={styles.nome} placeholder='Digite seu nome' minLength={3} maxLength={35} required/>
 
-                <label htmlFor="contatos" className={styles.nomesDoFormularios}>Contato</label>
-                <input type="number" id={styles.contatos} value={telefone} onChange={(e) => setTelefone(e.target.value)} placeholder='Digite seu telefone aqui' required/>
+                <label htmlFor="contatos" className={styles.nomesDoFormularios}>Telefone</label>
+                <input type="text" id={styles.contatos} value={telefone} onChange={(e) => setTelefone(e.target.value)} placeholder='Digite seu telefone aqui' minLength={8} maxLength={15} required/>
 
                 <label htmlFor="email" className={styles.nomesDoFormularios}>E-mail</label>
-                <input type="email" id={styles.email} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Digite seu email' required/>
+                <input type="email" id={styles.email} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Digite seu email' minLength={10} maxLength={50}required/>
 
                 <label htmlFor="mensagem" className={styles.nomesDoFormularios}>Mensagem</label>
-                <textarea name="MensagemTexto" id={styles.mensagem} value={mensagem} onChange={(e) => setMensagem(e.target.value)} cols="30" rows="10" placeholder='Digite sua mensagem' required></textarea>
-                <button id={styles.butaoContatos}>Enviar</button>
+                <textarea name="MensagemTexto" id={styles.mensagem} value={mensagem} onChange={(e) => setMensagem(e.target.value)} cols="30" rows="10" placeholder='Digite sua mensagem' minLength={10} maxLength={300} required></textarea>
+                <button id={styles.butaoContatos} onClick={() => notify()}>Enviar</button>
               </form>
             </div>
           </div>
@@ -305,6 +319,7 @@ export default function Home() {
         </div>
       </div>
       <InstaWhatsappFlut />
+      <ToastContainer />
     </div>
   )
 }
