@@ -142,7 +142,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgLorranaBeatriz}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Sou enfermeiro e fico reponsável pelo pós-operatório imediato das pacientes. Fico com elas no periodo noturno e acompanho até a alta hospitalar.</p>
+                                    <p className={styles.descricaoFuncionaria}>Sou enfermeira e fico reponsável pelo pós-operatório imediato das pacientes. Fico com elas no periodo noturno e acompanho até a alta hospitalar.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Lorrana Beatriz</h2>
