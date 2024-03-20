@@ -148,6 +148,16 @@ export default function PagClinica(){
                             <h2 className={styles.nomeFuncionaria}>Lorrana Beatriz</h2>
                             <h4 className={styles.cargo}>Enfermeira</h4>
                         </div>
+                        <div className={styles.cardsEquipe}>
+                            <article className={`${styles.bgCinza} ${styles.bgMilenaMoreira}`}>
+                                <div className={styles.bgEquipe}>
+                                    <div className={styles.linhaAcimaEquipeCorporali}></div>
+                                    <p className={styles.descricaoFuncionaria}>Cirurgiã-dentista, especialista, mestra e doutora em Periodontia pela UFMG 2015. Procedimento Faciais minimamente evasivos.</p>
+                                </div>
+                            </article>
+                            <h2 className={styles.nomeFuncionaria}>Dr. Milena Moreira</h2>
+                            <h4 className={styles.cargo}>Cirurgiã dentista</h4>
+                        </div>
                     </div>
                 </div>
             </div>
