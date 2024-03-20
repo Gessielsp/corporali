@@ -261,15 +261,19 @@
     padding: 50px 0 100px;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    /* justify-content: space-around; */
 }
 #boxUmEquipe{
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #tituloEquipe{
     color: $primarycolor;
     margin-bottom: 30px;
     text-transform: uppercase;
+    text-align: center;
 }
 #descricaoEquipe{
     color: #fff;
@@ -277,6 +281,7 @@
     text-align: justify;
     line-height: 25px;
     margin-bottom: 30px;
+    text-align: center;
 }
 #linkAgendaConsultaEquipe{
     border: 3px solid $primarycolor;
@@ -295,10 +300,11 @@
 #boxDoisEquipe{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    margin-top: 30px;
 }
 .cardsEquipe{
     width: 250px;
+    height: 400px;
 }
 .bgCinza{
     background-size: cover;
@@ -315,6 +321,9 @@
 }
 .bgLorranaBeatriz{
     background-image: url(../public/corporali/clinica/talita_corporali_comprimida.jpg);
+}
+.bgMilenaMoreira{
+    background-image: url(../public/corporali/clinica/milena_moreira.JPG);
 }
 .bgEquipe{
     background-color: #605e5ebb;
