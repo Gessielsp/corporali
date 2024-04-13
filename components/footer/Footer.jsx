@@ -71,7 +71,7 @@ export default function Footer() {
                     </div>
                     <div id={styles.caixaEndereço}>
                         <h3 className={styles.titulosFooter}>Endereço</h3>
-                        <p className={styles.descricaoFooter}>Centro Clínico Linea | SGAS 616, Bloco B, Salas 25 e 27 – Asa Sul, Brasília, Distrito Federal.</p>
+                        <p className={styles.descricaoFooter}>Centro Clínico Linea Vitta | SGAS 616, Bloco B, Salas 25 e 27 – Asa Sul, Brasília, Distrito Federal.</p>
                     </div>
                     <div className={styles.caixasFooter}>
                         <h3 className={styles.titulosFooter}>Funcionamento</h3>
