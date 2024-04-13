@@ -66,7 +66,7 @@ export default function PagClinica(){
                 <div className={styles.sobreaClinica}>
                     <div className={styles.sobreClinicaDois}>
                         <h2 className={styles.subTitulosSobre}>Onde Ficamos</h2>
-                        <p className={styles.descricaoSobre}>Localizada em uma das áreas mais prestigiadas de Brasília, a Centro Clínico Linea encontra-se no coração da Asa Sul, no endereço SGAS 616, Bloco B, Salas 25 e 27. Nossa clínica é facilmente acessível, oferecendo conveniência aos nossos pacientes que buscam serviços de alta qualidade em cirurgia plástica e cuidados médicos. Com uma localização central e comodidades modernas, estamos comprometidos em proporcionar um ambiente acolhedor e confortável para garantir a melhor experiência possível aos nossos pacientes.</p>
+                        <p className={styles.descricaoSobre}>Localizada em uma das áreas mais prestigiadas de Brasília, a Centro Clínico Linea Vitta encontra-se no coração da Asa Sul, no endereço SGAS 616, Bloco B, Salas 25 e 27. Nossa clínica é facilmente acessível, oferecendo conveniência aos nossos pacientes que buscam serviços de alta qualidade em cirurgia plástica e cuidados médicos. Com uma localização central e comodidades modernas, estamos comprometidos em proporcionar um ambiente acolhedor e confortável para garantir a melhor experiência possível aos nossos pacientes.</p>
                     </div>
                     <div className={styles.sobreClinicaDois}>
                         <h2 className={styles.subTitulosSobre}>A Equipe</h2>
@@ -152,7 +152,7 @@ export default function PagClinica(){
                             <article className={`${styles.bgCinza} ${styles.bgMilenaMoreira}`}>
                                 <div className={styles.bgEquipe}>
                                     <div className={styles.linhaAcimaEquipeCorporali}></div>
-                                    <p className={styles.descricaoFuncionaria}>Cirurgiã-dentista, especialista, mestra e doutora em Periodontia pela UFMG 2015. Procedimento Faciais minimamente evasivos.</p>
+                                    <p className={styles.descricaoFuncionaria}>Cirurgiã-dentista, especialista, mestra e doutora em Periodontia pela UFMG 2015. Procedimento Faciais minimamente invasivos.</p>
                                 </div>
                             </article>
                             <h2 className={styles.nomeFuncionaria}>Dr. Milena Moreira</h2>
@@ -171,7 +171,7 @@ export default function PagClinica(){
                     </div>
                     <div id={styles.textosGaleria}>
                         <h2 id={styles.tituloGaleria}>Galeria de Fotos</h2>
-                        <p id={styles.descricaoGaleria}>Confira nesta seção algumas fotos de nossa clínica. É uma clínica ampla, bem organizada e planejada. Ficamos no Centro Clínico Línea, Asa Sul, Brasília, Bloco B, Salas 25 e 27 – Distrito Federal. </p>
+                        <p id={styles.descricaoGaleria}>Confira nesta seção algumas fotos de nossa clínica. É uma clínica ampla, bem organizada e planejada. Ficamos no Centro Clínico Línea Vitta, Asa Sul, Brasília, Bloco B, Salas 25 e 27 – Distrito Federal. </p>
                         <a href="https://api.whatsapp.com/send?phone=55061981993099&text=Ol%C3%A1%2C%20vim%20do%20site%20de%20voc%C3%AAs%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" id={styles.linkGaleria}>Agendar consulta</a>
                     </div>
                 </div>
@@ -198,13 +198,13 @@ export default function PagClinica(){
                                 <p className={styles.textoDescricaoGaleria}>Interior do escritório</p>
                             </div>
                             <div className={styles.fotoGaleriaSeis}>
-                                <p className={styles.textoDescricaoGaleria}>Paula Melo, recepcionista.</p>
+                                <p className={styles.textoDescricaoGaleria}>Paula Melo, Secretaria.</p>
                             </div>
                         </div>
                         <div className={styles.linhaHorizontalVerde}></div>
                         <div id={styles.subSessaoTres}>
                             <div className={styles.fotoGaleriaSete}>
-                                <p className={styles.textoDescricaoGaleria}>Equipe Corporali, Jéssica Toledo, Marcelo Herique e Paula Melo.</p>
+                                <p className={styles.textoDescricaoGaleria}>Equipe Corporali, Jéssica Toledo, Marcelo Moreira e Paula Melo.</p>
                             </div>
                             <div className={styles.linhaHorizontalVerde}></div>
                             <div className={styles.fotoGaleriaOito}>
